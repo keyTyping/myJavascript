@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+    /*    var arr=new Array();
+      //var j=0;
+      for(var i=0;i<100;i++){
+          if(i%2!==0){
+              arr[arr.length]=i;
+          }
+      }*/
+        var arr=[12,55,6,13,24,46];
+        for(var i=0;i<arr.length-1;i++) {
+            var flag=true;
+            for (var j = 0; j < arr.length -1- i; j++) {
+                var temp = arr[0];
+                if (arr[j] > arr[j + 1]) {
+                    flag=false;
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+            if(flag){
+                break;
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

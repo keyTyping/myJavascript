@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+</div>
+<script>
+    var box= document.getElementById("box");
+//    console.log(box.innerHTML);
+//    console.log(box.innerText);
+//    box.innerHTML="<h2>h2标签</h2>";
+//    box.innerText="<h2>h2标签</h2>";
+//    box.textContent = "h2";
+
+//    兼容浏览器获取任意对象的内部文本
+    function getInnerText(element){
+        if(typeof element.innerText ==="string"){
+            return element.innerText;
+        }
+        else {
+           return element.textContent;
+        }
+    }
+
+//    兼容浏览器修改任意对象的内部文本
+    function setInnerText(element,text){
+        if(typeof element.innerText ==="string"){
+            element.innerText=text;
+        }
+        else {
+            element.textContent=text;
+        }
+    }
+    console.log(getInnerText(box));
+    setInnerText(box,"<h2>h2标签</h2>");
+</script>
+</body>
+</html>
