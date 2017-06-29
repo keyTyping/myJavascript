@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var i=0;
+    function getFib(n){
+        var sum=0;
+        if(i<n){
+            if(i==1){
+                return 1;
+            }
+            sum=getFib(n-1)+getFib(n-2);
+            return sum;
+        }
+        i++;
+    }
+    console.log(getFib(5));
+</script>
+</body>
+</html>

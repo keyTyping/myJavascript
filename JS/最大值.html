@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求任意个数的数中的最大值</title>
+</head>
+<body>
+<script>
+    function max(){
+        if(isNaN(arguments[0])){
+            alert("请输入正确的数值,以逗号隔开!");
+            return false;
+        }
+        if(arguments.length<=1){
+            alert("请输入至少两个数!");
+            return false;
+
+        }
+        var max=arguments[0];
+        for(var i=1;i<arguments.length;i++){
+            if(max<arguments[i]){
+                max=arguments[i];
+            }
+        }
+        return max;
+    }
+    console.log(max(1,8));
+</script>
+</body>
+</html>

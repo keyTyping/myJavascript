@@ -1,0 +1,77 @@
+/*这里是共用的头部,尾部栏样式*/
+
+/*shortcut begin*/
+.shortcut {
+    height: 30px;
+    background-color: #E3E4E5;
+    line-height: 30px;
+}
+.dorpdown i {
+    width: 15px;
+    height: 7px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.dorpdown i s {
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: -7px;
+
+}
+.shortcut li {
+    padding: 0 10px;
+}
+.stylecolor {
+    color: #C81623;
+}
+.shortcut em {
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url("../images/jd2015img.png") no-repeat;
+}
+/*shortcut end*/
+
+/*search bar begin*/
+.logo {
+    width: 360px;
+    height: 60px;
+    padding: 20px 0;
+    }
+.logo a {
+    width: 270px;
+    height: 60px;
+    display: block;
+    background: url("../images/logo.png") no-repeat;
+    text-indent: -2000em;
+}
+.search {
+    width: 540px;
+    height: 36px;
+}
+.search input {
+    width: 451px;
+    height: 32px;
+    outline: none;
+    border: 2px solid #B61D1D;
+    border-right: 0;
+    margin: 25px 0 10px 0;
+    padding-left: 3px;
+
+
+}
+.search button {
+    width: 82px;
+    height: 38px;
+    border: 0;
+    background-color: #B61D1D;
+    color: #ffffff;
+    margin-top: 25px;
+    outline: none;
+}
+/*search bar end*/
