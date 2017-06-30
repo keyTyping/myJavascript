@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .cls {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="cls" style="width: 100px;"></div>
+    <input type="button" value="按钮" id="btn"/>
+    <script>
+        var box = document.getElementById("box");
+        //style对象 获取到的是行内样式的 数值,
+        console.log(box.style.width);
+        //通过 style对象设置的 样式都是行内样式
+        var btn = document.getElementById("btn");
+        btn.onclick =function(){
+            box.style.width = "50px";
+            box.style.height = "50px";
+            box.style.backgroundColor = "blue";
+        }
+
+    </script>
+</body>
+</html>
