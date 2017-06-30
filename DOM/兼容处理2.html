@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+<input type="text" id="txtName"/><span></span> <br/>
+<input type="text" id="txtPwd"/>
+<span></span> <br/>
+<input type="button" value="注册" id="btn"/>
+<script>
+   //nextElementSibling  的兼容性处理
+
+   var txtName = document.getElementById("txtName");
+   var txtPwd = document.getElementById("txtPwd");
+   txtName.onkeyup = function (){
+       if (this.value.length < 3 || this.value.length > 6){
+           getNextElement (txtName).innerHTML = "用户名必须在3-6位之间"
+       }
+       else {
+           getNextElement (txtName).innerHTML = ""
+       }
+   }
+   txtPwd.onkeyup = function (){
+       if (this.value.length<3 || this.value.length>6){
+           this.nextElementSibling.innerHTML = "密码必须在3-6位之间"
+       }
+       else {
+           this.nextElementSibling.innerHTML = ""
+       }
+   }
+
+//   获取下一个兄弟元素的兼容函数
+    function getNextElement (element){
+        if(element.nextElementSibling){
+            return element.nextElementSibling;
+        }
+        else {
+            var next = element.nextSibling;
+            while(next&& next.nodeType !==1 ){
+                next = next.nextSibling;
+            }
+            return next;
+        }
+    }
+</script>
+</body>
+</html>

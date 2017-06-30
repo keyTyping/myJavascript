@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" value="金融 " id="text"/>
+<input type="button" value="搜索" id="btn"/>
+<script>
+    var btn = document.getElementById("btn");
+    var text = document.getElementById("text");
+    text.onfocus = function(){
+        if(text.value=="金融 "){
+            this.value = "";
+        }
+    };
+    text.onblur = function(){
+        if(!text.value){
+            this.value = "金融 ";
+        }
+    }
+</script>
+</body>
+</html>

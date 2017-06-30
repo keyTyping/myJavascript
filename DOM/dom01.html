@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<img src="../../images/Chrysanthemum.jpg" onclick="changePic()" id="demo"/>
+
+<script>
+   /* var e1=document.getElementById("demo");
+    console.log(e1);
+    console.dir(e1);
+    console.log(e1.src);
+    console.log(typeof e1.src);
+    e1.src="../../images/Koala.jpg"*/
+    var i=0;
+    function changePic(){
+        var e1=document.getElementById("demo");
+        if(i==0){
+            e1.src="../../images/Koala.jpg"
+            i=1;
+        }
+        else{
+            e1.src="../../images/Chrysanthemum.jpg"
+            i=0;
+        }
+    }
+</script>
+</body>
+</html>

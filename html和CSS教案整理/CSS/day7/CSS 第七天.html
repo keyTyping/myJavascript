@@ -1,0 +1,346 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>itcastmark:C:\双元资料\css 第七天\css7</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="1-">1.滑动门</h1>
+<p>先来体会下现实中的滑动门,或者你可以叫做推拉门：</p>
+<p><img src="images/h.gif" /></p>
+<h2 id="1-1-">1.1 滑动门出现的背景</h2>
+<p>制作网页时，为了美观，常常需要为网页元素设置特殊形状的背景，比如微信导航栏，有凸起和凹下去的感觉，最大的问题是里面的字数不一样多，咋办？</p>
+<p><img src="images/w.jpg" /></p>
+<p><strong style="color:#f00;">为了使各种特殊形状的背景能够自适应元素中文本内容的多少，</strong>出现了CSS滑动门技术。它从新的角度构建页面，使各种特殊形状的背景能够自由拉伸滑动，以适应元素内部的文本内容，可用性更强。 最常见于各种导航栏的滑动门。</p>
+<h2 id="1-2-">1.2 核心技术</h2>
+<p>核心技术就是利用CSS精灵（主要是背景位置）和盒子padding撑开宽度, 以便能适应不同字数的导航栏。</p>
+<p>一般的经典布局都是这样的：</p>
+<pre><code>&lt;li&gt;
+
+   &lt;a href=&quot;#&quot;&gt;
+
+            &lt;span&gt;导航栏内容&lt;/span&gt;
+
+   &lt;/a&gt;
+
+&lt;/li&gt;
+</code></pre><p>总结就是： </p>
+<ol>
+<li>a 设置 背景左侧，padding撑开合适宽度。    </li>
+<li>span 设置背景右侧， padding撑开合适宽度 剩下由文字继续撑开宽度。</li>
+<li>之所以a包含span就是因为 整个导航都是可以点击的。</li>
+</ol>
+<h1 id="2-css-">2.CSS 常用技巧</h1>
+<h2 id="2-1-margin-">2.1 margin 负值</h2>
+<p>制作网页时，为了拉开元素之间的距离，常常给元素设置大于0的外边距margin。其实，在实际工作中，为了实现一些特殊的效果，经常需要将元素的margin设置为负值，如下图所示的元素重叠效果。</p>
+<p>注意技巧：</p>
+<p>1.定位的盒子层级高于浮动和标准流。</p>
+<p>2.提高定位盒子的层级用 z-index。</p>
+<h2 id="2-2-css-">2.2 css三角的写法</h2>
+<p>易迅、网易三角的做法：</p>
+<p>京东三角的做法：</p>
+<p>综合做法：</p>
+<p><img src="images/icon.jpg"  style="border: 2px dashed #ccc;"/></p>
+<p>课后练习：</p>
+<p><img src="images/zy.png" style="border: 2px dashed #ccc;"/></p>
+<h2 id="2-3-ico-">2.3 给网页添加ico图标</h2>
+<p><img src="images/ico.png" /></p>
+<ol>
+<li>首先自己或者网页美工制作小图标。 </li>
+<li>利用 <a href="http://www.bitbug.net/">http://www.bitbug.net/</a>    进行转换   生成的是：  favicon.ico  的小图标</li>
+<li><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; /&gt;</code> 注意路径哦！</li>
+</ol>
+<h2 id="2-4-logo-">2.4 关于logo 的优化(建议)</h2>
+<p>1.一般情况下，logo给的是背景图片<br/><br/></p>
+<ol>
+<li>我们要在logo里面放一个h1标签，就是为提权，说明这个盒子很重要。<br/><br/></li>
+<li>我们继续在h1 里面放一个链接a 要和 logo盒子一样大。<br/><br/></li>
+<li>注意 a链接 里面要放上网站标题。（是为了优化）<br/><br/></li>
+<li><p>链接里面的文字对用户体验不好，这里不需要看见。 有两种方法实现：</p>
+<p>利用text-indent:-2000em; 或者 利用padding 挤开盒子 并且overflow 切割<br/><br/></p>
+</li>
+<li>给链接添加 title 提示文本 增强用户体验。</li>
+</ol>
+<h1 id="3-css-">3.CSS文本属性</h1>
+<h2 id="3-1-letter-spacing-">3.1 letter-spacing:字间距</h2>
+<p>letter-spacing属性用于定义字间距，所谓字间距就是字符与字符之间的空白。其属性值可为不同单位的数值，允许使用负值，默认为normal。</p>
+<h2 id="3-2-word-spacing-">3.2 word-spacing:单词间距</h2>
+<p>word-spacing属性用于定义英文单词之间的间距，对中文字符无效。和letter-spacing一样，其属性值可为不同单位的数值，允许使用负值，默认为normal。</p>
+<p>word-spacing和letter-spacing均可对英文进行设置。不同的是letter-spacing定义的为字母之间的间距，而word-spacing定义的为英文单词之间的间距。</p>
+<h2 id="3-3-word-break-">3.3 word-break:自动换行</h2>
+<p>normal   使用浏览器默认的换行规则。</p>
+<p>break-all   允许在单词内换行。</p>
+<p>keep-all    只能在半角空格或连字符处换行。</p>
+<h2 id="3-4-white-space-">3.4 white-space:空白符处理</h2>
+<p>使用HTML制作网页时，不论源代码中有多少空格，在浏览器中只会显示一个字符的空白。在CSS中，使用white-space属性可设置空白符的处理方式，其属性值如下：</p>
+<p>normal：常规（默认值），文本中的空格、空行无效，满行（到达区域边界）后自动换行。</p>
+<p>pre：预格式化，按文档的书写格式保留空格、空行原样显示。</p>
+<p>nowrap：空格空行无效，强制文本不能换行，除非遇到换行标记 &lt;br /&gt;   </p>
+<p>。内容超出元素的边界也不换行，若超出浏览器页面则会自动增加滚动条。(重要)</p>
+<h2 id="3-5-text-overflow-">3.5 text-overflow 文字溢出</h2>
+<p>ext-overflow : clip | ellipsis</p>
+<p>设置或检索是否使用一个省略标记（...）标示对象内文本的溢出</p>
+<p>clip : 　不显示省略标记（...），而是简单的裁切 </p>
+<p>ellipsis : 　当对象内文本溢出时显示省略标记（...）</p>
+<h1 id="4-css-">4. CSS兼容性</h1>
+<p>在网络中浏览器众多，因为不同浏览器使用内核及对W3C标准的支持不一样，各个浏览器对于页面的解释呈视也不尽相同。以及用户客户端的环境不同（如分辨率不同）造成的显示效果不能达到理想效果。最常见的问题就是网页元素位置混乱，错位。<strong>目前暂没有统一的能解决这样的工具</strong>.</p>
+<p>最普遍的解决办法就是不断的在各浏览器间调试网页显示效果，通过对CSS样式控制以及通过脚本判断并赋予不同浏览器的解析标准。</p>
+<p>总结：  所以为css兼容性，就是针对于不同浏览器我们书写不同的样式，从而达到统一的样式效果。  </p>
+<p>其实，css兼容性，主要针对于ie的旧版浏览器， 因为其他浏览器比较符合w3c规范。</p>
+<table>
+    <tr><th>CSS Hack  </th></tr>
+    <tr><td>CSS 属性 Hack </td></tr>
+    <tr><td>CSS 选择器 Hack </td></tr>
+    <tr><td>CSS 条件 Hack </td></tr>
+</table>
+
+
+
+<h2 id="4-1-hack">4.1 属性hack</h2>
+<table>
+   <tr>
+      <th>CSS前缀hack</th>
+      <th>针对的浏览器</th>
+   </tr>
+   <tr>
+      <td>_color:red;</td>
+      <td>IE6 专属</td>
+   </tr>
+   <tr>
+      <td>*color</td>
+      <td>IE7 及其以下版本</td>
+   </tr>
+   <tr>
+      <th>CSS后缀hack</th>
+      <th>针对的浏览器</th>
+   </tr>
+   <tr>
+      <td>color:red\9;</td>
+      <td>IE6/IE7/IE8/IE9/IE10版本(不包含ie11 以下同样如此)</td>
+   </tr>
+   <tr>
+      <td>color:red\0;</td>
+      <td>IE8/IE9/IE10版本</td>
+   </tr>
+   <tr>
+      <td>color:red\9\0;</td>
+      <td>IE9/IE10</td>
+   </tr>
+   <tr>
+      <td>color:red!important</td>
+      <td>IE7/IE8/IE9/IE10及其其他非ie</td>
+   </tr>
+</table>
+
+
+<h2 id="4-2-hack">4.2 选择器hack</h2>
+<p>（1）IE6(含)以下的版本识别</p>
+<p>语法：* html 选择器 ｛...｝</p>
+<p>例如：</p>
+<ul>
+<li>html .content {
+  width:300px;
+  height:300px;
+  border:1px dashed #0066FF;<br>}</li>
+</ul>
+<p>（2）只有IE7识别</p>
+<p>语法：*+html 选择器 {....}</p>
+<p>例如：</p>
+<p>*+html .content {
+    width:300px;
+    height:300px;
+    border:1px dashed #0066FF;</p>
+<p>}</p>
+<p>（3）媒体查询的写法（了解） </p>
+<table>
+   <tr>
+      <td>@media screen\9{body { background: red; }}</td>
+      <td>   只对IE6/7生效</td>
+   </tr>
+   <tr>
+      <td>@media \0screen {body { background: red; }}    </td>
+      <td>只对IE8生效</td>
+   </tr>
+   <tr>
+      <td>@media \0screen\,screen\9{body { background: blue; }}</td>
+      <td>只对IE6/7/8有效</td>
+   </tr>
+   <tr>
+      <td>@media screen\0 {body { background: green; }}</td>
+      <td>  只对IE8/9/10有效</td>
+   </tr>
+   <tr>
+      <td>@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {body { background: orange; }}</td>
+      <td>      只对IE10有效</td>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+</table>
+
+
+<h2 id="4-3-">4.3 条件注释语法</h2>
+<p>注意： 在ie10.ie11 已经不支持 if ie 这些语句了，其实ie10以上基本已经和ff，chrome差不多了，因此不需要单独指定兼容性了。</p>
+<p>（1）只有IE浏览器中可见</p>
+<pre><code>&lt;!--[if IE]&gt;
+&lt;p&gt;你在非IE中将看不到我的身影&lt;/p&gt;
+&lt;![endif]--&gt;
+</code></pre><p>（2）判断等于某个IE浏览器版本的语法</p>
+<p>语法：</p>
+<pre><code>&lt;!--[if IE 7]&gt;只能被 IE7 识别;&lt;![endif]--&gt;
+</code></pre><p>例如：</p>
+<pre><code>&lt;!--[if ie 7]&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/c.css&quot;&gt;
+
+&lt;![endif]--&gt;
+</code></pre><p>（3）判断IE浏览器的范围：gte,gt,lte,lt</p>
+<table>
+   <tr>
+      <td>gte   </td>
+      <td>表示高于或等于某个IE浏览的版本
+      </td>
+   </tr>
+   <tr>
+      <td>gt    </td>
+      <td>表示高于某个IE浏览器的版本</td>
+   </tr>
+   <tr>
+      <td>lte    </td>
+      <td>表示低于或等于某个IE浏览器的版本</td>
+   </tr>
+   <tr>
+      <td>lt    </td> 
+      <td>表示低于某个IE浏览器的版本</td>
+   </tr>
+</table>
+
+<p>语法：</p>
+<pre><code>&lt;!--[if gte ie 版本号]&gt;要判断的内容&lt;![endif]--&gt;
+</code></pre><p>例如：</p>
+<pre><code>&lt;!--[if gte ie 5]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/c.css&quot;&gt;
+&lt;![endif]--&gt;
+</code></pre><p>（4） 判断非IE浏览器</p>
+<p>语法：</p>
+<pre><code>&lt;!--[if ! ie]&gt;&lt;!--&gt;要判断的内容&lt;!--&lt;![endif]--&gt;
+</code></pre><p>例如：</p>
+<pre><code>&lt;!--[if ! ie]&gt;&lt;!--&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/c.css&quot;&gt;
+
+&lt;!--&lt;![endif]--&gt;
+</code></pre><h2 id="4-4-">4.4 检测是否了解兼容性</h2>
+<p>（1） 请问以下代码 ie6.7.8.谷歌浏览器各自显示的颜色是什么？</p>
+<p>  #tip {</p>
+<p>background:blue; </p>
+<p>background:red \9; </p>
+<p>*background:black; </p>
+<p>_background:orange; </p>
+<p>}</p>
+<p>答案：</p>
+<p>background:blue;   chrome 背景变蓝色</p>
+<p>background:red \9;   IE8 背景变红色</p>
+<p>*background:black;   IE7 背景变黑色</p>
+<p>_background:orange;   IE6 背景变橘色</p>
+<p>（2） 下图乃是三星官网代码截图也，问此语句为何意？</p>
+<p> <img src="images/san.png" style="border: 1px dashed #ccc"/></p>
+<h2 id="4-5-">4.5 总结兼容性</h2>
+<p>其实，最好的兼容性还是要写符合标准的代码， 注意前面讲过的特殊属性，比如外边距合并，浮动脱标等等。 </p>
+<p>非要使用css hack的话，要注意顺序千万不要乱，因为当出现重复定义时，浏览器默认按最后一下渲染，所以一定要先正常，再*，最后_。 （先大后小或者 先全局后局部）</p>
+<h1 id="5-css-bug">5. CSS 常见bug</h1>
+<h2 id="5-1-ie6-bug-">5.1 IE6及更早浏览器浮动时产生双倍边距的BUG？</h2>
+<p>所谓的IE6双倍边距就是指当元素有float属性，又有margin属性时，在IE6下面显示的margin的值是设置值的两倍。这个是IE6比较著名的BUG。
+解决的方法就是_display:inline。</p>
+<h2 id="5-2-ie6-">5.2 IE6下元素最小高度的问题</h2>
+<p>在IE6下面，如果想给把元素例如div设置成19像素以下的高度设置不了。这是因为IE6浏览器里面有个默认的高度
+iE6下这个问题是因为默认的行高造成的,解决的技巧也有很多,例如:overflow:hidden;height:1px;font-size:0;line-height:0; 都可以。</p>
+<h2 id="5-3-ie7-li-2-li-bug-">5.3 IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？</h2>
+<p>vertical-align:top;</p>
+<p>除了top值，还可以设置为 middle | bottom  等都可以</p>
+<h2 id="5-4-ie6-bug">5.4 IE6中奇数宽高的BUG</h2>
+<p>IE6还有奇数宽高的bug，解决方案就是将外部相对定位的div宽度改成偶数。</p>
+<h2 id="5-5-ie6-">5.5 了解ie6盒子会撑高的特性</h2>
+<p>ie下面的盒子， 即使你给与了宽度和高度，但是内容超过大小的时候，盒子还会撑大，解决方法就是添加overflow:hidden;</p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

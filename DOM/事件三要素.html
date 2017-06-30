@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="按钮1" onclick="alert('1')"/>
+<input type="button" value="按钮2" id="btn"/>
+<script>
+    //事件源.事件=function(){事件处理程序}
+    var img=document.getElementById("btn");
+    img.onclick=function(){
+        alert("2");
+    }
+</script>
+</body>
+</html>

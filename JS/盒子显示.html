@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类名控制</title>
+    <style>
+        .pinkBox {
+            width: 100px;
+            height: 150px;
+            background-color: lightpink;
+        }
+        button {
+            width: 80px;
+            height: 25px;
+            background-color: lightgreen;
+            outline: none;
+            border: 0;
+            font: 14px "Microsoft Yahei";
+        }
+        button:hover {
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">按&nbsp;钮</button>
+    <div id="box"></div>
+    <script>
+        var btn =document.getElementById("btn");
+        var box =document.getElementById("box");
+        var i=0;
+/*
+        btn.onclick= function(){
+            if(i==0){
+                box.className = "pinkBox";
+                i=1;
+            }
+            else {
+                box.className = null;
+                i=0;
+            }
+        }
+*/
+        btn.onmouseover= function(){
+            box.className = "pinkBox";
+        }
+        btn.onmouseout= function(){
+            box.className = null;
+        }
+
+    </script>
+</body>
+</html>

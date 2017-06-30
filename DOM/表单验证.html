@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="txtName"/><span></span> <br/>
+<input type="text" id="txtPwd"/>
+<span></span> <br/>
+<input type="button" value="注册" id="btn"/>
+<script>
+    var txtName = document.getElementById("txtName");
+    var txtPwd = document.getElementById("txtPwd");
+    txtName.onkeyup = function (){
+        if (this.value.length < 3 || this.value.length > 6){
+            this.nextSibling.innerHTML = "用户名必须在3-6位之间"
+        }
+        else {
+            this.nextSibling.innerHTML = ""
+        }
+    }
+    txtPwd.onkeyup = function (){
+        if (this.value.length<3 || this.value.length>6){
+            this.nextElementSibling.innerHTML = "密码必须在3-6位之间"
+        }
+        else {
+            this.nextElementSibling.innerHTML = ""
+        }
+    }
+
+</script>
+</body>
+</html>

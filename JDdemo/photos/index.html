@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美女相册</title>
+    <style>
+        * {
+            font-family: "Microsoft Yahei";
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix:after {
+            content: ' ';
+            height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+        .main {
+            margin: 0 0 0 96px;
+        }
+        h2 {
+            font: 700 24px "宋体";
+            line-height: 2em;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .small li {
+            float: left;
+            padding-right: 20px;
+        }
+        .small img {
+            /*width: 100px;*/
+            height: 62px;
+        }
+        .big img {
+            width: 460px;
+            padding: 25px 0 21px 0;
+        }
+        p {
+            font: 16px "宋体";
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h2>美女画廊</h2>
+
+    <div class="small clearfix" id="small">
+        <ul>
+            <li><a href="./images/1.jpg" title="美女A"><img src="./images/1-small.jpg"  alt=""/></a></li>
+            <li><a href="./images/2.jpg" title="美女B"><img src="./images/2-small.jpg"  alt=""/></a></li>
+            <li><a href="./images/3.jpg" title="美女C"><img src="./images/3-small.jpg"  alt=""/></a></li>
+            <li><a href="./images/4.jpg" title="美女D"><img src="./images/4-small.jpg"  alt=""/></a></li>
+        </ul>
+    </div>
+
+    <div class="big">
+        <img src="./images/placeholder.png" id="big"/>
+    </div>
+    <p id="des">
+        选择一个图片
+    </p>
+</div>
+<script>
+    function changePic(picNumber) {
+       /* var pic = document.getElementById("small");
+        var pic2 = pic.getElementsByTagName("img");
+//        console.log(pic2[1]);
+        pic2[picNumber-1].src="./images/"+picNumber+".jpg";*/
+        var pic = document.getElementById("big");
+        var des = document.getElementById("des");
+        pic.src = "./images/"+picNumber+".jpg";
+        return false;
+    }
+    var small = document.getElementById("small");
+    var clearA = small.getElementsByTagName("a");
+    var pic = document.getElementById("big");
+    var des = document.getElementById("des");
+   /* clearA[0].onclick = "return changePic(1);"
+    clearA[1].onclick = "return changePic(2);"
+    clearA[2].onclick = "return changePic(3);"
+    clearA[3].onclick = "return changePic(4);"*/
+    for(var i=0;i<clearA.length;i++){
+        var link = clearA[i];
+        link.onclick = function(){
+            pic.src= this.href;
+            des.innerText = this.title;
+            return false;
+        }
+    }
+
+</script>
+</body>
+</html>

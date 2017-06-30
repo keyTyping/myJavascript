@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .tab {
+            margin: 100px 0 200px 100px;
+        }
+         span {
+            height: 30px;
+            width: 60px;
+            background-color: pink;
+            font: 400 16px/30px "Microsoft Yahei";
+            text-align: center;
+            display: inline-block;
+        }
+
+        ul li {
+            display: none;
+            width: 264px;
+            height: 260px;
+            background-color: lawngreen;
+        }
+        .headCurrent {
+            background-color: lawngreen;
+        }
+        .current {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <div class="head">
+        <span class="headCurrent">体育</span>
+        <span>娱乐</span>
+        <span>新闻</span>
+        <span>综合</span>
+    </div>
+    <div class="body">
+        <ul>
+            <li class="current">我是体育模块</li>
+            <li>我是娱乐模块</li>
+            <li>我是新闻模块</li>
+            <li>我是综合模块</li>
+        </ul>
+    </div>
+</div>
+<script>
+    //找人
+    var spans = document.getElementsByTagName("span");
+    var lis = document.getElementsByTagName("li");
+//    console.dir(lis);
+    //head
+    for (var i =0 ;i< spans.length;i++){
+        spans[i].index = i;
+        spans[i].onclick = function(){
+            for(var j = 0; j<spans.length;j++){
+                spans[j].className = "";
+                lis[j].className = "";
+            }
+            this.className = "headCurrent";
+            lis[this.index].className = "current";
+
+        }
+    }
+</script>
+</body>
+</html>

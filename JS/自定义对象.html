@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    函数工厂模式,批量创建对象
+    function createStudent(name,age,sex,scroe){
+        var stu = new Object();
+        stu.name = name;
+        stu.age = age;
+        stu.sex= sex;
+        stu.score = scroe;
+        stu.sayHi = function(){
+            console.log("大家好,我是"+this.name);
+        }
+        return stu;
+    }
+    var s1 = createStudent("ZS",15,1,89);
+     // var s2 = createStudent("LS",17,2,93);
+     console.log(s1);
+    //  console.log(s2);
+    //    console.log(typeof s1); //object
+
+//  构造函数模式
+    var arr = new Array();
+    var obj = new Object(); //这些都是构造函数
+
+    function Student(name,age,sex,scroe){
+        //var stu = new Object();
+        this.name = name;
+        this.age = age;
+        this.sex= sex;
+        this.score = scroe;
+        this.sayHi = function(){
+            console.log("大家好,我是"+this.name);
+        }
+    }
+    var s2 = new Student("LS",17,2,93);
+    console.log(s2);
+
+    // A instanceof B : A是不是一个通过B创建出来的实例
+    console.log(s2 instanceof Student);
+    console.log([] instanceof Student);
+</script>
+</body>
+</html>
