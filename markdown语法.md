@@ -1,10 +1,10 @@
-Markdown的常用语法
+# Markdown的常用语法
 
-标题
+## 标题
 
 Markdown 标题支持两种形式：
 
-1、用#标记
+### 1、用#标记
 
 在 标题开头 加上1~6个#，依次代表一级标题、二级标题....六级标题
 <!-- more -->
@@ -15,7 +15,7 @@ Markdown 标题支持两种形式：
 ##### 四级标题
 ###### 五级标题
 ###### 六级标题
-2、用=和-标记
+### 2、用=和-标记
 
 在 标题底下 加上任意个=代表一级标题，-代表二级标题
 
@@ -24,21 +24,8 @@ Markdown 标题支持两种形式：
 
 二级标题
 ----------
-效果如下：
 
-一级标题
-
-二级标题
-
-三级标题
-
-四级标题
-
-五级标题
-
-六级标题
-
-列表
+## 列表
 
 Markdown 支持有序列表和无序列表。
 
@@ -70,7 +57,7 @@ Blue
 Red
 Green
 Blue
-引用
+## 引用
 
 引用以>来表示，引用中支持多级引用、标题、列表、代码块、分割线等常规语法。
 
@@ -117,7 +104,7 @@ protected void onCreate(Bundle savedInstanceState) {
 这是第二行列表项
 以下是分割线
 
-强调
+## 强调
 
 两个*或-代表加粗，一个*或-代表斜体，~~代表删除。
 
@@ -134,7 +121,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 删除文本
 
-图片与链接
+## 图片与链接
 
 图片与链接的语法很像，区别在一个 ! 号。二者格式：
 
@@ -145,7 +132,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 这是行内式链接：[ConnorLin's Blog](http://connorlin.github.io)。
 
-这是参考式链接：[ConnorLin's Blog][url]，其中url为链接标记，可置于文中任意位置。
+这是参考式链接：[ConnorLin's Blog]，其中url为链接标记，[url]可置于文中任意位置。
 
 [url]: http://connorlin.github.io/ "ConnorLin's Blog"
 
@@ -167,7 +154,7 @@ protected void onCreate(Bundle savedInstanceState) {
 这是图片：
 
 
-代码
+## 代码
 
 代码分为行内代码和代码块。
 
@@ -242,7 +229,7 @@ ___
 * * *
 效果均为一条分割线：
 
-换行
+## 换行
 
 在行尾添加两个空格加回车表示换行：
 
@@ -266,7 +253,7 @@ ___
 
 常用弥补Markdown的Html标签
 
-字体
+## 字体
 
 <font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
 <font color="#0000ff">字体颜色</font>
@@ -275,14 +262,14 @@ ___
 <font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
 <font color="#0000ff">字体颜色</font>
 
-换行
+## 换行
 
 使用html标签`<br/>`<br/>换行
 效果如下：
 
 使用html标签<br/><br/>换行
 
-文本对齐方式
+## 文本对齐方式
 
 <p align="left">居左文本</p>
 <p align="center">居中文本</p>
@@ -293,7 +280,7 @@ ___
 <p align="center">居中文本</p>
 <p align="right">居右文本</p>
 
-下划线
+## 下划线
 
 <u>下划线文本</u>
 效果如下：
