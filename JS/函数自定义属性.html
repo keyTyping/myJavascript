@@ -6,16 +6,21 @@
 </head>
 <body>
 <script>
-    var fun = new function (){};
-    var fun1 = new fun;
     fun.index = 0;
     function fun() {
-        return index++;
+        return fun.index++;
     }
      console.log(fun());
      console.log(fun());
      console.log(fun());
      console.log(fun());
+    // console.log(index);
+/*
+    var obj= {}; obj.aa = 0;
+    console.log(obj);*/
+    fn.aa = 0;
+    function fn(){}
+    console.dir(fn);
 </script>
 </body>
 </html>

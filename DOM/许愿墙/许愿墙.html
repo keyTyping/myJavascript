@@ -141,6 +141,10 @@
                 zIndex++;
                 this.style.zIndex = zIndex;
             }
+            cloneTips.firstElementChild.ondblclick = function () {
+                //this.parentNode.style.display = "none";  隐藏显示
+                content.removeChild(this.parentNode);  //直接删除
+            }
         }
     </script>
 </body>
