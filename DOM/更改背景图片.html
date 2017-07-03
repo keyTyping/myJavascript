@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            width: 800px;
+            height: 400px;
+            background-image: url(../images/1.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+    <script>
+        var box = document.getElementById("box");
+        box.onmouseover = function(){
+            box.style.backgroundImage = "url(../images/2.jpg)";
+        }
+        box.onmouseout = function(){
+            box.style.backgroundImage = "url(../images/1.jpg)";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="father">
+        <div id="son"></div>
+    </div>
+    <div id="demo"></div>
+    <input type="button" value="按钮" id="btn"/>
+    <script>
+        var btn = document.getElementById("btn");
+        var father = document.getElementById("father");
+        var son = document.getElementById("son");
+        var demo = document.getElementById("demo");
+        var clon = demo.cloneNode(true);
+        btn.onclick = function () {
+            father.appendChild(demo); //appendChild  追加子节点,放到父节点内部的最后
+            father.appendChild(clon); // 追加克隆出来的节点, 对原节点不产生影响
+            father.insertBefore(demo,son); //把一个节点放到父节点内部参考节点之前
+            father.removeChild(son);  //移除子节点
+        }
+    </script>
+</body>
+</html>
