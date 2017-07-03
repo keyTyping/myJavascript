@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数自定义属性</title>
+</head>
+<body>
+<script>
+    var fun = new function (){};
+    var fun1 = new fun;
+    fun.index = 0;
+    function fun() {
+        return index++;
+    }
+     console.log(fun());
+     console.log(fun());
+     console.log(fun());
+     console.log(fun());
+</script>
+</body>
+</html>
