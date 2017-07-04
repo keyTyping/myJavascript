@@ -1,35 +1,35 @@
-# MarkdownµÄ³£ÓÃÓï·¨
+# Markdownçš„å¸¸ç”¨è¯­æ³•
 
-## ±êÌâ
+## æ ‡é¢˜
 
-Markdown ±êÌâÖ§³ÖÁ½ÖÖÐÎÊ½£º
+Markdown æ ‡é¢˜æ”¯æŒä¸¤ç§å½¢å¼ï¼š
 
-### 1¡¢ÓÃ#±ê¼Ç
+### 1ã€ç”¨#æ ‡è®°
 
-ÔÚ ±êÌâ¿ªÍ· ¼ÓÉÏ1~6¸ö#£¬ÒÀ´Î´ú±íÒ»¼¶±êÌâ¡¢¶þ¼¶±êÌâ....Áù¼¶±êÌâ
+åœ¨ æ ‡é¢˜å¼€å¤´ åŠ ä¸Š1~6ä¸ª#ï¼Œä¾æ¬¡ä»£è¡¨ä¸€çº§æ ‡é¢˜ã€äºŒçº§æ ‡é¢˜....å…­çº§æ ‡é¢˜
 <!-- more -->
 
-# Ò»¼¶±êÌâ
-## ¶þ¼¶±êÌâ
-### Èý¼¶±êÌâ
-##### ËÄ¼¶±êÌâ
-###### Îå¼¶±êÌâ
-###### Áù¼¶±êÌâ
-### 2¡¢ÓÃ=ºÍ-±ê¼Ç
+# ä¸€çº§æ ‡é¢˜
+## äºŒçº§æ ‡é¢˜
+### ä¸‰çº§æ ‡é¢˜
+##### å››çº§æ ‡é¢˜
+###### äº”çº§æ ‡é¢˜
+###### å…­çº§æ ‡é¢˜
+### 2ã€ç”¨=å’Œ-æ ‡è®°
 
-ÔÚ ±êÌâµ×ÏÂ ¼ÓÉÏÈÎÒâ¸ö=´ú±íÒ»¼¶±êÌâ£¬-´ú±í¶þ¼¶±êÌâ
+åœ¨ æ ‡é¢˜åº•ä¸‹ åŠ ä¸Šä»»æ„ä¸ª=ä»£è¡¨ä¸€çº§æ ‡é¢˜ï¼Œ-ä»£è¡¨äºŒçº§æ ‡é¢˜
 
-Ò»¼¶±êÌâ
+ä¸€çº§æ ‡é¢˜
 ======
 
-¶þ¼¶±êÌâ
+äºŒçº§æ ‡é¢˜
 ----------
 
-## ÁÐ±í
+## åˆ—è¡¨
 
-Markdown Ö§³ÖÓÐÐòÁÐ±íºÍÎÞÐòÁÐ±í¡£
+Markdown æ”¯æŒæœ‰åºåˆ—è¡¨å’Œæ— åºåˆ—è¡¨ã€‚
 
-ÎÞÐòÁÐ±íÊ¹ÓÃ-¡¢+ºÍ*×÷ÎªÁÐ±í±ê¼Ç£º
+æ— åºåˆ—è¡¨ä½¿ç”¨-ã€+å’Œ*ä½œä¸ºåˆ—è¡¨æ ‡è®°ï¼š
 
 - Red
 - Green
@@ -42,253 +42,253 @@ Markdown Ö§³ÖÓÐÐòÁÐ±íºÍÎÞÐòÁÐ±í¡£
 + Red
 + Green
 + Blue
-Ð§¹ûÈçÏÂ£º
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
 Red
 Green
 Blue
-ÓÐÐòÁÐ±íÔòÊ¹ÓÃÊý×Ö¼ÓÓ¢ÎÄ¾äµã.À´±íÊ¾£º
+æœ‰åºåˆ—è¡¨åˆ™ä½¿ç”¨æ•°å­—åŠ è‹±æ–‡å¥ç‚¹.æ¥è¡¨ç¤ºï¼š
 
 1. Red
 2. Green
 3. Blue
-Ð§¹ûÈçÏÂ£º
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
 Red
 Green
 Blue
-## ÒýÓÃ
+## å¼•ç”¨
 
-ÒýÓÃÒÔ>À´±íÊ¾£¬ÒýÓÃÖÐÖ§³Ö¶à¼¶ÒýÓÃ¡¢±êÌâ¡¢ÁÐ±í¡¢´úÂë¿é¡¢·Ö¸îÏßµÈ³£¹æÓï·¨¡£
+å¼•ç”¨ä»¥>æ¥è¡¨ç¤ºï¼Œå¼•ç”¨ä¸­æ”¯æŒå¤šçº§å¼•ç”¨ã€æ ‡é¢˜ã€åˆ—è¡¨ã€ä»£ç å—ã€åˆ†å‰²çº¿ç­‰å¸¸è§„è¯­æ³•ã€‚
 
-³£¼ûµÄÒýÓÃÐ´·¨£º
+å¸¸è§çš„å¼•ç”¨å†™æ³•ï¼š
 
-> ÕâÊÇÒ»¶ÎÒýÓÃ    //ÔÚ`>`ºóÃæÓÐ 1 ¸ö¿Õ¸ñ
+> è¿™æ˜¯ä¸€æ®µå¼•ç”¨    //åœ¨`>`åŽé¢æœ‰ 1 ä¸ªç©ºæ ¼
 >
->     ÕâÊÇÒýÓÃµÄ´úÂë¿éÐÎÊ½    //ÔÚ`>`ºóÃæÓÐ 5 ¸ö¿Õ¸ñ
+>     è¿™æ˜¯å¼•ç”¨çš„ä»£ç å—å½¢å¼    //åœ¨`>`åŽé¢æœ‰ 5 ä¸ªç©ºæ ¼
 >
-> ´úÂëÀý×Ó£º
+> ä»£ç ä¾‹å­ï¼š
 >
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-> Ò»¼¶ÒýÓÃ
-> > ¶þ¼¶ÒýÓÃ
-> > > Èý¼¶ÒýÓÃ
+> ä¸€çº§å¼•ç”¨
+> > äºŒçº§å¼•ç”¨
+> > > ä¸‰çº§å¼•ç”¨
 
-> #### ÕâÊÇÒ»¸öËÄ¼¶±êÌâ
+> #### è¿™æ˜¯ä¸€ä¸ªå››çº§æ ‡é¢˜
 >
-> 1. ÕâÊÇµÚÒ»ÐÐÁÐ±íÏî
-> 2. ÕâÊÇµÚ¶þÐÐÁÐ±íÏî
-Ð§¹ûÈçÏÂ£º
+> 1. è¿™æ˜¯ç¬¬ä¸€è¡Œåˆ—è¡¨é¡¹
+> 2. è¿™æ˜¯ç¬¬äºŒè¡Œåˆ—è¡¨é¡¹
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-ÕâÊÇÒ»¶ÎÒýÓÃ
+è¿™æ˜¯ä¸€æ®µå¼•ç”¨
 
-ÕâÊÇÒýÓÃµÄ´úÂë¿éÐÎÊ½    //ÔÚ`>`ºóÃæÓÐ 5 ¸ö¿Õ¸ñ
-´úÂëÀý×Ó£º
+è¿™æ˜¯å¼•ç”¨çš„ä»£ç å—å½¢å¼    //åœ¨`>`åŽé¢æœ‰ 5 ä¸ªç©ºæ ¼
+ä»£ç ä¾‹å­ï¼š
 
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 }
-Ò»¼¶ÒýÓÃ
+ä¸€çº§å¼•ç”¨
 
-¶þ¼¶ÒýÓÃ
+äºŒçº§å¼•ç”¨
 
-Èý¼¶ÒýÓÃ
-ÕâÊÇÒ»¸öËÄ¼¶±êÌâ
+ä¸‰çº§å¼•ç”¨
+è¿™æ˜¯ä¸€ä¸ªå››çº§æ ‡é¢˜
 
-ÕâÊÇµÚÒ»ÐÐÁÐ±íÏî
-ÕâÊÇµÚ¶þÐÐÁÐ±íÏî
-ÒÔÏÂÊÇ·Ö¸îÏß
+è¿™æ˜¯ç¬¬ä¸€è¡Œåˆ—è¡¨é¡¹
+è¿™æ˜¯ç¬¬äºŒè¡Œåˆ—è¡¨é¡¹
+ä»¥ä¸‹æ˜¯åˆ†å‰²çº¿
 
-## Ç¿µ÷
+## å¼ºè°ƒ
 
-Á½¸ö*»ò-´ú±í¼Ó´Ö£¬Ò»¸ö*»ò-´ú±íÐ±Ìå£¬~~´ú±íÉ¾³ý¡£
+ä¸¤ä¸ª*æˆ–-ä»£è¡¨åŠ ç²—ï¼Œä¸€ä¸ª*æˆ–-ä»£è¡¨æ–œä½“ï¼Œ~~ä»£è¡¨åˆ é™¤ã€‚
 
-**¼Ó´ÖÎÄ±¾** »òÕß __¼Ó´ÖÎÄ±¾__
+**åŠ ç²—æ–‡æœ¬** æˆ–è€… __åŠ ç²—æ–‡æœ¬__
 
-*Ð±ÌåÎÄ±¾*  »òÕß_Ð±ÌåÎÄ±¾_
+*æ–œä½“æ–‡æœ¬*  æˆ–è€…_æ–œä½“æ–‡æœ¬_
 
-~~É¾³ýÎÄ±¾~~
-Ð§¹ûÈçÏÂ£º
+~~åˆ é™¤æ–‡æœ¬~~
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-¼Ó´ÖÎÄ±¾ »òÕß ¼Ó´ÖÎÄ±¾
+åŠ ç²—æ–‡æœ¬ æˆ–è€… åŠ ç²—æ–‡æœ¬
 
-Ð±ÌåÎÄ±¾ »òÕß Ð±ÌåÎÄ±¾
+æ–œä½“æ–‡æœ¬ æˆ–è€… æ–œä½“æ–‡æœ¬
 
-É¾³ýÎÄ±¾
+åˆ é™¤æ–‡æœ¬
 
-## Í¼Æ¬ÓëÁ´½Ó
+## å›¾ç‰‡ä¸Žé“¾æŽ¥
 
-Í¼Æ¬ÓëÁ´½ÓµÄÓï·¨ºÜÏñ£¬Çø±ðÔÚÒ»¸ö ! ºÅ¡£¶þÕß¸ñÊ½£º
+å›¾ç‰‡ä¸Žé“¾æŽ¥çš„è¯­æ³•å¾ˆåƒï¼ŒåŒºåˆ«åœ¨ä¸€ä¸ª ! å·ã€‚äºŒè€…æ ¼å¼ï¼š
 
-Í¼Æ¬£º![]()    ![Í¼Æ¬ÎÄ±¾(¿ÉºöÂÔ)](Í¼Æ¬µØÖ·)
+å›¾ç‰‡ï¼š![]()    ![å›¾ç‰‡æ–‡æœ¬(å¯å¿½ç•¥)](å›¾ç‰‡åœ°å€)
 
-Á´½Ó£º[]()     [Á´½ÓÎÄ±¾](Á´½ÓµØÖ·)
-Á´½ÓÓÖ·ÖÎªÐÐÄÚÊ½¡¢²Î¿¼Ê½ºÍ ×Ô¶¯Á´½Ó£º
+é“¾æŽ¥ï¼š[]()     [é“¾æŽ¥æ–‡æœ¬](é“¾æŽ¥åœ°å€)
+é“¾æŽ¥åˆåˆ†ä¸ºè¡Œå†…å¼ã€å‚è€ƒå¼å’Œ è‡ªåŠ¨é“¾æŽ¥ï¼š
 
-ÕâÊÇÐÐÄÚÊ½Á´½Ó£º[ConnorLin's Blog](http://connorlin.github.io)¡£
+è¿™æ˜¯è¡Œå†…å¼é“¾æŽ¥ï¼š[ConnorLin's Blog](http://connorlin.github.io)ã€‚
 
-ÕâÊÇ²Î¿¼Ê½Á´½Ó£º[ConnorLin's Blog]£¬ÆäÖÐurlÎªÁ´½Ó±ê¼Ç£¬[url]¿ÉÖÃÓÚÎÄÖÐÈÎÒâÎ»ÖÃ¡£
+è¿™æ˜¯å‚è€ƒå¼é“¾æŽ¥ï¼š[ConnorLin's Blog]ï¼Œå…¶ä¸­urlä¸ºé“¾æŽ¥æ ‡è®°ï¼Œ[url]å¯ç½®äºŽæ–‡ä¸­ä»»æ„ä½ç½®ã€‚
 
 [url]: http://connorlin.github.io/ "ConnorLin's Blog"
 
-Á´½Ó±ê¼Ç¸ñÊ½Îª£º[Á´½Ó±ê¼ÇÎÄ±¾]:  Á´½ÓµØÖ·  Á´½Ótitle(¿ÉºöÂÔ)
+é“¾æŽ¥æ ‡è®°æ ¼å¼ä¸ºï¼š[é“¾æŽ¥æ ‡è®°æ–‡æœ¬]:  é“¾æŽ¥åœ°å€  é“¾æŽ¥title(å¯å¿½ç•¥)
 
-ÕâÊÇ×Ô¶¯Á´½Ó£ºÖ±½ÓÊ¹ÓÃ`<>`À¨ÆðÀ´<http://connorlin.github.io>
+è¿™æ˜¯è‡ªåŠ¨é“¾æŽ¥ï¼šç›´æŽ¥ä½¿ç”¨`<>`æ‹¬èµ·æ¥<http://connorlin.github.io>
 
-ÕâÊÇÍ¼Æ¬£º![][avatar]
+è¿™æ˜¯å›¾ç‰‡ï¼š![][avatar]
 
 [avatar]: https://connorlin.github.io/images/avatar.jpg
-Ð§¹ûÈçÏÂ£º
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-ÕâÊÇÐÐÄÚÊ½Á´½Ó£ºConnorLin's Blog¡£
+è¿™æ˜¯è¡Œå†…å¼é“¾æŽ¥ï¼šConnorLin's Blogã€‚
 
-ÕâÊÇ²Î¿¼Ê½Á´½Ó£ºConnorLin's Blog£¬ÆäÖÐurlÎªÁ´½Ó±ê¼Ç£¬¿ÉÖÃÓÚÎÄÖÐÈÎÒâÎ»ÖÃ¡£
+è¿™æ˜¯å‚è€ƒå¼é“¾æŽ¥ï¼šConnorLin's Blogï¼Œå…¶ä¸­urlä¸ºé“¾æŽ¥æ ‡è®°ï¼Œå¯ç½®äºŽæ–‡ä¸­ä»»æ„ä½ç½®ã€‚
 
-ÕâÊÇ×Ô¶¯Á´½Ó£ºÖ±½ÓÊ¹ÓÃ<>À¨ÆðÀ´http://connorlin.github.io
+è¿™æ˜¯è‡ªåŠ¨é“¾æŽ¥ï¼šç›´æŽ¥ä½¿ç”¨<>æ‹¬èµ·æ¥http://connorlin.github.io
 
-ÕâÊÇÍ¼Æ¬£º
+è¿™æ˜¯å›¾ç‰‡ï¼š
 
 
-## ´úÂë
+## ä»£ç 
 
-´úÂë·ÖÎªÐÐÄÚ´úÂëºÍ´úÂë¿é¡£
+ä»£ç åˆ†ä¸ºè¡Œå†…ä»£ç å’Œä»£ç å—ã€‚
 
-ÐÐÄÚ´úÂëÊ¹ÓÃ `´úÂë` ±êÊ¶£¬¿ÉÇ¶ÈëÎÄ×ÖÖÐ
-´úÂë¿éÊ¹ÓÃ4¸ö¿Õ¸ñ»ò```±êÊ¶
+è¡Œå†…ä»£ç ä½¿ç”¨ `ä»£ç ` æ ‡è¯†ï¼Œå¯åµŒå…¥æ–‡å­—ä¸­
+ä»£ç å—ä½¿ç”¨4ä¸ªç©ºæ ¼æˆ–```æ ‡è¯†
 
 ```
-ÕâÀïÊÇ´úÂë
+è¿™é‡Œæ˜¯ä»£ç 
 ```
 
-´úÂëÓï·¨¸ßÁÁÔÚ ```ºóÃæ¼ÓÉÏ¿Õ¸ñºÍÓïÑÔÃû³Æ¼´¿É
+ä»£ç è¯­æ³•é«˜äº®åœ¨ ```åŽé¢åŠ ä¸Šç©ºæ ¼å’Œè¯­è¨€åç§°å³å¯
 
-``` ÓïÑÔ
-//×¢ÒâÓïÑÔÇ°ÃæÓÐ¿Õ¸ñ
-ÕâÀïÊÇ´úÂë
+``` è¯­è¨€
+//æ³¨æ„è¯­è¨€å‰é¢æœ‰ç©ºæ ¼
+è¿™é‡Œæ˜¯ä»£ç 
 ```
 
-ÀýÈç£º
+ä¾‹å¦‚ï¼š
 
-ÕâÊÇÐÐÄÚ´úÂë`onCreate(Bundle savedInstanceState)`µÄÀý×Ó¡£
+è¿™æ˜¯è¡Œå†…ä»£ç `onCreate(Bundle savedInstanceState)`çš„ä¾‹å­ã€‚
 
-ÕâÊÇ´úÂë¿éºÍÓï·¨¸ßÁÁ£º
+è¿™æ˜¯ä»£ç å—å’Œè¯­æ³•é«˜äº®ï¼š
 
 ``` java
-// ×¢ÒâjavaÇ°ÃæÓÐ¿Õ¸ñ
+// æ³¨æ„javaå‰é¢æœ‰ç©ºæ ¼
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 }
 ```
-Ð§¹ûÈçÏÂ£º
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-ÕâÊÇÐÐÄÚ´úÂëonCreate(Bundle savedInstanceState)µÄÀý×Ó¡£
+è¿™æ˜¯è¡Œå†…ä»£ç onCreate(Bundle savedInstanceState)çš„ä¾‹å­ã€‚
 
-ÕâÊÇ´úÂë¿éºÍÓï·¨¸ßÁÁ£º
+è¿™æ˜¯ä»£ç å—å’Œè¯­æ³•é«˜äº®ï¼š
 
-// ×¢ÒâjavaÇ°ÃæÓÐ¿Õ¸ñ
+// æ³¨æ„javaå‰é¢æœ‰ç©ºæ ¼
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 }
-±í¸ñ
+è¡¨æ ¼
 
-±í¸ñ¶ÔÆë¸ñÊ½
+è¡¨æ ¼å¯¹é½æ ¼å¼
 
-¾Ó×ó£º:----
-¾ÓÖÐ£º:----:»ò-----
-¾ÓÓÒ£º----:
-Àý×Ó£º
+å±…å·¦ï¼š:----
+å±…ä¸­ï¼š:----:æˆ–-----
+å±…å³ï¼š----:
+ä¾‹å­ï¼š
 
-|±êÌâ|±êÌâ|±êÌâ|
+|æ ‡é¢˜|æ ‡é¢˜|æ ‡é¢˜|
 |:---|:---:|---:|
-|¾Ó×ó²âÊÔÎÄ±¾|¾ÓÖÐ²âÊÔÎÄ±¾|¾ÓÓÒ²âÊÔÎÄ±¾|
-|¾Ó×ó²âÊÔÎÄ±¾1|¾ÓÖÐ²âÊÔÎÄ±¾2|¾ÓÓÒ²âÊÔÎÄ±¾3|
-|¾Ó×ó²âÊÔÎÄ±¾11|¾ÓÖÐ²âÊÔÎÄ±¾22|¾ÓÓÒ²âÊÔÎÄ±¾33|
-|¾Ó×ó²âÊÔÎÄ±¾111|¾ÓÖÐ²âÊÔÎÄ±¾222|¾ÓÓÒ²âÊÔÎÄ±¾333|
-Ð§¹ûÈçÏÂ£º
+|å±…å·¦æµ‹è¯•æ–‡æœ¬|å±…ä¸­æµ‹è¯•æ–‡æœ¬|å±…å³æµ‹è¯•æ–‡æœ¬|
+|å±…å·¦æµ‹è¯•æ–‡æœ¬1|å±…ä¸­æµ‹è¯•æ–‡æœ¬2|å±…å³æµ‹è¯•æ–‡æœ¬3|
+|å±…å·¦æµ‹è¯•æ–‡æœ¬11|å±…ä¸­æµ‹è¯•æ–‡æœ¬22|å±…å³æµ‹è¯•æ–‡æœ¬33|
+|å±…å·¦æµ‹è¯•æ–‡æœ¬111|å±…ä¸­æµ‹è¯•æ–‡æœ¬222|å±…å³æµ‹è¯•æ–‡æœ¬333|
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-±êÌâ	±êÌâ	±êÌâ
-¾Ó×ó²âÊÔÎÄ±¾	¾ÓÖÐ²âÊÔÎÄ±¾	¾ÓÓÒ²âÊÔÎÄ±¾
-¾Ó×ó²âÊÔÎÄ±¾1	¾ÓÖÐ²âÊÔÎÄ±¾2	¾ÓÓÒ²âÊÔÎÄ±¾3
-¾Ó×ó²âÊÔÎÄ±¾11	¾ÓÖÐ²âÊÔÎÄ±¾22	¾ÓÓÒ²âÊÔÎÄ±¾33
-¾Ó×ó²âÊÔÎÄ±¾111	¾ÓÖÐ²âÊÔÎÄ±¾222	¾ÓÓÒ²âÊÔÎÄ±¾333
-·Ö¸ôÏß
+æ ‡é¢˜	æ ‡é¢˜	æ ‡é¢˜
+å±…å·¦æµ‹è¯•æ–‡æœ¬	å±…ä¸­æµ‹è¯•æ–‡æœ¬	å±…å³æµ‹è¯•æ–‡æœ¬
+å±…å·¦æµ‹è¯•æ–‡æœ¬1	å±…ä¸­æµ‹è¯•æ–‡æœ¬2	å±…å³æµ‹è¯•æ–‡æœ¬3
+å±…å·¦æµ‹è¯•æ–‡æœ¬11	å±…ä¸­æµ‹è¯•æ–‡æœ¬22	å±…å³æµ‹è¯•æ–‡æœ¬33
+å±…å·¦æµ‹è¯•æ–‡æœ¬111	å±…ä¸­æµ‹è¯•æ–‡æœ¬222	å±…å³æµ‹è¯•æ–‡æœ¬333
+åˆ†éš”çº¿
 
-ÔÚÒ»ÐÐÖÐÓÃÈý¸öÒÔÉÏµÄ*¡¢-¡¢_À´½¨Á¢Ò»¸ö·Ö¸ôÏß£¬ÐÐÄÚ²»ÄÜÓÐÆäËû¶«Î÷¡£Ò²¿ÉÒÔÔÚ·ûºÅ¼ä²åÈë¿Õ¸ñ¡£
+åœ¨ä¸€è¡Œä¸­ç”¨ä¸‰ä¸ªä»¥ä¸Šçš„*ã€-ã€_æ¥å»ºç«‹ä¸€ä¸ªåˆ†éš”çº¿ï¼Œè¡Œå†…ä¸èƒ½æœ‰å…¶ä»–ä¸œè¥¿ã€‚ä¹Ÿå¯ä»¥åœ¨ç¬¦å·é—´æ’å…¥ç©ºæ ¼ã€‚
 
 ***
 ---
 ___
 
 * * *
-Ð§¹û¾ùÎªÒ»Ìõ·Ö¸îÏß£º
+æ•ˆæžœå‡ä¸ºä¸€æ¡åˆ†å‰²çº¿ï¼š
 
-## »»ÐÐ
+## æ¢è¡Œ
 
-ÔÚÐÐÎ²Ìí¼ÓÁ½¸ö¿Õ¸ñ¼Ó»Ø³µ±íÊ¾»»ÐÐ£º
+åœ¨è¡Œå°¾æ·»åŠ ä¸¤ä¸ªç©ºæ ¼åŠ å›žè½¦è¡¨ç¤ºæ¢è¡Œï¼š
 
-ÕâÊÇÒ»ÐÐºóÃæ¼ÓÁ½¸ö¿Õ¸ñ  »»ÐÐ
-Ð§¹ûÈçÏÂ£º
+è¿™æ˜¯ä¸€è¡ŒåŽé¢åŠ ä¸¤ä¸ªç©ºæ ¼  æ¢è¡Œ
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-ÕâÊÇÒ»ÐÐºóÃæ¼ÓÁ½¸ö¿Õ¸ñ
-»»ÐÐ
+è¿™æ˜¯ä¸€è¡ŒåŽé¢åŠ ä¸¤ä¸ªç©ºæ ¼
+æ¢è¡Œ
 
-½Å×¢(×¢½â)
+è„šæ³¨(æ³¨è§£)
 
-Ê¹ÓÃ[^]À´¶¨Òå½Å×¢£º
+ä½¿ç”¨[^]æ¥å®šä¹‰è„šæ³¨ï¼š
 
-ÕâÊÇÒ»¸ö½Å×¢µÄÀý×Ó[1]
+è¿™æ˜¯ä¸€ä¸ªè„šæ³¨çš„ä¾‹å­[1]
 
-[1]: ÕâÀïÊÇ½Å×¢
-Ð§¹ûÈçÏÂ£º
+[1]: è¿™é‡Œæ˜¯è„šæ³¨
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-ÕâÊÇÒ»¸ö½Å×¢µÄÀý×Ó[1]
+è¿™æ˜¯ä¸€ä¸ªè„šæ³¨çš„ä¾‹å­[1]
 
 
-³£ÓÃÃÖ²¹MarkdownµÄHtml±êÇ©
+å¸¸ç”¨å¼¥è¡¥Markdownçš„Htmlæ ‡ç­¾
 
-## ×ÖÌå
+## å­—ä½“
 
-<font face="Î¢ÈíÑÅºÚ" color="red" size="6">×ÖÌå¼°×ÖÌåÑÕÉ«ºÍ´óÐ¡</font>
-<font color="#0000ff">×ÖÌåÑÕÉ«</font>
-Ð§¹ûÈçÏÂ£º
+<font face="å¾®è½¯é›…é»‘" color="red" size="6">å­—ä½“åŠå­—ä½“é¢œè‰²å’Œå¤§å°</font>
+<font color="#0000ff">å­—ä½“é¢œè‰²</font>
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-<font face="Î¢ÈíÑÅºÚ" color="red" size="6">×ÖÌå¼°×ÖÌåÑÕÉ«ºÍ´óÐ¡</font>
-<font color="#0000ff">×ÖÌåÑÕÉ«</font>
+<font face="å¾®è½¯é›…é»‘" color="red" size="6">å­—ä½“åŠå­—ä½“é¢œè‰²å’Œå¤§å°</font>
+<font color="#0000ff">å­—ä½“é¢œè‰²</font>
 
-## »»ÐÐ
+## æ¢è¡Œ
 
-Ê¹ÓÃhtml±êÇ©`<br/>`<br/>»»ÐÐ
-Ð§¹ûÈçÏÂ£º
+ä½¿ç”¨htmlæ ‡ç­¾`<br/>`<br/>æ¢è¡Œ
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-Ê¹ÓÃhtml±êÇ©<br/><br/>»»ÐÐ
+ä½¿ç”¨htmlæ ‡ç­¾<br/><br/>æ¢è¡Œ
 
-## ÎÄ±¾¶ÔÆë·½Ê½
+## æ–‡æœ¬å¯¹é½æ–¹å¼
 
-<p align="left">¾Ó×óÎÄ±¾</p>
-<p align="center">¾ÓÖÐÎÄ±¾</p>
-<p align="right">¾ÓÓÒÎÄ±¾</p>
-Ð§¹ûÈçÏÂ£º
+<p align="left">å±…å·¦æ–‡æœ¬</p>
+<p align="center">å±…ä¸­æ–‡æœ¬</p>
+<p align="right">å±…å³æ–‡æœ¬</p>
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-<p align="left">¾Ó×óÎÄ±¾</p>
-<p align="center">¾ÓÖÐÎÄ±¾</p>
-<p align="right">¾ÓÓÒÎÄ±¾</p>
+<p align="left">å±…å·¦æ–‡æœ¬</p>
+<p align="center">å±…ä¸­æ–‡æœ¬</p>
+<p align="right">å±…å³æ–‡æœ¬</p>
 
-## ÏÂ»®Ïß
+## ä¸‹åˆ’çº¿
 
-<u>ÏÂ»®ÏßÎÄ±¾</u>
-Ð§¹ûÈçÏÂ£º
+<u>ä¸‹åˆ’çº¿æ–‡æœ¬</u>
+æ•ˆæžœå¦‚ä¸‹ï¼š
 
-ÏÂ»®ÏßÎÄ±¾
+ä¸‹åˆ’çº¿æ–‡æœ¬
 
 That's all, Enjoy it!
 
-±¸×¢£ºÎÄÄ©ÓÐÐ©html±êÇ©ÔÚ¼òÊéÉÏ²»Ö§³Ö£¬Í¬Ê±£¬±¾ÎÄÌá¹©MarkdownÔ´ÎÄ¼þ£¬ÐèÒªµÄÇëÁªÏµÎÒ£¡
+å¤‡æ³¨ï¼šæ–‡æœ«æœ‰äº›htmlæ ‡ç­¾åœ¨ç®€ä¹¦ä¸Šä¸æ”¯æŒï¼ŒåŒæ—¶ï¼Œæœ¬æ–‡æä¾›Markdownæºæ–‡ä»¶ï¼Œéœ€è¦çš„è¯·è”ç³»æˆ‘ï¼
 
-[1]: ÕâÀïÊÇ½Å×¢ ?
+[1]: è¿™é‡Œæ˜¯è„šæ³¨ ?
