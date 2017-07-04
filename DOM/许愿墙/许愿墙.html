@@ -140,10 +140,23 @@
             cloneTips.onclick = function () {
                 zIndex++;
                 this.style.zIndex = zIndex;
-            }
+            };
             cloneTips.firstElementChild.ondblclick = function () {
                 //this.parentNode.style.display = "none";  隐藏显示
                 content.removeChild(this.parentNode);  //直接删除
+            }
+        }
+
+        // 获取第一个子元素兼容函数;
+        function getFirstElementChild(element) {
+            if (element.firstElementChild) {
+                return element.firstElementChild;
+            }
+            else {
+                var node = element.firstChild;
+                while(node && node.nodeType !== 1){
+
+                }
             }
         }
     </script>
