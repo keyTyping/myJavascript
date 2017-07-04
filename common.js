@@ -7,8 +7,8 @@
  * @param element
  * @returns {*}
  */
-function getInnerText (element){
-    if(typeof element.innerText === "string"){
+function getInnerText(element) {
+    if (typeof element.innerText === "string") {
         return element.innerText;
     }
     else {
@@ -21,8 +21,8 @@ function getInnerText (element){
  * @param element
  * @param content
  */
-function setInnerText(element,content){
-    if(typeof element.innerText === "string"){
+function setInnerText(element, content) {
+    if (typeof element.innerText === "string") {
         element.innerText = content;
     }
     else {
@@ -35,7 +35,7 @@ function setInnerText(element,content){
  * @param element
  * @returns {*}
  */
-function getNextElement (element) {
+function getNextElement(element) {
     if (element.nextElementSibling) {
         return element.nextElementSibling;
     }
@@ -48,11 +48,11 @@ function getNextElement (element) {
     }
 }
 /**
-* 获取上一个兄弟元素的兼容函数
-* @param element
-* @returns {*}
-*/
-function getPreviousElement (element) {
+ * 获取上一个兄弟元素的兼容函数
+ * @param element
+ * @returns {*}
+ */
+function getPreviousElement(element) {
     if (element.previousElementSibling) {
         return element.previousElementSibling;
     }
@@ -64,4 +64,39 @@ function getPreviousElement (element) {
         return prev;
     }
 }
+
+/**
+ * 获取第一个子元素的 兼容函数
+ * @param element
+ * @returns {Element}
+ */
+function getFirstElementChild(element) {
+    if (element.firstElementChild) {
+        return element.firstElementChild;
+    }
+    else {
+        var node = element.firstChild;
+        while (node && node.nodeType !== 1) {
+            node = node.nextSibling;
+        }
+    }
+}
+
+/***
+ * 获取最后一个子元素的 兼容函数
+ * @param element
+ * @returns {Element}
+ */
+function getLastElementChild(element) {
+    if (element.lastElementChild) {
+        return element.lastElementChild;
+    }
+    else {
+        var node = element.lastChild;
+        while (node && node.nodeType !== 1) {
+            node = node.previousSibling;
+        }
+    }
+}
+
 

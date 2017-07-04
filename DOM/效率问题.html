@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="box"></div>
+    <input type="button" value="按钮" id="btn"/>
+    <script>
+        var btn = document.getElementById("btn");
+        var box = document.getElementById("box");
+        btn.onclick = function () {
+            var start = + new Date();
+/*
+            for(var i =0; i<1000;i++){
+                box.innerHTML += "<ul><li>111</li></ul>";
+                //1,这里是拼接字符串
+                //2,吧字符串编程DOM对象
+                //3,把DOM对象挂在DOM树上
+                //4,还要渲染
+                //所以就很耗时间了
+            }
+*/
+             /**********解决方法************/
+            //1,用一个数组拼接字符串
+           /* var arr = [];
+            for(var i=0 ;i<1000;i++){
+                arr.push("<ul><li>111</li></ul>");
+            }
+            //2,吧字符串编程DOM对象
+            //3,把DOM对象挂在DOM树上
+            //4,还要渲染
+             box.innerHTML += arr.join("");*/
+            /**********End************/
+            /**********另一种方法************/
+            for(var i= 0; i<1000;i++){
+                var ul = document.createElement("ul");
+                var li = document.createElement("li");
+                box.appendChild(ul);
+                ul.appendChild(li);
+                li.innerText = "111";
+            }
+
+            /**********END************/
+
+
+            var end = +new Date();
+//            var test = new Date();
+//            console.log(end);
+//            console.log(test);
+            console.log(end - start);
+        }
+    </script>
+</body>
+</html>

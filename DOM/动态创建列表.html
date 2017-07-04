@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src = "../common.js"></script>
+<input type="button" value="按钮" id="btn"/>
+<div id="box"></div>
+<script>
+    var phones = ["小米","华为","魅族","苹果","三星","HTC",];
+    var btn = document.getElementById("btn");
+    var box = document.getElementById("box");
+    btn.onclick = function () {
+        var ul = document.createElement("ul");
+//        var li = document.createElement("li");
+        box.appendChild(ul);
+        for(var i = 0; i<phones.length;i++){
+            var phone = phones[i];
+            var li = document.createElement("li");
+            setInnerText(li, phone);
+            ul.appendChild(li);
+        }
+
+    }
+</script>
+</body>
+</html>
