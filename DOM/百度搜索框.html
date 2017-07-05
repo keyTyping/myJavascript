@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            width: 500px;
+            height: 100px;
+            margin: 200px auto;
+        }
+        #txtSearch {
+            height: 20px;
+            width: 300px;
+            outline: none;
+        }
+        #btnSearch {
+            height: 30px;
+            width: 80px;
+            font: 16px/20px "Microsoft Yahei";
+            background-color: #46f;
+            border: none;
+            outline: none;
+        }
+        #pop {
+            width: 300px;
+            border: 1px solid blue;
+        }
+        #pop ul {
+            list-style: none;
+        }
+        #pop li:hover {
+            background-color: #CCCCCC;
+        }
+    </style>
+    <script src="../common.js"></script>
+</head>
+<body>
+    <div id="box">
+        <input type="text" name="" id="txtSearch"/>
+        <input type="button" value="百度一下" id="btnSearch"/>
+    </div>
+    <script>
+        //用户输入的同事,根据用户输入的文本 寻找匹配项,然后创建盒子
+        var datas = ["a", "abc", "abbbb", "abxxxx", "xyz", "abcdef", "abzzz"];
+        var btn = $("btnSearch");
+        var input = $("txtSearch");
+        var box = $("box");
+        input.onkeyup = function () {
+            var filterArr = [];
+            for(var i = 0; i<datas.length;i++){
+                var data = datas[i];
+                if(data.indexOf(input.value)==0){
+                    filterArr.push(data);
+                }
+            }
+           // console.log(filterArr);
+//            1,DIV会重叠
+            var pop = $("pop");
+            if(pop){
+                box.removeChild(pop);
+            }
+//            2,如果没有匹配项,就不创建
+            if(filterArr.length == 0){
+                return;
+            }
+//            3,如果用户输入为空,而言不创建
+            if(input.value==""){
+                return;
+            }
+            //动态创建结构
+            var popDiv = document.createElement("div");
+            var ul = document.createElement("ul");
+            //var li = document.createElement("li");
+            popDiv.id = "pop";
+            box.appendChild(popDiv);
+            popDiv.appendChild(ul);
+            for(var i =0; i<filterArr.length;i++){
+                var li = document.createElement("li");
+//                li.innerText = filterArr[i];
+                setInnerText(li, filterArr[i]);
+                ul.appendChild(li);
+            }
+        }
+/*
+        input.onkeydown = function () {
+            var pop = $("pop");
+            if(pop){
+                box.removeChild(pop);
+            }
+        }
+*/
+        input.onblur = function () {
+            var pop = $("pop");
+            if(pop){
+                box.removeChild(pop);
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -98,5 +98,13 @@ function getLastElementChild(element) {
         }
     }
 }
+/**
+ * 根据ID获取元素
+ * @param id
+ * @returns {Element}
+ */
+function $(id) {
+    return document.getElementById(id);
+}
 
 

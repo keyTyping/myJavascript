@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        select  {
+            height: 200px;
+            width: 100px;
+            display: inline-block;
+            /*float: left;*/
+        }
+        input {
+            /*display: inline-block;*/
+            /*float: left;*/
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="left" multiple = "multiple">
+        <option value="">张三</option>
+        <option value="">李四</option>
+        <option value="">王五</option>
+        <option value="">赵六</option>
+    </select>
+    <input type="button" value=">>" id="btn1"/>
+    <input type="button" value="<<" id="btn2"/>
+    <input type="button" value=">"  id="btn3"/>
+    <input type="button" value="<"  id="btn4"/>
+    <select name="" id="right" multiple = "multiple"></select>
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+        var btn1 = $("btn1");
+        var btn2 = $("btn2");
+        var btn3 = $("btn3");
+        var btn4 = $("btn4");
+        var left = $("left");
+        var right = $("right");
+/*        btn1.onclick = function () {
+            var options = left.children;
+            for(var i = 0; i<options.length;/!*i++*!/){
+                var option = options[i];
+                right.appendChild(option);
+            }
+        }
+        btn2.onclick = function () {
+            var options = right.children;
+            for(var i = 0; i<options.length;/!*i++*!/){
+                var option = options[i];
+                left.appendChild(option);
+            }
+        }
+        btn3.onclick = function () {
+            var options = left.children;
+            for(var i = 0; i<options.length;i++){
+                var option = options[i];
+                if(option.selected){
+                    right.appendChild(option);
+                    i--;
+                }
+            }
+        }
+        btn4.onclick = function () {
+            var options = right.children;
+            for(var i = 0; i<options.length;i++){
+                var option = options[i];
+                if(option.selected){
+                    left.appendChild(option);
+                    i--;
+                }
+            }
+        }*/
+//    封装移动函数
+        function move(sout,dest,isMoveAll) {
+            var options = sout.children;
+            for (var i = 0; i < options.length; i++) {
+                var option = options[i];
+                if (isMoveAll || option.selected) {
+                    dest.appendChild(option);
+                    i--;
+                }
+            }
+        }
+        btn1.onclick= function () {
+            move(left,right,true);
+        }
+        btn2.onclick= function () {
+            move(right,left,true);
+        }
+        btn3.onclick= function () {
+            move(left,right,false);
+        }
+        btn4.onclick= function () {
+            move(right,left,false);
+        }
+
+    </script>
+
+</body>
+</html>
