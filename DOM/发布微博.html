@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        s {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .clearFix:after {
+            content: ",";
+            display: block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+
+        .clearFix {
+            *zoom: 1;
+        }
+
+        #weibo {
+            width: 400px;
+            border: 1px solid #ccc;
+            margin: 100px 100px;
+            float: left;
+        }
+
+        #weibo span {
+            display: inline-block;
+            width: 180px;
+            font: 14px "Microsoft Yahei";
+            margin: 5px 20px;
+        }
+
+        #weibo #count {
+            float: right;
+            font: 14px "Microsoft Yahei";
+            width: 115px;
+        }
+
+        #txt {
+            border: 2px solid #ccc;
+            width: 355px;
+            height: 100px;
+            margin: 5px 20px;
+        }
+
+        #btn {
+            display: block;
+            float: right;
+            width: 65px;
+            height: 25px;
+            margin: 0 20px 10px 300px;
+            background-color: #f40;
+            outline: none;
+            border: none;
+        }
+        /*#popContant {
+            border-top: 1px solid #ccc;
+        }*/
+    </style>
+    <script src="../common.js"></script>
+</head>
+<body>
+<div id="weibo">
+    <span>有什么新鲜事箱告诉大家</span>
+    <span id="count">还可以输入 <s>140</s>字</span>
+    <textarea name="" id="txt" cols="30" rows="10"></textarea>
+    <input type="button" value="发布" id="btn" class="clearFix"/>
+    <div id="popContant">
+        <ul id="ul"></ul>
+    </div>
+</div>
+<script>
+    //需求: 用户在文本域中输入文本, 点击发布按钮 吧文本内容发布到ul中
+    var txt = $("txt");
+    var btn = $("btn");
+    var ul = $("ul");
+    btn.onclick = function () {
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        if (txt.value.trim() == "") {  //对两头的空格修剪
+            alert("请输入内容");
+            return;
+        }
+        setInnerText(span, txt.value);
+        li.appendChild(span);
+        var lis = ul.children;
+        if (lis.length === 0) {
+            ul.appendChild(li);
+        }
+        else {
+//                插入到之前
+            ul.insertBefore(li, lis[0]);
+        }
+        txt.value = "";
+//        添加删除按钮
+        var del = document.createElement("input");
+        del.type = "button";
+        del.value = "删除";
+        del.onclick = function () {
+            var li = this.parentNode;
+            ul.removeChild(li);
+        }
+        li.appendChild(del);
+    }
+</script>
+</body>
+</html>

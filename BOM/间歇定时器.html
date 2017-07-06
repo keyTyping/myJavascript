@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="设定定时器" id="btn1"/>
+<input type="button" value="设定定时器" id="btn2"/>
+
+<script>
+    var timer = null;
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    btn1.onclick = function () {
+        timer = setInterval(function () {
+            console.log("起床了");
+        },1000);
+    }
+    btn2.onclick = function () {
+        clearInterval(timer);
+    }
+</script>
+</body>
+</html>
