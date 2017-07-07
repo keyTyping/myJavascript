@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .xiaomi {
+            width: 512px;
+            height: 390px;
+            margin: 50px 100px;
+            /*background-color: red;*/
+            position: relative;
+            overflow: hidden;
+        }
+        .up {
+            width: 512px;
+            height: 195px;
+            display: block;
+            /*float: left;*/
+            position: absolute;
+            /*background-color: pink;*/
+            top: 0;
+        }
+        .down {
+            width: 512px;
+            height: 195px;
+            display: block;
+            /*float: left;*/
+            position: absolute;
+            /*background-color: lightskyblue;*/
+            top: 195px;
+        }
+        #pic {
+            position: absolute;
+        }
+
+    </style>
+    <script src="../common.js"></script>
+</head>
+<body>
+    <div class="xiaomi">
+        <img src="../素材/mi.png" alt="" id="pic"/>
+        <span class="up" id="goUp"></span>
+        <span class="down" id="goDown"></span>
+        <script>
+            var y = 0;  //1090
+            var timer = null;
+            var pic = $("pic");
+            var goUp = $("goUp");
+            var goDown = $("goDown");
+            goUp.onmouseover = function () {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    y-=3;
+                    pic.style.top = y + "px";
+                    if (y < -1090) {
+                        clearInterval(timer);
+                    }
+
+                },15);
+            }
+//            goUp.onmouseout = function () {
+//                clearInterval(timer);
+//            }
+            goDown.onmouseover = function () {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    y+=3;
+                    pic.style.top = y + "px";
+                    if (y > 0 ) {
+                        clearInterval(timer);
+                    }
+                },15);
+            }
+            goDown.parentNode.onmouseout = function () {
+                clearInterval(timer);
+            }
+
+        </script>
+    </div>
+</body>
+</html>

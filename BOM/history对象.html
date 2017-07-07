@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button id="btn">前进</button>
+<script>
+    document.getElementById("btn").onclick = function () {
+        history.forward();  //前进
+        history.go(1); //前进
+        history.back(); //后退
+        history.go(-1); //后退
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../common.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="txt" value="请输入短信验证码"/>
+    <input type="button" value="点击发送验证码" id="btn"/>
+    <script>
+        var btn = $("btn");
+        var timer = null;
+        var num = 20;
+        btn.onclick = function () {
+            this.disabled = true;
+            timer = setInterval(function () {
+                num--;
+                btn.value = num+"秒后可以再次发送";
+                if(num === 0){
+                    clearInterval(timer);
+                    btn.disabled = false;
+                    btn.value = "点击发送验证码";
+                    num = 20;
+                }
+            },1000)
+        }
+    </script>
+</body>
+</html>

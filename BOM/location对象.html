@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="点击" id="btn"/>
+<script>
+    var btn = document.getElementById("btn");
+    btn.onclick = function () {
+//    window.location 地址栏对象
+//    location.href = "http://www.baidu.com"
+//    location.href = "mailto://123@baidu.com"
+        console.log(window.location.hash);//锚点 #aaa
+        console.log(window.location.host);//主机 主机名+端口号
+        console.log(window.location.hostname);//主机名
+        console.log(window.location.pathname);//路径名
+        console.log(window.location.port);//端口
+        console.log(window.location.protocol);//协议
+        console.log(window.location.search);//一些参数 /s?wd=abd
+    }
+</script>
+</body>
+</html>
