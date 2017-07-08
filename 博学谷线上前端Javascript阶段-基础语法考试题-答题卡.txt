@@ -1,0 +1,96 @@
+博学谷线上前端Javascript阶段-基础语法考试题-答题卡
+
+一、单选题
+
+1. B  2. C  3.D   4.C   5.A
+
+6.C   7.B   8.D   9.D   10.D
+
+11.D  12.C  13.C  14.A  15.B
+
+二、简答题
+
+1.
+     javascript是一门脚本语言;
+     特点:
+       a,它是一门若类型语言;
+       b,采用解释执行的方式运行;
+       c,基于html页面的事件执行
+2.
+    方法一: 通过调用toString()方法
+    方法二:用String()函数转换
+    方法三:通过 + 运算符 将要转换的数据 + 一个空字符串 "";
+
+3.
+  数组的常用方法:
+     join()方法:将数组按照传入的字符连接成字符串,默认用逗号连接;
+     push()方法:向数组的末尾添加元素,返回新数组的长度
+     pop()方法:从数组的末尾删除元素,并返回当前元素
+     shift()方法:从数组的开头删除元素,并返回当前元素
+     unshift()方法:向数组的开头添加元素,并返回新数组的长度
+     sort()方法:根据传入的排序函数的返回值,对当前数组排序
+     
+三、程序题
+
+1. 
+//第一题
+    var arr = [1,2,3,4,5,6,7,8,9];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i]%3==0) {
+        console.log(arr[i]);
+        break;    
+      }
+    }
+
+2.
+//第二题
+    for (var i = 0; i < 10; i++) {
+        for (var j = 0; j <= i; j++) {
+           document.write("*");
+           }
+           document.write("</br>");
+    }
+
+
+3.
+//第三题
+    var array1 = ["a","b","c","e"];
+    var array2 = ["d","e","f","f"];
+    var isSame = false; //判断当前arr3[i] 是否有重复的,有重复的置位为true
+    var arrConcat = [];
+    var arr3 = array1.concat(array2) ;
+    for (var i = 0; i < arr3.length; i++) {
+      for(var j= i+1;j<arr3.length;j++){
+         if(arr3[i]==arr3[j]){
+           isSame = true;
+           break;
+         }
+       }
+       if (!isSame) {
+         arrConcat.push(arr3[i]);
+       }
+       isSame = false;
+    }
+
+4.
+    // 第四题
+    var userName =prompt("请输入用户名:") ;
+    var times = 3;    //密码出错次数寄存器
+    if (userName == "admin") {
+      var password = prompt("请输入您的密码:")
+        while(password!=="888"){
+            times--;
+            if (times<=0) {
+                alert("密码不正确,请稍后再试");
+                break;
+            }
+            password = prompt("密码不正确,你还有"+times+"次机会");
+        }
+        if (times>0) {
+            alert("欢迎进入!");
+        }
+    }
+    else {
+        alert("用户名不正确!");
+    }
+
