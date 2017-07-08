@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    统计一个字符串中每个字符出现的次数
+//
+    var str = "abcoefoxyozzopp";
+    var o = {};
+    for(var i = 0; i<str.length;i++){
+//        var item = str[i];//获取每个字符, 低版本浏览器不支持
+        var item = str.charAt(i);  //获取每个字符, 所有浏览器都支持
+        if (o[item]) {
+            o[item]++;
+        }
+        else {
+            o[item] = 1;
+        }
+    }
+    for(var k in o){
+        console.log(k + "出现了" + o[k] + "次");
+    }
+
+</script>
+</body>
+</html>

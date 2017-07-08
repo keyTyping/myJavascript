@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../common.js"></script>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        //设置DEMO的内部文本,显示当前时间
+        var demo = $("demo");
+        function clock(){
+            var d = new Date();
+            var hour = d.getHours();
+             hour = hour<10?"0"+hour:hour;
+            var minute = d.getMinutes();
+            minute = minute<10?"0"+minute:minute;
+            var second = d.getSeconds();
+            second = second<10?"0"+second:second;
+            var str  = hour+":"+minute+":"+second;
+            setInnerText(demo,str);
+        }
+        setInterval(clock, 1000);
+    </script>
+</body>
+</html>

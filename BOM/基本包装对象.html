@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    number  string boolean 三个基本类型 都有包装对象
+    var str = "abc";
+    console.log(str.length);
+
+//浏览器内部的执行过程
+    var temp = new String(str); //1,创建临时的包装对象
+    console.log(temp.length);  //2,调用临时对象的属性
+    temp = null;    //3,使用完成后,销毁临时包装对象
+
+
+</script>
+</body>
+</html>

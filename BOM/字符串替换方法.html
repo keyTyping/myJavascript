@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //把字符串中所有的o替换成!
+    var str = "abcoefoxyozzopp";
+    console.log(str);
+    console.log(str.replace("o", "!"));  //只替换第一个
+    console.log(str.replace(/o/, "!"));  //只替换第一个
+    console.log(str.replace(/o/g, "!"));  //替换所有   正则表达式
+    //循环替换
+    console.log(str);
+    do{
+        str= str.replace("o", "!");
+    }while(str.indexOf("o")!== -1 );
+    console.log(str);
+
+</script>
+</body>
+</html>

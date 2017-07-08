@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var date1 = new Date(2017,10,2);
+    var date2 = new Date("2017-10-2");
+    var date3 = new Date(1128095000000);
+    console.log(date1);
+    console.log(date2);
+    console.log(date3);
+    console.log("----------日期格式化---------");
+    //日期格式化
+    console.log(date1.toString());
+    console.log(date1.toDateString()); //显示日期(不含时间)
+    console.log(date1.toTimeString()); //显示时间(不含日期)
+    console.log(date1.toLocaleTimeString());  //显示时间和本地时间格式相符(不含日期)
+    console.log(date1.toLocaleDateString());  //显示日期和本地时间格式相符(不含时间)
+
+    // 获取日期中的指定部分
+    console.log("----------获取日期中的指定部分---------");
+    var date4 = new Date();
+    console.log(date4);
+    console.log(date4.getTime());  //获取日期中的 返回毫秒数(与valueOf的一样)
+    console.log(date4.getMilliseconds());  //获取日期中的 毫秒数
+    console.log(date4.getSeconds());  //获取日期中的 秒
+    console.log(date4.getMinutes());  //获取日期中的 分钟
+    console.log(date4.getHours());  //获取日期中的 小时
+    console.log(date4.getDay());  //获取日期中的 星期 (0-6,0周日)
+    console.log(date4.getDate());  //获取日期中的 第几天
+    console.log(date4.getMonth());  //获取日期中的 月份
+    console.log(date4.getFullYear());  //获取日期中的 年份(4位)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var date = new Date();
+    console.log(typeof date);
+    console.log(date);
+    console.log(date.toString()); //可以把日期对象转换成字符串形式
+    console.log(date.valueOf()); // 可以把日期对象转换成数值的形式  13位数字
+    //从 1970-1-1 00:00:00:000 到现在过去的毫秒数
+
+    console.log(Date.now()); //获取当前时间,旧版浏览器不支持
+    var date3 = +new Date(); //这种转换方式,支持所有浏览器
+    console.log(date3);
+</script>
+</body>
+</html>
