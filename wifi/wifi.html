@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wifi-icon</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wifi {
+            width: 100px;
+            height: 100px;
+            background-color: #0dbaf1;
+            border-radius:20%;
+            margin: 50px;
+            position: relative;
+        }
+        .out {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #fff;
+            border-radius:50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -36px;
+            margin-top: -41px;
+        }
+        .in {
+            width: 30px;
+            height: 30px;
+            border: 6px solid #fff;
+            border-radius:50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -21px;
+            /*margin-top: -26px;*/
+
+        }
+        .masking {
+            /*width: 0px;*/
+            /*height: 0px;*/
+            border: 40px solid #0dbaf1;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -40px;
+            margin-top: -45px;
+            border-color:#0dbaf1 transparent;
+        }
+        .circle {
+            width: 14px;
+            height: 14px;
+            border: 5px solid #fff;
+            border-radius:50%;
+            position: absolute;
+            left: 50%;
+            top: 66px;
+            margin-left: -12px;
+        }
+        .key1 {
+            height: 27px;
+            border: 3px solid #fff;
+            position: absolute;
+            left: 50%;
+            top: 38px;
+            margin-left: -3px;
+
+        }
+        .key2 {
+            width: 5px;
+            border: 3px solid #fff;
+            position: absolute;
+            left: 50%;
+            top: 43px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wifi">
+        <div class="out">
+            <div class="in"></div>
+        </div>
+        <div class="masking"></div>
+        <div class="circle"></div>
+        <div class="key1"></div>
+        <div class="key2"></div>
+    </div>
+</body>
+</html>
