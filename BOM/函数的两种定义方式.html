@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../common.js"></script>
+
+</head>
+<body>
+<script>
+    // 预解析  声明提升,变量提升 函数声明提升
+    console.log(fn1(3, 4));   //函数声明提升
+//    console.log(fn2);       //undefine
+    console.log(fn2(3, 4));   //变量声明提升, 只提升声明, 不提升赋值
+    //函数声明
+    function fn1(a,b) {
+        return a+b;
+    }
+
+    //函数表达式
+    var fn2 = function (a, b) {
+        return a+b;
+    }
+</script>
+</body>
+</html>
