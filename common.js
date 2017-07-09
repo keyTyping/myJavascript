@@ -112,19 +112,41 @@ function $(id) {
  * @param className
  * @returns {*}
  */
-function getElementByClassName(element,className){
+function getElementsByClassName(element,className){
     if (element.getElementsByClassName) {
         return element.getElementsByClassName(className);
     }
     else {
+        //先寻找element 里面的所有标签,然后判断类名是否符合要求如果符合要求,就放到一个数组中,最后返回这个数组
         var filterArr = [];
-        var elements = element.getElementsByTagName("*"); //通配符
-        for(var i=0;i<elements.length;i++){
-            if (elements[i].className.indexOf(className) !== -1) {   //会有问题
-                filterArr.push(elements[i]);
+        var elements = element.getElementsByTagName("*");//通配符 表示所有标签
+        //遍历数组,把每一个标签都取出来, 判断是否符合
+        for(var i= 0 ;i< elements.length;i ++) {
+            var nameArr = elements[i].className.split(" ");
+            for(var j=0; j<nameArr.length;j++) {
+                if (nameArr[j] === className) {
+                    filterArr.push(elements[i]);
+                    break;
+                }
             }
         }
-        return filterArr;
     }
+    return filterArr;
+}
+
+/**
+ *   类名替换函数
+ * @param element
+ * @param oldStr
+ * @param newStr
+ */
+function replaceClassName(element,oldStr,newStr){
+    var nameArr = element.className.split(" ");  //把类名切割成一个一个的类名
+    for(var i = 0; i< nameArr.length;i++) {
+        if (nameArr[i] === oldStr) {
+            nameArr[i] = newStr;
+        }
+    }
+    element.className = nameArr.join(" ");
 }
 

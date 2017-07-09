@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../common.js"></script>
+</head>
+<body>
+<script>
+//替换类名的封装函数
+//    function replaceClassName(element,oldStr,newStr){
+//        element.className = element.className.replace(oldStr, newStr);
+//
+//    }
+
+    function replaceClassName(element,oldStr,newStr){
+        var nameArr = element.className.split(" ");  //把类名切割成一个一个的类名
+        for(var i = 0; i< nameArr.length;i++) {
+            if (nameArr[i] === oldStr) {
+                nameArr[i] = newStr;
+            }
+        }
+        element.className = nameArr.join(" ");
+    }
+
+//    通过类名获取元素
+
+</script>
+</body>
+</html>
