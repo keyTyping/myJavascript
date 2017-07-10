@@ -1,0 +1,190 @@
+1:jquery可以加载多个ready函数，而原始的js只能加载一次onload
+2:用dom对象得到的对象不能使用jquery中的方法，比如var p=document.getElementById("id"),此时p不能这样使用p.html(),而应该使用innerHTML。同样，jquery对象不能使用dom中的方法，如果juqery中改写了dom中的方法，则可以使用dom中的方法。
+3：jquery对象转换为dom对象的方法：
+    <input type="text" id="a" value="111111">
+    var input=$('#a')
+    a：使用索引，alert(input[0].value)
+    b：使用get,alert(input.get[0].value)
+4:dom对象转换为juqery对象：
+    用$()把DOM对象包装起来就OK：
+    var input = document.getElementById('a');
+    alert($(input).val());
+5：jquery与其他js库共存
+    <script>
+        var sowhat = jQuery.noConflict()//自定义，可代替jQuery
+        或者直接jQuery.noConflict()，然后用jQuery调用方法即可，注意Q不能小写，默认是大写
+        alert('这是jquery弹出的'+sowhat('#a').val());
+        alert('这是prtotype弹出的'+$F('a'));
+    </script>
+6： >号表示子标签，项目中一般不用css表达式，因为它不停地计算会使浏览器特别卡
+    $(function(){
+        $('div>a').css('color','red');
+    });
+    <div>
+        <a href="###">abcdefg</a>
+        <p><a href="###">1234567890</a></p>
+    </div>
+7:jquery优势：
+    a:兼容性强大,完美支持css1-2.0
+    b:完美容错机制，eg：即使没有对应标签也不会报错
+8:选择器：
+    1：id    ：$('#id')
+    eg:$('#p1').css('color','red');//代替了#p1{color:red;}
+    2：calss ：$('.p1')
+    eg:$('.p1').css('color','red');//代替了.p1{color:red;}
+    3：标签选择器（不推荐*选择器）
+    eg:$('p').css('color','red');//代替了.p1{color:red;}
+    4：多重选择器
+    eg： <span>123</span>
+         <div>12312</div>
+         <script>
+         $(function(){
+             $('p,div').css('color','red');
+         });
+         </script>
+    5:层次选择器
+        E   F  e元素所欲的后代元素
+        E>F  e元素的子元素
+        E+next  e元素后紧邻的标签为next的兄弟元素，等于next()
+        E~siblings  e元素后的所有的标签为siblings的兄弟元素,等于nextAll()
+        eg:给div标签后紧邻的p标签添加颜色
+           $('div+p').css('color','red');
+           $('div').next().css('color','red');
+           给div标签后所有的p标签添加颜色
+           $('div~p').css('color','red');
+           $('div').nextAll().css('color','red');
+    6：过滤选择器：(用法：只举一例，其他参考手册)
+        :first
+        $('p:first').css();
+        注意：标签内嵌套标签时单引号和双引号错开使用，若计算偶数则下标从0算起
+    7：属性选择器
+        A:<p title="js">safs</p>
+        选取title为js的p标签添加红色,注意title可以为原有标签，也可以为自己自定义的标签
+        $('p[title=js]').css('color','red');
+        或者$('p[title]').css('color','red');
+        B:选取含有title和myuu属性的p元素,注意title可以为原有标签，也可以为自己自定义的标签
+        $('p[title=js][myuu]').css('color','red');
+        C:子元素:div的子标签p的第一个标签
+        $('div p:first-child').css('color','red');
+    8：表单元素及表单元素属性选择器
+        $(':input[type=checkbox]').val();
+        $(':input:disabled').val();
+        $(':input[disabled=disabled]').val();
+        $('select:selected').val();
+9:dom筛选
+    $('p:eq(0)').css();    //给指定下标为0的p标签添加颜色
+    $('p').filter('#second').css(); //奇偶数添加
+    $('p').click(function(){//单击p标签给当前添加颜色
+       if($(this).is('.first')){
+          $(this).css('backgound','red');
+       }
+    });
+    $('p').not(':last').css();//给p标签添颜色，除了最后一个
+    $('p').not('#secone').css();//给p标签添颜色，除了id为second的p标签
+    $('input').map(function(){ //将一组元素转换为数组（一般不用，因为有一个序列化的方法比这个更好用）
+        return $(this).val();
+    }).get().join(',');//,即将三组文本框中的值用逗号隔开并转为字符串
+    slice():$('p').slice(1,5).css();//    选中下标为1，2，3，4的元素,包含1，不包含5。也可传入负数
+10:dom遍历查找：（注：返回一组元素的都可以加参数，返回一个的不能加参数）
+    $('#p1').parent().css(); //通过子节点p1找到父节点wrap
+    $('#p1').parents('.outer').css();//选取祖先元素，通常加参数,表示范围为class为outer的标签为止
+    $('p1').offsetParent().css();//offsetParent()返回父元素中第一个其position设为relative或者absolute的元素,仅对可见元素有效
+    $('#p2').siblings('div').css();//选择p2所有的兄弟元素(可加参数)
+    $('span').parent().css('color','red').end().css('color','blue')//先设置红色再设置成蓝色，颜色可重叠。链式操作，end()函数
+    $('input').each(function(){//用的不多，因为效率低，后面有工具函数可以代替它
+       alert($(this).val());
+    });
+11：特殊符号的处理：有的加1个\，有的加2个\\
+    $('input[name=gender[]]')没加转义符,报错
+    $('input[name=gender\\[\\]]')加了转义符，正确
+    $('input[name=\'checkbox\']')正确
+12：表格隔行变色
+    ----------js代码-----------
+    var table=document.getElementById('table');
+    var tr=table.getElementByTagName('tr');
+    for(var i=0;i<tr.length;i++){
+        if(i%2==1){
+            tr[i].style.background('blue');
+        }else{
+            tr[i].style.background('red');
+        }
+    }
+    -----------jquery代码-------
+    $('table tr:even').css('backgrpund','red');
+    $('table tr:odd').css('backgrpund','blue');
+    使用end()函数可以优化为一行代码：
+    $('table tr').fliter(':even').css().end().fliter(':odd').css()
+13：tab标签页
+    $('#ul li').click(function(){
+        $(this).addClass('current').siblings().removeClass('current');//点击li的时候切换样式
+        $(#content>div).eq($(this).index()).show().siblings().hide();//根据li的索引值，来确定哪个div显示哪个div隐藏
+        上面两行代码可优化为一行：
+        $(this).addClass('current').siblings().removeClass('current').parent().next().children().eq($(this).index()).show().siblings().hide();
+    });
+14:jquery选择器的优化:
+    a：最快的是id选择器:能用id获取到的标签尽量不用class选择器
+    b：假如p标签下有一个class为a，则尽量：$('p.a')，当然$('.a')这样写也可以。
+       假如有一个div标签，id为a，则直接：$('#id'),一定不要$('div#id')这样写。
+    c：假如div有一个子div，则尽量使用直接使用id获取，不要通过父元素找。
+    d：通过find()来找，尽量不使用上下文查找
+        eg：$('li.item-li').find('li').css();
+    e：链式操作比缓存快很多，只有在要通过一个元素查找另外的元素的时候才需要用到缓存，如果直接对某一个元素进行修改，则直接用链式操作。
+15：dom操作：
+    a：创建节点：分为内部插入和外部插入。
+    内部插入：插入后是子元素
+    外部插入：插入后是兄弟元素
+    $('body').append('<div>div标签</div>');//给页面添加了一个div标签
+    或者也可以这样写：
+    var str='<div>div标签</div>';
+    $('body').append(str);
+    $('p').append('<div>div标签</div>');//向p标签的尾部插入div标签，div是p的所有子标签中排序在最后一个
+    $('<div>div标签</div>').appendTo('p');//结果和上一句一样
+16：添加样式
+    <style>
+       .bg{background:red;}
+       .white{color:#fff;}
+    </style>
+    <script>
+        $('p').addClass('bg white');
+        $('p').removeClass('bg white');
+        //toggleClass();//切换样式
+    </script>
+    再比如：
+    <p>11111111</p>
+    <script>
+        /*$('p').css('background','red').css('color','white').css('border','10px solid #abcdef');*/
+        $('p').css({
+            'backgroundColor':'red',
+            'color':'white',
+            'border':'10px solid #abcdef'
+        });
+        //建议大家把css属性名用引号引起来
+    </script>
+17：jquery中的事件和对象
+18:jquery插件编写（类级别开发，几乎不用）：
+    $.zxit={  //zxit为命名空间
+    centerDiv:function(obj){  //centerDiv为我们自己自定义的插件方法
+        obj.css({
+            'top':($(window).height()-div.height())/2,
+            'left':($(window).width()-div.width())/2,
+            'position':'absolute'
+        });
+
+        return obj;//返回和传入的都是jquery对象
+    }
+}
+19：jquery插件编写（对象级别开发，使用率99%）：
+    a：官方模板：
+        ;(function($){
+            $.fn.plugin=function(options){
+            var defaults = {
+            //各种参数，各种属性
+            }
+            var options = $.extend(defaults,options);
+
+            this.each(function(){
+            //实现功能的代码
+            });
+            return this;
+            }
+        })(jQuery);
