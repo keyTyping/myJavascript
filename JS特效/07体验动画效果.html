@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #demo {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">奔跑吧盒子</button>
+<div id="demo"></div>
+<script>
+    var btn = document.getElementById("btn");
+    var demo = document.getElementById("demo");
+    var timer = null;
+    btn.onclick = function () {
+        clearInterval(timer);
+      timer = setInterval(function () {
+          //leader = leader + step
+          var leader = demo.offsetLeft;
+          var step = 10 ;
+          if (leader < 400) {
+              demo.style.left = leader + step + "px";
+          }
+          else{
+              clearInterval(timer);
+             // demo.style.left = 0 + "px";
+//             console.log(step);
+          }
+      },15);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            /*width: 490px;*/
+            height: 170px;
+            position: relative;
+            margin: 50px;
+        }
+        .inner {
+            width: 490px;
+            height: 170px;
+            float: left;
+            overflow: hidden;
+        }
+        .inner ul {
+            width: 2000%;
+            list-style: none;
+        }
+        .inner ul li {
+            display: inline-block;
+        }
+        .square span {
+            width: 16px;
+            height: 16px;
+            border: 2px solid yellow;
+            position: absolute;
+        }
+    </style>
+    <script src="../../common.js"></script>
+</head>
+<body>
+    <div id="box" class="box">
+        <div class="inner">
+            <ul>
+                <li><a href="#"><img src="images/01.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/02.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/03.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/04.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/05.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+        <div class="square">
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+    </div>
+</body>
+</html>

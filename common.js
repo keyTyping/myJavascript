@@ -150,3 +150,24 @@ function replaceClassName(element,oldStr,newStr){
     element.className = nameArr.join(" ");
 }
 
+/**
+ * 让任意对象移动到指定位置
+ * @param obj
+ * @param target
+ */
+function animate(obj,target){
+    clearInterval(obj.timer);
+    obj.timer = setInterval(function () {
+        var leader = obj.offsetLeft;
+        var step = 10 ;
+        step = leader<target?step:-step;
+        if (Math.abs(leader-target)>= Math.abs(step)) {
+            leader = leader + step ;
+            obj.style.left = leader + "px";
+        }
+        else{
+            obj.style.left = target + "px";
+            clearInterval(obj.timer);
+        }
+    },15);
+}
