@@ -159,7 +159,7 @@ function animate(obj,target){
     clearInterval(obj.timer);
     obj.timer = setInterval(function () {
         var leader = obj.offsetLeft;
-        var step = 10 ;
+        var step = 30 ;
         step = leader<target?step:-step;
         if (Math.abs(leader-target)>= Math.abs(step)) {
             leader = leader + step ;

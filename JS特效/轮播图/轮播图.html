@@ -11,6 +11,7 @@
         .box {
             /*width: 490px;*/
             height: 170px;
+            width: 490px;
             position: relative;
             margin: 50px;
         }
@@ -19,19 +20,38 @@
             height: 170px;
             float: left;
             overflow: hidden;
+            position: relative;
         }
         .inner ul {
-            width: 2000%;
+            width: 1000%;
             list-style: none;
+            position: absolute;
+            left: 0;
+            right: 0;
         }
         .inner ul li {
             display: inline-block;
+            float: left;
+        }
+        .square {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -53px;
         }
         .square span {
             width: 16px;
             height: 16px;
-            border: 2px solid yellow;
-            position: absolute;
+            /*border: 2px solid yellow;*/
+            float: left;
+            margin: 5px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0,0,0,0.5);
+            font: 14px/16px  "Microsoft Yahei";
+        }
+        .current:hover {
+            background-color: #f40;
         }
     </style>
     <script src="../../common.js"></script>
@@ -45,6 +65,7 @@
                 <li><a href="#"><img src="images/03.jpg" alt=""/></a></li>
                 <li><a href="#"><img src="images/04.jpg" alt=""/></a></li>
                 <li><a href="#"><img src="images/05.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/01.jpg" alt=""/></a></li>
             </ul>
         </div>
         <div class="square">
@@ -55,5 +76,27 @@
             <span>5</span>
         </div>
     </div>
+    <script>
+        //需求: 鼠标经过按钮,按钮排他,还要把UL以动画的方式移动到指定位置
+        //1,鼠标经过,按钮排他
+        var box = $("box");
+        var inner = box.children[0];
+        var ul = inner.children[0];
+        var squares = box.children[1];
+        var buttons = squares.getElementsByTagName("span");
+        for(var i =0;i,buttons.length;i++) {
+            buttons[i].index = i;   //保存索引
+            var innerWidth = inner.offsetWidth;
+            buttons[i].onmouseover = function () {
+                //干掉所有人
+                for(var j=0;j<buttons.length;j++) {
+                    buttons[j].className = "";
+                }
+                var target = -this.index * innerWidth;
+                this.className = "current";
+                animate(ul, target);
+            }
+        }
+    </script>
 </body>
 </html>
