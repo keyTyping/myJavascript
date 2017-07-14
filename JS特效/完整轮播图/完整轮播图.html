@@ -23,7 +23,7 @@
         .screen {
             width: 500px;
             height: 200px;
-            /*overflow: hidden;*/
+            overflow: hidden;
             position: relative;
         }
 
@@ -37,7 +37,7 @@
         .screen ul {
             position: absolute;
             left: 0;
-            top: 0px;
+            top: 0;
             width: 3000px;
         }
 
@@ -115,8 +115,9 @@
     var ol = screen.children[1];
     var ulList = ul.children;
     var arr = box.children[1];
-    var left = box.children[0];
-    var right = box.children[1];
+    var left = arr.children[0];
+    var right = arr.children[1];
+    var timer = null;
     //1,动态生成ol列表
     for(var i = 0; i<ulList.length;i++) {
         var li = document.createElement("li");
@@ -128,10 +129,113 @@
     //1.2 克隆第一个广告
     var firstImg = ulList[0].cloneNode(true);
     ul.appendChild(firstImg);
+    var imgWidth = screen.offsetWidth;
     //2,鼠标经过按钮
     //鼠标经过, 按钮排他, 以动画的形式把UL移动到指定位置
     for(var j = 0 ;j<olList.length;j++) {
+        olList[j].index = j;
+        olList[j].onmouseover = function () {
+            for (var k = 0; k<olList.length;k++) {
+                olList[k].className = "";
+            }
+            this.className = "current";
+            pic = this.index;
+            squ = this.index;
+            var target = 0;
+            if(pic === olList.length) {
+                target = -(this.index + 1) * imgWidth;//????
+                animate(ul,target);
+            }
+            else {
+                target = -this.index*imgWidth;
+                animate(ul,target);
+            }
+            // target 索引和图片宽度有关
+        }
+    }
+    //3,鼠标经过,显示箭头,点击箭头,左右移动
+    box.onmouseover = function () {
+        arr.style.display = "block";
+        clearInterval(timer);
+    }
+    box.onmouseout = function () {
+        arr.style.display = "none";
+        timer=setInterval(right.onclick,1000);
+    }
+    //3.1 点击右箭头
+    var pic = 0;//记录当前演示的图片的索引
+    var squ = 0;//记录当前要显示图片的按钮
+    right.onclick = function () {
+        //先判断是否最后一个图片, 如果是最后一个,瞬间跳回第一个图片,索引归0
+        if(pic===ulList.length -1 ) {
+            ul.style.left = 0 + "px";
+            pic=0;
+        }
+        pic++;
+        //和PIC有关,和图片宽度有关
+        var target = -pic*imgWidth;
+        animate(ul,target);
+//        切换按钮显示
+        if(squ<olList.length-1){
+            squ++;
+        }
+        else {
+            squ = 0;
+        }
+        //干掉所有人
+        for(var i = 0 ; i<olList.length;i++) {
+            olList[i].className = "";
+        }
+        //留下对应的
+        olList[squ].className = "current";
 
+    }
+    left.onclick = function () {
+        //先判断是否第一个图片, 如果是第一个,瞬间跳回最后一个图片,索引
+        if(pic===0 ) {
+            ul.style.left =-(ulList.length-1)*imgWidth + "px";
+            pic=ulList.length-1;
+        }
+        pic--;
+        //和PIC有关,和图片宽度有关
+        var target = -pic*imgWidth;
+        animate(ul,target);
+ //      切换按钮显示
+        if(squ>0){
+            squ--;
+        }
+        else {
+            squ = olList.length-1;
+        }
+        //干掉所有人
+        for(var i = 0 ; i<olList.length;i++) {
+            olList[i].className = "";
+        }
+        //留下对应的
+        olList[squ].className = "current";
+    }
+    timer = setInterval(right.onclick,1000);
+
+    /**
+     * 让任意对象移动到指定位置
+     * @param obj
+     * @param target
+     */
+    function animate(obj,target){
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var leader = obj.offsetLeft;
+            var step = 15 ;
+            step = leader<target?step:-step;
+            if (Math.abs(leader-target)>= Math.abs(step)) {
+                leader = leader + step ;
+                obj.style.left = leader + "px";
+            }
+            else{
+                obj.style.left = target + "px";
+                clearInterval(obj.timer);
+            }
+        },15);
     }
 
 </script>

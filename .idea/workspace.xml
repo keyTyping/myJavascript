@@ -25,32 +25,58 @@
         <entry file="file://$PROJECT_DIR$/common.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="169" column="37" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc;n#getInnerText#0" expanded="false" />
+                <element signature="n#!!doc;n#setInnerText#0" expanded="false" />
+                <element signature="n#!!block;n#setInnerText#0" expanded="false" />
+                <element signature="n#!!doc;n#getNextElement#0" expanded="false" />
+                <element signature="n#!!block;n#getNextElement#0" expanded="false" />
+                <element signature="n#!!doc;n#getPreviousElement#0" expanded="false" />
+                <element signature="n#!!block;n#getPreviousElement#0" expanded="false" />
+                <element signature="n#!!doc;n#getFirstElementChild#0" expanded="false" />
+                <element signature="n#!!block;n#getFirstElementChild#0" expanded="false" />
+                <element signature="n#!!doc;n#getLastElementChild#0" expanded="false" />
+                <element signature="n#!!block;n#getLastElementChild#0" expanded="false" />
+                <element signature="n#!!doc;n#$#0" expanded="false" />
+                <element signature="n#!!block;n#$#0" expanded="false" />
+                <element signature="n#!!doc;n#getElementsByClassName#0" expanded="false" />
+                <element signature="n#!!block;n#getElementsByClassName#0" expanded="false" />
+                <element signature="n#!!doc;n#replaceClassName#0" expanded="false" />
+                <element signature="n#!!block;n#replaceClassName#0" expanded="false" />
+                <element signature="n#!!doc;n#animate#0" expanded="false" />
+                <element signature="n#!!doc;n#scroll#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scrollHeight和scrollWidth.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS特效/scrollHeight和scrollWidth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3214285">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="轮播图.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS特效/轮播图/轮播图.html">
+      <file leaf-file-name="页面的滚动坐标.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS特效/页面的滚动坐标.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.25">
-              <caret line="62" column="51" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-6.75">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="完整轮播图.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JS特效/完整轮播图/完整轮播图.html">
+      <file leaf-file-name="固定导航栏.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS特效/固定导航栏/固定导航栏.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54545456">
-              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-              <folding>
-                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.48">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,9 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/DOM/许愿墙/许愿墙.html" />
-        <option value="$PROJECT_DIR$/DOM/FlyBird/效率问题.html" />
         <option value="$PROJECT_DIR$/DOM/效率问题.html" />
         <option value="$PROJECT_DIR$/DOM/动态创建文本框.html" />
         <option value="$PROJECT_DIR$/DOM/动态创建列表.html" />
@@ -119,10 +142,13 @@
         <option value="$PROJECT_DIR$/JS特效/07体验动画效果.html" />
         <option value="$PROJECT_DIR$/JS特效/08封装动画函数.html" />
         <option value="$PROJECT_DIR$/JS特效/轮播图/images/轮播图.html" />
-        <option value="$PROJECT_DIR$/common.js" />
         <option value="$PROJECT_DIR$/JS特效/左右焦点图/左右焦点图.html" />
         <option value="$PROJECT_DIR$/JS特效/轮播图/轮播图.html" />
+        <option value="$PROJECT_DIR$/JS特效/scrollHeight和scrollWidth.html" />
         <option value="$PROJECT_DIR$/JS特效/完整轮播图/完整轮播图.html" />
+        <option value="$PROJECT_DIR$/JS特效/页面的滚动坐标.html" />
+        <option value="$PROJECT_DIR$/common.js" />
+        <option value="$PROJECT_DIR$/JS特效/固定导航栏/固定导航栏.html" />
       </list>
     </option>
   </component>
@@ -298,6 +324,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myjavascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myjavascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS特效" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="固定导航栏" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myjavascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myjavascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS特效" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="固定导航栏" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -314,11 +380,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\H5START\GitHub\myjavascript\JS特效\固定导航栏" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\完整轮播图" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\左右焦点图" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图" />
       <recent name="D:\H5START\GitHub\myjavascript\机械表" />
-      <recent name="D:\H5START\GitHub\myjavascript\素材" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图" />
@@ -424,32 +490,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DOM/效率问题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.18363637">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/动态创建文本框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8290909">
-          <caret line="24" column="13" selection-start-line="7" selection-start-column="3" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/百度换肤.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.107142">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DOM/选好友案例.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.142857">
@@ -746,14 +791,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="169" column="37" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS特效/轮播图/images/01.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -763,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46289754">
           <caret line="139" column="18" selection-start-line="139" selection-start-column="18" selection-end-line="139" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,9 +808,19 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/完整轮播图/完整轮播图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37454545">
+          <caret line="145" column="60" selection-start-line="145" selection-start-column="60" selection-end-line="145" selection-end-column="60" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS特效/轮播图/轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.25">
+        <state vertical-scroll-proportion="0.3109091">
           <caret line="62" column="51" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
           <folding>
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -782,13 +828,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS特效/完整轮播图/完整轮播图.html">
+    <entry file="file://$PROJECT_DIR$/JS特效/scrollHeight和scrollWidth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54545456">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.3214285">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
-            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc;n#getInnerText#0" expanded="false" />
+            <element signature="n#!!doc;n#setInnerText#0" expanded="false" />
+            <element signature="n#!!block;n#setInnerText#0" expanded="false" />
+            <element signature="n#!!doc;n#getNextElement#0" expanded="false" />
+            <element signature="n#!!block;n#getNextElement#0" expanded="false" />
+            <element signature="n#!!doc;n#getPreviousElement#0" expanded="false" />
+            <element signature="n#!!block;n#getPreviousElement#0" expanded="false" />
+            <element signature="n#!!doc;n#getFirstElementChild#0" expanded="false" />
+            <element signature="n#!!block;n#getFirstElementChild#0" expanded="false" />
+            <element signature="n#!!doc;n#getLastElementChild#0" expanded="false" />
+            <element signature="n#!!block;n#getLastElementChild#0" expanded="false" />
+            <element signature="n#!!doc;n#$#0" expanded="false" />
+            <element signature="n#!!block;n#$#0" expanded="false" />
+            <element signature="n#!!doc;n#getElementsByClassName#0" expanded="false" />
+            <element signature="n#!!block;n#getElementsByClassName#0" expanded="false" />
+            <element signature="n#!!doc;n#replaceClassName#0" expanded="false" />
+            <element signature="n#!!block;n#replaceClassName#0" expanded="false" />
+            <element signature="n#!!doc;n#animate#0" expanded="false" />
+            <element signature="n#!!doc;n#scroll#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/页面的滚动坐标.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.75">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/固定导航栏/固定导航栏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

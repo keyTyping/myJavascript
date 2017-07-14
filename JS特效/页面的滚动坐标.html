@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>获取页面的滚动坐标</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+<script>
+        //主流浏览器  IE678  IE6之前的
+        console.log(scrollTop);
+    }
+    //封装自己的scroll函数
+    function scroll() {
+        window.onscroll = function () {
+            var scrollTop = window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0;
+            var scrollLeft = window.pageXOffset||document.documentElement.scrollLeft||document.body.scrollLeft||0;
+
+            var o = {};
+            o.top = scrollTop;
+            o.left = scrollLeft;
+            return o;
+    }
+</script>
+</body>
+</html>

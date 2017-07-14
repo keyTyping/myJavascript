@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <style>
+        #demo {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">很多内容很多内容很多内容很多内容很多内容很多内容很多内容很多内容很多内容很多内容很多内容</div>
+    <script>
+        var demo = document.getElementById("demo");
+        console.log(demo.offsetHeight);
+        console.log(demo.scrollHeight);
+        demo.onscroll = function () {
+            console.log("srollTop:"+demo.scrollTop);
+        }
+    </script>
+</body>
+</html>
