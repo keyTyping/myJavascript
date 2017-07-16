@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <script src = "../../common.js"></script>
+    <style>
+        #father {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px;
+        }
+        #son {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div id = "father">
+    <div id = "son"></div>
+</div>
+<script>
+    var father = $("father");
+    var son = $("son");
+    father.onmouseout = function () {
+        alert("离开父盒子");
+    }
+    son.onmouseout = function (event) {     //onmousueleave
+        var event = event || window.event;
+        event.stopPropagation();   //阻止事件冒泡
+        alert("离开son盒子");
+        if ( event.stopPropagation) {
+            event.stopPropagation();
+        }
+        else{
+            event.cancelBubble = true; //IE678兼容写法
+        }
+    }
+</script>
+</body>
+</html>

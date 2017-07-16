@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+</head>
+<body>
+<button id="btn1">按钮</button>
+<button id="btn2">按钮</button>
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    btn1.onclick = function () {
+                alert("第一个人的代码");  //被覆盖了
+            }
+    btn1.onclick = null;  //直接覆盖原函数 就相当于删除了
+    function fn() {
+        alert("第一个人的代码");
+    }
+    //新的移除方式
+    btn2.addEventListener("click",fn,false);
+//    btn2.addEventListener("click",null,false); //这种不能抵消原来的
+    btn2.removeEventListener("click",fn,false);  //同样有兼容问题
+    //IE678
+    btn2.attachEvent("onclick",fn);
+    btn2.detachEvent("onclick",fn);  //移除
+</script>
+</body>
+</html>

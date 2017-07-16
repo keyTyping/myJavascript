@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+</head>
+<body>
+<button id="btn1">按钮</button>
+<button id="btn2">按钮</button>
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    btn1.onclick = function () {
+        alert("第一个人的代码");  //被覆盖了
+    }
+    btn1.onclick = function () {
+        alert("第二个人的代码");
+    }
+    //                ...........
+    //        方法二
+    //        addEventListener()
+    //1,事件类型(字符串  不加on)  2,监听器(事件处理函数)  3,是否使用捕获
+    btn2.addEventListener("click",function () {
+        alert("第一个人的代码");
+    },false);
+    btn2.addEventListener("click",function () {
+        alert("第二个人的代码");       //不会相互抵消,但是有兼容问题
+    },false);
+    //IE678
+    //        attachEvent()
+    //         //1,事件类型(字符串  要加on)  2,监听器(事件处理函数)
+    btn2.attachEvent("onclick",function () {
+        alert("第一个人的代码");
+    });
+    btn2.attachEvent("onclick",function () {
+        alert("第二个人的代码");
+    });
+
+    //封装添加事件的兼容函数
+    //element--要绑定的对象,eventName--事件字符串,不加on的,listene--事件处理函数r
+    function addEvent(element,eventName,listener){
+        if ( element.addEventListener ) {
+            element.addEventListener(eventName,listener,false);
+        }
+        else if(element.attachEvent) {
+            element.attachEvent("on" + eventName,listener);
+        }
+        else {
+            element["on" + eventName] = listener;
+        }
+    }
+</script>
+</body>
+</html>

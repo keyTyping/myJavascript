@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    console.log(/^a$/.test("a"));
+    console.log(/^a$/.test("aa"));
+    // "*"	重复零次或更多 x>=0
+    console.log("-------*------");
+    console.log(/^a*$/.test("a"));//表示a可以出现0次或者多次
+    console.log(/^a*$/.test("aaaaaa"));//表示a可以出现0次或者多次
+    console.log(/^a*$/.test(""));//表示a可以出现0次或者多次
+    console.log(/^a*$/.test("d"));//false a出现多少次都可以 但是没有说可以出现d
+    // "+"	重复一次或更多次 x>=1
+    console.log("-------+------");
+    console.log(/^a+$/.test("a"));
+    console.log(/^a+$/.test("aaaaa"));
+    console.log(/^a+$/.test(""));//false 一次或者多次 0次不行
+    // "?"	重复零次或一次  x=(0||1)
+    console.log("-------?------");
+    console.log(/^a?$/.test("a"));
+    console.log(/^a?$/.test(""));
+    console.log(/^a?$/.test("aaaa"));//false 0或者1次 多次不行
+    //自定义出现的次数
+    console.log("-------{}------");
+    console.log(/^a{2}$/.test("aa"));//a可以出现2次 a=2
+    console.log(/^a{2,}$/.test("aa"));//a可以出现2次或者更多 a>=2
+    console.log(/^a{2,5}$/.test("aa"));//a可以出现2次到5次 a>=2并且<=5
+    console.log("-------------");
+    console.log(/^a*$/.test("a"));//表示a可以出现0次或者多次
+    console.log(/^a{0,}$/.test("a"));//表示a可以出现0次或者多次
+    console.log(/^a+$/.test("a"));
+    console.log(/^a{1,}$/.test("a"));
+    console.log(/^a?$/.test("a"));
+    console.log(/^a{0,1}$/.test("a"));
+
+
+</script>
+</body>
+</html>

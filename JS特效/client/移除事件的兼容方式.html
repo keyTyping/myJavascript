@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //封装添加事件的兼容函数
+    //element--要绑定的对象,eventName--事件字符串,不加on的,listene--事件处理函数r
+    function addEvent(element,eventName,listener){
+        if ( element.addEventListener ) {
+            element.addEventListener(eventName,listener,false);
+        }
+        else if(element.attachEvent) {
+            element.attachEvent("on" + eventName,listener);
+        }
+        else {
+            element["on" + eventName] = listener;
+        }
+    }
+
+    //移除事件的兼容函数
+    function removeEvent(element,eventName,listener){
+        if ( element.removeEventListener ) {
+            element.removeEventListener(eventName,listener,false);
+        }
+        else if ( element.detachEvent ) {
+            element.detachEvent("on" + eventName,listener);
+        }
+        else {
+            element["on" + eventName] = null;
+        }
+    }
+</script>
+</body>
+</html>

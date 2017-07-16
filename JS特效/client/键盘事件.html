@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+</head>
+<body>
+<input type = "text" id = "inp"/>
+<script>
+    var inp = document.getElementById("inp");
+    inp.onkeydown = function (event) {
+        console.log("onkeydown"); //键盘按下
+        console.log(event.keyCode);  //键盘码
+    }
+    inp.onkeyup = function (event) {
+        console.log("onkeyup"); //键盘谈起
+        console.log(event.keyCode);   //键盘码
+
+    }
+    inp.onkeypress = function (event) {
+        console.log("onkeypress");
+        console.log(event.keyCode);   // ASIIC码
+
+    }
+</script>
+</body>
+</html>

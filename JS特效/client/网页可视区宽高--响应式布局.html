@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //窗体大小改变的事件
+    window.onresize = function () {
+        //可视区的宽度
+        var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0;
+        //可视区的高度
+        var clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0;
+        console.log(client().width);
+
+    }
+
+    //能过获取网页可视区的宽度和高度 的封装函数
+    function client(){
+        return {
+            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0,
+            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0
+        };
+    }
+</script>
+</body>
+</html>

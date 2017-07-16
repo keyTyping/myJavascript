@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <script src = "../../common.js"></script>
+
+</head>
+<body>
+<script>
+    window.onresize = function () {
+        if ( client().width > 960 ) {
+            document.body.style.backgroundColor = "red";
+            document.body.innerHTML = "当前是电脑";
+        }
+        else if ( client().width > 640 ) {
+            document.body.style.backgroundColor = "green";
+            document.body.innerHTML = "当前是平板";
+        }
+        else {
+            document.body.style.backgroundColor = "yellow";
+            document.body.innerHTML = "当前是手机";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //只要有我想要的就可以 这种策略在表单验证中是不行的
+    console.log(/chuan/.test("chuan"));
+    console.log(/chuan/.test("chuang"));
+    console.log(/chuan/.test("achuan"));
+    console.log("-------------------");
+    //^ 表示限制开头
+    console.log(/^chuan/.test("chuan"));
+    console.log(/^chuan/.test("achuan"));//开头必须是chuan
+    console.log(/^chuan/.test("chuang"));//只限制开头 结尾不管
+    console.log("-------------------");
+    //$ 表示限制结尾
+    console.log(/chuan$/.test("chuan"));
+    console.log(/chuan$/.test("chuang"));//结尾必须是chuan
+    console.log(/chuan$/.test("achuan"));//只限制结尾 开头不管
+    //^$ 要什么就必须得给我什么 不能多也不能少
+    console.log("-------------------");
+    console.log(/^chuan$/.test("chuan"));
+    console.log(/^chuan$/.test("achuan"));
+    console.log(/^chuan$/.test("chuang"));
+    console.log(/^chuan$/.test("chuanchuan"));//false
+
+
+
+
+</script>
+</body>
+</html>

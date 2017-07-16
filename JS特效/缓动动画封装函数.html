@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #demo {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+        }
+    </style>
+    <script src = "../common.js"></script>
+</head>
+<body>
+    <button id="btn1">300</button>
+    <button id="btn2">500</button>
+    <button id="btn3">000</button>
+    <div id="demo"></div>
+    <script>
+        var btn1 = $("btn1");
+        var btn2 = $("btn2");
+        var btn3 = $("btn3");
+        var demo = $("demo");
+        btn1.onclick = function () {
+            animate(demo,300);
+        }
+        btn2.onclick = function () {
+            animate(demo,500);
+        }
+        btn3.onclick = function () {
+            animate(demo,0);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick = function (event) {
+            var event = event || window.event;
+            var target = event.target || event.srcElement;
+            console.log(target);
+            console.log(target.id);
+        }
+    </script>
+</body>
+</html>

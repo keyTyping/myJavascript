@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //通过构造函数创建
+    var regEx = new RegExp(/\d/);//\d预定义类 表示数字 digit 数字
+    regEx.test("1");//可以判断传入的字符串是否符合规则 符合要求返回true不符合返回false
+    console.log(regEx.test("1"));//true
+    console.log(regEx.test("a"));//false 匹配数字 字母不行
+    console.log(regEx.test("a1"));//true 只要有我想要的就可以
+    //字面量
+    var regEx2 = /\d/;
+    //如果这个规则只是使用一次
+    console.log(/\d/.test("1"));
+    console.log(RegExp());
+</script>
+</body>
+</html>

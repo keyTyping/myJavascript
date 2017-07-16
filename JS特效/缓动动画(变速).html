@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+        #demo {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">动画变速</button>
+<div id="demo"></div>
+<script>
+    var timer = null;
+    var btn = document.getElementById("btn");
+    var demo = document.getElementById("demo");
+    btn.onclick = function () {
+        clearInterval(timer);
+        timer= setInterval(function () {
+            //leader = leader +step
+            var target = 400;
+            var leader = demo.offsetLeft;
+            var step = (target-leader)/10;
+            step = step>0?Math.ceil(step):Math.floor(step);
+            leader = leader + step;
+            demo.style.left = leader + "px";
+            if(leader === target) {
+                clearInterval(timer);
+            }
+        },15);
+    };
+</script>
+</body>
+</html>
