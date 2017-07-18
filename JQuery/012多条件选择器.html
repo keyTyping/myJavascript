@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+    <script src = "./jquery-1.12.2.js"></script>
+    <script>
+        /*
+        * 点击按钮,设置页面中的span标签,li标签,div标签的背景颜色
+        * */
+        $(function () {
+            //多标签选择器设置背景颜色
+            $("#btn").click(function () {
+                $("span,p,li,div").css("backgroundColor","yellow");
+            });
+        });
+    </script>
+</head>
+<body>
+<input type = "button" value = "按钮" id = "btn"/>
+<span>真是一个span标签</span>
+<p>这是一个p标签</p>
+<ul>
+    <li>三个li标签</li>
+    <li>三个li标签</li>
+    <li>三个li标签</li>
+</ul>
+<div></div>
+</body>
+</html>
