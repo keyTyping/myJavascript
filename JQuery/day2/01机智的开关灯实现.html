@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title></title>
+    <style>
+        .cls {
+            background-color: black;
+        }
+    </style>
+    <script src = "jquery-1.12.2.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $("body").toggleClass("cls");
+            })
+        })
+    </script>
+</head>
+<body>
+<input type = "button" value = "开关灯" id = "btn"/>
+</body>
+</html>
