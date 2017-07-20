@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -31,7 +32,14 @@
             background: url(images/tip1_h.gif) no-repeat left top;
         }
 
-        #content .tip1 .tip_h, #content .tip2 .tip_h, #content .tip3 .tip_h, #content .tip4 .tip_h, #content .tip5 .tip_h, #content .tip6 .tip_h, #content .tip7 .tip_h, #content .tip8 .tip_h {
+        #content .tip1 .tip_h,
+        #content .tip2 .tip_h,
+        #content .tip3 .tip_h,
+        #content .tip4 .tip_h,
+        #content .tip5 .tip_h,
+        #content .tip6 .tip_h,
+        #content .tip7 .tip_h,
+        #content .tip8 .tip_h {
             width: 227px;
             padding-top: 45px;
             height: 23px;
@@ -43,7 +51,14 @@
             background: url(images/tip1_c.gif) repeat-y;
         }
 
-        #content .tip1 .tip_c, #content .tip2 .tip_c, #content .tip3 .tip_c, #content .tip4 .tip_c, #content .tip5 .tip_c, #content .tip6 .tip_c, #content .tip7 .tip_c, #content .tip8 .tip_c {
+        #content .tip1 .tip_c,
+        #content .tip2 .tip_c,
+        #content .tip3 .tip_c,
+        #content .tip4 .tip_c,
+        #content .tip5 .tip_c,
+        #content .tip6 .tip_c,
+        #content .tip7 .tip_c,
+        #content .tip8 .tip_c {
             width: 200px;
             padding-left: 12px;
             padding-right: 15px;
@@ -60,13 +75,21 @@
             background: url(images/tip1_f.gif) no-repeat left top;
         }
 
-        #content .tip1 .tip_f, #content .tip2 .tip_f, #content .tip3 .tip_f, #content .tip4 .tip_f, #content .tip5 .tip_f, #content .tip6 .tip_f, #content .tip7 .tip_f, #content .tip8 .tip_f {
+        #content .tip1 .tip_f,
+        #content .tip2 .tip_f,
+        #content .tip3 .tip_f,
+        #content .tip4 .tip_f,
+        #content .tip5 .tip_f,
+        #content .tip6 .tip_f,
+        #content .tip7 .tip_f,
+        #content .tip8 .tip_f {
             width: 227px;
             height: 53px;
             padding-top: 20px;
         }
 
-        #content .close, #content .close2 {
+        #content .close,
+        #content .close2 {
             float: left;
             font-size: 12px;
             cursor: pointer;
@@ -103,7 +126,76 @@
             width: 195px;
         }
     </style>
+    <script src="../../jquery-1.12.2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var messages = [{
+                    "id": 1,
+                    "name": "mahu",
+                    "content": "今天你拿苹果支付了么",
+                    "time": "2016-02-17 00:00:00"
+                },
+                {
+                    "id": 2,
+                    "name": "haha",
+                    "content": "今天天气不错，风和日丽的",
+                    "time": "2016-02-18 12:40:00"
+                },
+                {
+                    "id": 3,
+                    "name": "jjjj",
+                    "content": "常要说的事儿是乐生于苦",
+                    "time": "2016-03-18 12:40:00"
+                },
+                {
+                    "id": 4,
+                    "name": "9.8的妹纸",
+                    "content": "把朋友家厕所拉堵了 不敢出去 掏了半小时了都",
+                    "time": "2016-03-18 12:40:00"
+                },
+                {
+                    "id": 5,
+                    "name": "雷锋ii.",
+                    "content": "元宵节快乐",
+                    "time": "2016-02-22 12:40:00"
+                },
+                {
+                    "id": 6,
+                    "name": "哎呦哥哥.",
+                    "content": "据说今晚央视的元宵晚会导演和春晚导演是同一个人，真是躲得过初一，躲不过十五。",
+                    "time": "2016-02-22 01:30:00"
+                },
+                {
+                    "id": 7,
+                    "name": "哎呦杰杰.",
+                    "content": "真搞不懂你们地球人，月亮有什么好看的，全是坑，还是对面那哥们好看，",
+                    "time": "2016-02-22 01:30:00"
+                },
+                {
+                    "id": 8,
+                    "name": "哎呦哎呦",
+                    "content": "今天哪里的烟花最好看！！？答：朋友圈。。。",
+                    "time": "2016-02-22 02:30:00"
+                },
+                {
+                    "id": 9,
+                    "name": "没猴哥，不春晚",
+                    "content": "班主任:“小明，你都十二岁了，还是三年级，不觉得羞愧吗”？。小明:“一点也不觉得，老师你都四十多岁了，不也是年年在三年级混日子吗？羞愧的应该是你”。老师:……",
+                    "time": "2016-02-22 01:30:00"
+                }
+            ];
+            for (var i = 0; i < messages.length; i++) {
+                var $clone = $("#cc").clone(true);
+                $clone.attr('id', messages[i].id);
+                $clone.children("div").find(".num").text(messages[i].time);
+                $clone.children("div").find(".name").text(messages[i].name);
+                $clone.children("div").find(".tip_c").text(messages[i].content);
+                $("#content").append($clone);
+            }
+        });
+    </script>
 </head>
+
 <body>
     <div id="content">
         <div class="tip1" id="cc">
@@ -124,41 +216,6 @@
             </div>
         </div>
     </div>
-    <script>
-        var zIndex = null;
-        var content  = document.getElementById("content");
-        var tip1 = document.getElementById("cc");
-//        var tips = tip1.cloneNode(true);
-        for (var i =0 ; i<10 ;i++){
-            var cloneTips = tip1.cloneNode(true);
-            cloneTips.id = "cc" + i;
-            content.appendChild(cloneTips);
-            var x = parseInt(Math.random()*400+400);
-            var y = parseInt(Math.random()*400);
-            cloneTips.style.left = x +"px";
-            cloneTips.style.top = y + "px";
-            cloneTips.onclick = function () {
-                zIndex++;
-                this.style.zIndex = zIndex;
-            };
-            cloneTips.firstElementChild.ondblclick = function () {
-                //this.parentNode.style.display = "none";  隐藏显示
-                content.removeChild(this.parentNode);  //直接删除
-            }
-        }
-
-        // 获取第一个子元素兼容函数;
-        function getFirstElementChild(element) {
-            if (element.firstElementChild) {
-                return element.firstElementChild;
-            }
-            else {
-                var node = element.firstChild;
-                while(node && node.nodeType !== 1){
-                    node = node.nextSibling;
-                }
-            }
-        }
-    </script>
 </body>
+
 </html>
