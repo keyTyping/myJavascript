@@ -19,6 +19,7 @@
             width: 960px;
             background: url(images/content_bg.jpg) no-repeat left top;
             height: 627px;
+            position: relative;
         }
 
         #content .tip1 {
@@ -47,18 +48,18 @@
             cursor: move;
         }
 
-        #content .tip1 .tip_c {
+        #content .tip1 .tipCenter {
             background: url(images/tip1_c.gif) repeat-y;
         }
 
-        #content .tip1 .tip_c,
-        #content .tip2 .tip_c,
-        #content .tip3 .tip_c,
-        #content .tip4 .tip_c,
-        #content .tip5 .tip_c,
-        #content .tip6 .tip_c,
-        #content .tip7 .tip_c,
-        #content .tip8 .tip_c {
+        #content .tip1 .tipCenter,
+        #content .tip2 .tipCenter,
+        #content .tip3 .tipCenter,
+        #content .tip4 .tipCenter,
+        #content .tip5 .tipCenter,
+        #content .tip6 .tipCenter,
+        #content .tip7 .tipCenter,
+        #content .tip8 .tipCenter {
             width: 200px;
             padding-left: 12px;
             padding-right: 15px;
@@ -129,7 +130,8 @@
     <script src="../../jquery-1.12.2.js"></script>
     <script type="text/javascript">
         $(function() {
-            var messages = [{
+            var messages = [
+                {
                     "id": 1,
                     "name": "mahu",
                     "content": "今天你拿苹果支付了么",
@@ -186,12 +188,38 @@
             ];
             for (var i = 0; i < messages.length; i++) {
                 var $clone = $("#cc").clone(true);
+                var zIndex = 0;
+                var tipX = parseInt(Math.random()*600)+"px";
+                var tipY = parseInt(Math.random()*400)+"px";
                 $clone.attr('id', messages[i].id);
                 $clone.children("div").find(".num").text(messages[i].time);
+                $clone.find(".tipCenter").text(messages[i].content);
                 $clone.children("div").find(".name").text(messages[i].name);
-                $clone.children("div").find(".tip_c").text(messages[i].content);
+                $clone.css({"left":tipX,"top":tipY,"position":"absolute"})
                 $("#content").append($clone);
             }
+            $("#content div").find(".tip_h").dblclick(function () {
+                $(this).parent("div").fadeOut(500,function () {
+                    $(this).remove();
+                })
+                /*.mousedown(function () {
+                    $("#content").mousemove(function (event) {
+                        var tipX = event.pageX-$(this).offset().left-$(this).find(".tip1").offset().left;
+                        var tipY = event.pageY-$(this).offset().top-$(this).find(".tip1").offset().top;
+                        $("#content").find(".tip1").css("left",tipX).css("top",tipY);
+                    });
+                })*/;
+            });
+            $("#content>div").click(function () {
+                zIndex++;
+                $(this).css("zIndex", zIndex);
+            });
+            $("#content div").find(".close").click(function () {
+                $(this).parent("div").parent("div").slideUp(500,function () {
+                    $(this).parent("div").parent("div").remove();
+                });
+            })
+
         });
     </script>
 </head>
@@ -204,7 +232,7 @@
                 <div class="close" title="关闭纸条">×</div>
                 <div class="clr"></div>
             </div>
-            <div class="tip_c">
+            <div class="tipCenter">
                 希望马上能怀个健康的猴宝宝 祈祷祈祷
             </div>
             <div class="tip_f">
