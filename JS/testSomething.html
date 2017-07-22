@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">切换选项</button>
+<input type="text" id="txt">
+<select name="" id="sec">
+    <option value="1">选项1</option>
+    <option value="2">选项2</option>
+    <option value="3">选项3</option>
+    <script>
+        var btn = document.getElementById("btn");
+        var sec = document.getElementById("sec");
+        var txt = document.getElementById("txt");
+        btn.onclick =  function () {
+                sec.value = "3";
+               // txt.value = "2";
+               // alert("嗯");
+        }
+    </script>
+</select>
+</body>
+</html>
