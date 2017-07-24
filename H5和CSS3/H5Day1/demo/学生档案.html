@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            width: 600px;
+            margin: 20px auto;
+        }
+        form>fieldset{
+            padding: 10px;
+        }
+        form>fieldset>input,meter {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            font: 16px "microsoft yahei";
+            padding-left: 5px;
+            box-sizing: border-box;
+            border:1px solid #CCCCCC;
+            border-radius: 4px;
+        }
+        form>fieldset>meter {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>学生档案</legend>
+        <label for="userName">姓名:</label>
+        <input type="text" id="userName" name="userName" placeholder="请输入姓名">
+        <label for="userPhone">手机号码:</label>
+        <input type="tel" name="userPhone" id="userPhone" pattern="^1\d{10}&">
+        <label for="email">邮箱地址:</label>
+        <input type="email" name="email" id="email">
+        <label for="collage">所属学院:</label>
+        <input type="text" name="collage" id="collage" list="cList">
+        <datalist id="cList">
+            <option value="三峡大学" label="湖北宜昌"></option>
+            <option value="常熟理工学院" label="江苏常熟"></option>
+            <option value="苏州科技学院" label="江苏苏州"></option>
+            <option value="华中科技大学" label="湖北武汉"></option>
+            <option value="上海交大" label="上海"></option>
+        </datalist>
+        <label for="scroe">入学成绩:</label>
+        <input type="number" name="scroe" id="scroe" max="100" min="0" value="0">
+        <label for="level">基础水平:</label>
+        <meter id="level" max="100" min="0" low="59" high="89"></meter>
+        <label for="stuIn">入学日期:</label>
+        <input type="date" name="stuIn" id="stuIn">
+        <label for="stuOut">入学日期:</label>
+        <input type="date" name="stuOut" id="stuOut">
+        <input type="submit" value="提交">
+    </fieldset>
+</form>
+<script>
+    document.getElementById("scroe").oninput = function () {
+        document.getElementById("level").value = this.value;
+    }
+</script>
+</body>
+</html>
