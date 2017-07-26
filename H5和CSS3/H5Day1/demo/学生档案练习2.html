@@ -3,8 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>学生档案录入系统</title>
+    <style>
+        form {
+            width: 600px;
+            margin: 30px auto;
+            padding: 10px;
+            font: 18px "microsoft yahei";
+        }
+        form>fieldset>input,form>fieldset>meter {
+            /*display: block;*/
+            width: 100%;
+            height: 30px;
+            border: 1px solid #CCCCCC;
+            font: 16px/30px "microsoft yahei";
+            padding-left: 5px;
+            margin: 5px 0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        form>fieldset>meter {
+            padding-left:0;
+
+        }
+    </style>
 </head>
 <body>
-
+<form action="" method="get" autocomplete="off">
+    <fieldset>
+        <legend>学生档案</legend>
+        <label for="userName">姓名:</label>
+        <input type="text" name="userName" id="userName" placeholder="请输入您的姓名" autofocus pattern="^[\u4E00-\u9FA5]{2,8}$" required>
+        <label for="phoneNumber">手机号码:</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="请输入你的手机号码" required pattern="^(\+86)?1\d{10}$" >
+        <label for="email">电子邮箱:</label>
+        <input type="email" name="email" id="email" placeholder="请输入邮箱">
+        <label for="college">所属学院:</label>
+        <input type="text" name="college" id="college" list="collegeList">
+        <datalist id="collegeList">
+            <option value="JAVA学院">东校区</option>
+            <option value="WEB前端学院">东校区</option>
+            <option value="JAVAEE学院">西校区</option>
+            <option value="PHP学院">西校区</option>
+        </datalist>
+        <label for="score">入学成绩:</label>
+        <input type="number" name="score" id="score" max="100" min="0" value="60">
+        <label for="level">基础水平:</label>
+        <meter id="level" max="100" min="0" high="89" low="59" value="60" optimum="100"></meter>
+        <label for="stuIn">入学日期:</label>
+        <input type="date" name="stuIn" id="stuIn">
+        <label for="stuOut">毕业日期:</label>
+        <input type="date" name="stuOut" id="stuOut">
+        <input type="submit" value="提交信息">
+    </fieldset>
+</form>
+<script>
+    document.querySelector("#score").oninput = function () {
+        document.querySelector("#level").value = this.value;
+    }
+</script>
 </body>
 </html>

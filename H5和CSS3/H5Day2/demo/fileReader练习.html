@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fileReader练习</title>
+    <style>
+        input {
+            margin: 30px;
+        }
+        div img{
+            width: 300px;
+            /*box-shadow: #CCC ;*/
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <input type="file" name="fileSec" id="fileSec" onchange="getFile();"> <br>
+    <input type="submit" value="上传图片">
+</form>
+<div id="overView">
+    <img src="" alt="图片预览">
+</div>
+<script>
+    function getFile() {
+        var reader = new FileReader();
+        var file = document.querySelector("#fileSec").files;
+        reader.readAsDataURL(file[0]);
+        reader.onload = function () {
+//            console.log(reader.result);
+            document.querySelector("#overView").firstElementChild.src= reader.result;
+        }
+
+    }
+</script>
+</body>
+</html>
