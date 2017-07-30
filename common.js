@@ -143,7 +143,6 @@ function replaceClassName(element,oldStr,newStr) {
     }
     element.className = nameArr.join(" ");
 }
-
 /**
  * 封装 能够让 任意对象 的指定属性 变到指定值 的动画函数
  * @param obj
@@ -205,7 +204,6 @@ function getStyle(obj,attr) {
         return obj.currentStyle[attr];
     }
 }
-
 /**
  * 能过获取网页可视区的宽度和高度 的封装函数
  * @returns {{width: (Number|number), height: (Number|number)}}

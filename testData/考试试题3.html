@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滚动条</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            margin: 30px auto;
+            width: 800px;
+            height: 40px;
+            background: repeating-linear-gradient(-45deg, yellow, yellow 4%, green 4%, green 8%);
+        }
+
+        .change {
+            background: repeating-linear-gradient(-45deg, green, green 4%, yellow 4%, yellow 8%);
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box"></div>
+<script>
+    window.onload = function () {
+        var box = document.getElementById("box");
+        setInterval(function () {
+            replaceClassName(box, "change");
+        }, 500);
+    }
+
+    function replaceClassName(element, className) {
+        var nameArr = element.className.split(" ");  //把类名切割成一个一个的类名
+        var k = 0; //0---没有查找的类名
+        for (var i = 0; i < nameArr.length; i++) {
+            if (nameArr[i] === className) {
+                nameArr[i] = "";
+                k = 1;
+            }
+        }
+        if (k == 0) {
+            nameArr[nameArr.length + 1] = className;
+        }
+        element.className = nameArr.join(" ");
+    }
+
+</script>
+</body>
+</html>
