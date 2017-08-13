@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatRoom</title>
+    <style>
+        div,input,textarea,button,form {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+        .outerback {
+            width: 450px;
+            height: 420px;
+            background-image: url(./3.jpg);
+            opacity: 0.1;
+            position: absolute;
+            z-index: -1;
+        }
+        .chatRoom {
+            width: 450px;
+            height: 420px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin: 50px auto;
+            box-shadow: 5px 5px 10px #aaa;
+            position: relative;
+        }
+        .chatRoom>.disMessage {
+            width: 100%;
+            height: 300px;
+            border-bottom: 2px solid #ccc;
+            overflow: auto;
+            padding: 5px 10px;
+            box-sizing: border-box;
+        }
+        .chatRoom > .inMess {
+        }
+        .chatRoom textarea {
+            width: 100%;
+            height: 80px;
+            border: 0;
+            border-bottom: 2px solid #ccc;
+            outline: 0;
+            resize: none;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        .inMess input {
+            height: 30px;
+            width: 80px;
+            float: right;
+            margin: 0 10px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+            border: 0;
+            background: linear-gradient(to top, #bbb, #fff);
+            border-radius: 3px;
+            outline:0;
+        }
+        .inMess input:hover {
+            background: #ccc;
+        }
+        .disMessage span {
+            padding: 5px;
+            display: block;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        .center {
+            display: block;
+            text-align: center;
+            font-size: : 8px;
+            color: #aaa;
+        }
+    </style>
+    <script src="./ajax.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            var disMessage = document.getElementById('js_disMessage');
+            var inputMessage = document.getElementById('js_inputMessage');
+            var send = document.getElementById('js_send');
+            var clear = document.getElementById('js_clear');
+            send.onclick = function () {
+                //发送输入的数据到disMessage显示框中
+                if (inputMessage.value == "") {
+                    //输入的信息不能为空
+                    if (disMessage.getElementsByClassName('center').length==0) {
+                        var empty = document.createElement("span");
+                        empty.className = "center";
+                        empty.innerHTML = "输入的文本不能为空!";
+                        disMessage.appendChild(empty);
+                    }
+                }else {
+                    //将输入的文本显示在显示窗口中
+                    var typeIn = document.createElement('span');
+                    typeIn.className = 'left';
+                    typeIn.innerHTML = "我:"+inputMessage.value;
+                    disMessage.appendChild(typeIn);
+                    disMessage.scrollTop = disMessage.scrollHeight; //滚动条
+                    //从服务器获取ajax并显示
+                    ajax("get","./ajax.php",function(data){
+                        var reseiveText = JSON.parse(data);
+                        var index = Math.floor(Math.random()*reseiveText.length);
+                        //追加元素
+                        typeIn = document.createElement('span');
+                        typeIn.className = 'right';
+                        typeIn.innerHTML = "Ajax:"+reseiveText[index];
+                        setTimeout(function () {
+                            disMessage.appendChild(typeIn);
+                            disMessage.scrollTop = disMessage.scrollHeight; //滚动条
+                        },1000);
+                        inputMessage.value = '';
+                     });
+
+                }
+            }
+            clear.onclick = function () {
+                var spans = disMessage.children;
+                var leng=spans.length;
+                inputMessage.value = '';
+                for (var i = 0; i < leng; i++) {
+                    disMessage.removeChild(spans[0]);
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+        <div class="chatRoom">
+            <div class="outerback"></div>
+            <div class="disMessage" id="js_disMessage">
+            </div>
+            <div class="inMess">
+                <form >
+                    <textarea name="inputMessage" id="js_inputMessage" placeholder="请输入信息...." ></textarea>
+                    <input type="button" value="发送" id="js_send">
+                    <input type="button" value="清屏" id="js_clear">
+                </form>
+            </div>
+    </div>
+</body>
+</html>

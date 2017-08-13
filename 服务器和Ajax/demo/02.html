@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>初识Ajax开发</title>
+    <script type="text/javascript">
+    window.onload = function(){
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var uname = document.getElementById('username').value;
+            var pw = document.getElementById('password').value;
+
+            // 1、创建XMLHttpRequest对象
+            // var xhr = new XMLHttpRequest();//标准浏览器
+            // var xhr = new ActiveXObject("Microsoft.XMLHTTP");//IE6
+            // console.log(xhr);
+            // alert(xhr);
+            var xhr = null;
+            if(window.XMLHttpRequest){
+                xhr = new XMLHttpRequest();//标准
+            }else{
+                xhr = new ActiveXObject("Microsoft");//IE6
+            }
+
+            // try{
+            //     xhr = new XMLHttpRequest();
+            // }catch(e){
+            //     xhr = new ActiveXObject("Microsoft");
+            // }
+            
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <form>
+        用户名：
+        <input type="text" name="username" id="username"><span id="info"></span>
+        <br> 密码：
+        <input type="text" name="password" id="password">
+        <input type="button" value="登录" id="btn">
+    </form>
+</body>
+
+</html>
