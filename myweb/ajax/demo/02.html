@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>初识Ajax开发</title>
+    <style media="screen">
+        input{
+            margin: 5px 10px;
+            padding-left: 3px;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            outline: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+				var uname = document.getElementById('username').value;
+				var pw = document.getElementById('password').value;
+				//Ajax发送请求需要如下几部:
+				//1,创建XMLHttpRequest对象
+					// var xhr = new XMLHttpRequest();//标准浏览器
+                    var xhr = null;
+                    try {
+                        xhr = new XMLHttpRequest(); // 不支持IE6
+                    } catch (e) {
+                        xhr = new ActivexObject('Microsoft.XMLHTTP');//IE6兼容处理
+                    }
+				//2,准备发送
+                /*
+                    1,请求方式(get获取数据;post 提交数据)
+                    2,请求地址
+                    3,同步或者异步标志位,默认true 异步
+                    ps.如果是get请求,请求参数必须在url中传递
+                */
+                // encodeURI()用来对中文参数进行编码,防止乱码
+                var param ='username='+uname+'&password='+pw;
+                xhr.open('get','01check.php?'=encodeURI(param),true);
+				//3,执行发送动作
+                xhr.send(null);
+				//4,指定回调函数
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState==4) {
+                        if (xhr.status==200) {
+                            alert(xhr.responseText);
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+	<div>
+		<form>
+			<label for="username">用户名:</label>
+            <input type="text" name="username" id="username"> &nbsp;
+            <span id="info"></span> <br>
+			<label for="password">密码:</label>
+            <input type="text" name="password" id="password" >
+			<input type="button" value="请登录" id="btn">
+		</form>
+	</div>
+</body>
+</html>

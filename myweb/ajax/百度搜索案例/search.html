@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #container {
+            width: 400px;
+            min-height: 300px;
+            background-color: lightgreen;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+        #info{
+            /*padding:5px 0px 0px 90px;*/
+        }
+        #info ul{
+            width: 180px;
+            background-color: rgba(0,0,0,0.3);
+            list-style: none;
+            margin: 5px 0 0 95px;
+            text-align: left;
+
+        }
+    </style>
+    <script src="../chartRoom/jquery-1.12.2.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#keywords").keyup(function(){
+                var kw = $(this).val();
+                $.ajax({
+                    url:'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
+                    jsonp:'cb',
+                    data:{wd:kw},
+                    dataType:'jsonp',
+                    success:function(data){
+                        // console.log(data);
+                        var sug = data.s;
+                        var tag = '<ul>';
+                        $.each(sug,function (i,e) {
+                            tag+='<li>'+e+'</li>';
+                        });
+                        tag += '</ul>';
+                        $('#info').html(tag);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <input type="text" name="keywords" id="keywords">
+        <input type="button" value="搜索" id="btn">
+        <div id="info"></div>
+    </div>
+</body>
+</html>
+<!-- https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=jav&json=1&p=3&sid=1461_13548_21123_22158&req=2&bs=java&pbs=java&csor=3&pwd=ja&cb=jQuery1102017906742171744017_1502725861153&_=1502725861160 -->

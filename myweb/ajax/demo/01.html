@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>初识Ajax开发</title>
+    <style media="screen">
+        input{
+            margin: 5px 10px;
+            padding-left: 3px;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            outline: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+				var uname = document.getElementById('username').value;
+				var pw = document.getElementById('password').value;
+				//Ajax发送请求需要如下几部:
+				//1,创建XMLHttpRequest对象
+					var xhr = new XMLHttpRequest();
+				//2,准备发送
+					xhr.open('get','./01check.php?username='+uname+'&password='+pw,true);  //默认true--异步发送
+				//3,执行发送动作
+					xhr.send(null);  //get请求必须写null
+				//4,指定回调函数
+					xhr.onreadystatechange = function () {
+						// body...
+						if (xhr.readyState==4) {  //=4表示服务器端的数据已经回来了
+							if (xhr.status==200) {//200表示得到的数据是正常的
+								var data = xhr.responseText;
+								var info = document.getElementById('info')
+								if (data == '1') {
+									info.innerHTML = '登录成功';
+								}else if (data=='2') {
+									info.innerHTML='用户名或密码错误!';
+								}
+							}
+						}
+					}
+            }
+        }
+		
+    </script>
+</head>
+<body>
+	<div>
+		<form>
+			<label for="username">用户名:</label>
+            <input type="text" name="username" id="username"> &nbsp;
+            <span id="info"></span> <br>
+			<label for="password">密码:</label>
+            <input type="text" name="password" id="password" >
+			<input type="button" value="请登录" id="btn">
+		</form>
+	</div>
+</body>
+</html>
