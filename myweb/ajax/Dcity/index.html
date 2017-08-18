@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>动态选择城市</title>
+	<style>
+		div,select,option{
+			padding: 0;
+			margin: 0;
+		}
+			display: inline-block;
+			width: auto;
+			padding: 10px;
+			/*max-width: 400px;*/
+			min-height: 100px;
+			border: 1px solid #bbb;
+			border-radius: 5px;
+			margin: 5px,auto;
+		}
+		.container select {
+			outline: none;
+			height: 30px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 14px;
+			line-height: 30px;
+		}
+	</style>
+	<script src= "jquery.js"></script>
+	<!-- <script src= "template.js"></script> -->
+	<script>
+		$(function() {
+			function dataSelect(obj, callback) {
+				$.ajax({
+					url: './select.php',
+					type: 'get',
+					dataType: 'json',
+					data: obj,
+					success: function(data) {
+						// 省份
+						callback(data);
+					}
+				});
+			}
+			//加载省级数据
+			dataSelect({flag:1},function(data){
+				// console.log(data);
+				$.each(data,function(index, el) {
+					var $proStr =$('<option value="'+el.id+'">'+el.province+'</option>') ;
+					$('#province').append($proStr);
+				});
+			});
+			//加载城市数据
+			$('#province').change(function() {
+				$('#city').html('<option value="">请选择城市...</option>');
+				$('#county').html('<option value="">请选择区县...</option>');
+				dataSelect({flag:2,pId:$('#province').val()},function(data){
+				// console.log(data);
+				$.each(data,function(index, el) {
+					var $proStr =$('<option value="'+el.id+'">'+el.city+'</option>') ;
+					$('#city').append($proStr);
+				});
+			});
+			});
+			//加载县级数据
+				$('#city').change(function() {
+				$('#county').html('<option value="">请选择区县...</option>');
+				dataSelect({flag:3,cId:$('#city').val()},function(data){
+				// console.log(data);
+				$.each(data,function(index, el) {
+					var $proStr =$('<option value="'+el.id+'">'+el.county+'</option>') ;
+					$('#county').append($proStr);
+				});
+			});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<select name="province" id="province">
+			<option value="">请选择省份...</option>
+		</select>
+		<select name="city" id="city">
+			<option value="">请选择城市...</option>
+		</select>
+		<select name="county" id="county">
+			<option value="">请选择区县...</option>
+		</select>
+	</div>
+</body>
+</html>
