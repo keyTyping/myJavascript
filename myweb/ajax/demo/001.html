@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax封装</title>
+    <script src="./ajax.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    window.onload =function () {
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var info1 = document.getElementById('info1');
+        var info2 = document.getElementById('info2');
+        btn1.onclick = function() {
+            ajax('get','./01-1.php',function(data){
+                var index = Math.floor(Math.random()*6);
+                console.log(index);
+                var arr = JSON.parse(data);
+                info1.innerHTML = arr[index];
+            });
+        }
+        btn2.onclick = function() {
+            ajax('get','./01-2.php',function(data){
+                info2.innerHTML = data;
+            });
+        }
+
+    }
+    </script>
+</head>
+
+<body>
+    <div id="info1"></div>
+    <input type="button" value="点击1" id="btn1">
+    <div id="info2"></div>
+    <input type="button" value="点击2" id="btn2">
+</body>
+
+</html>

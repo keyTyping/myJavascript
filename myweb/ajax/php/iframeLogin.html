@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+    <style media="screen">
+        iframe {
+            border: 0;
+            outline: 0;
+        }
+        input{
+            margin: 5px 10px;
+            padding-left: 3px;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+	<div>
+		<form action="./iframe.php" method="post" target="myframe">
+			用户名: <input type="text" name="username" > &nbsp;<span id="info"></span> <br>
+			密码: <input type="text" name="password" >
+			<input type="submit">
+		</form>
+	</div>
+    <iframe name="myframe" width="0" height="0"></iframe>
+</body>
+</html>

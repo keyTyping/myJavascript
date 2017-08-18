@@ -1,0 +1,60 @@
+/*清除浏览器默认样式*/
+/*所有标签和伪类 before after*/
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置盒模型为 边框模式*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*设置字体*/
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+/*清除列表默认样式*/
+ul,ol {
+    list-style: none;
+}
+/*清除a标签默认样式*/
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #333;
+}
+/*清除input默认样式*/
+input,textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    /*组件默认样式为空*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/**公共CSS部分 */
+.f_right {
+    float: right;
+}
+.f_left {
+    float: left;
+}
+/*清除浮动*/
+clearfix:after {
+    content: ".";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+clearfix{
+    *zoom: 1;
+}
