@@ -1,0 +1,7 @@
+/*主页样式设置*/
+.jd_layerout {
+    max-width: 650px;
+    min-width: 300px;
+    height: 1000px;
+    background-color: #ccc;
+}
