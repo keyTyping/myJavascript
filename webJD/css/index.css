@@ -8,7 +8,7 @@ body {
     min-width: 300px;
     margin: 0 auto;
     position: relative;
-    height: 1000px;
+    /*height: 1000px;*/
 }
 
 /*header begin*/
@@ -84,6 +84,10 @@ body {
 
 .jd_banner ul:nth-child(1) {
     width: 1000%; /*10个轮播图的宽度*/
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
     transform: translateX(-10%);
 }
 
@@ -120,7 +124,9 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
-
+.jd_banner ul:nth-child(2) li.now {
+    background-color: #fff;
+}
 .jd_banner ul:nth-child(2) li:first-child {
     /*margin-left: 0;*/
 }
@@ -191,6 +197,7 @@ body {
 }
 .jd_product_box .product_con{
     min-height: 100px;
+    width: 100%;
 }
 
 /*掌上秒杀*/
@@ -228,4 +235,56 @@ body {
 .sk_time span:nth-child(3n){
     background-color: #fff;
     color: #333;
+    width: 3px;
+}
+.sk_product{
+    width: 100%;
+    font-size: 12px;
+    padding:10px 0;
+}
+.sk_product li{
+    width: 33.33%;
+    float: left;
+}
+.sk_product li a{
+    width: 100%;
+    display: block;
+    border: 1px solid #e0e0e0;
+}
+.sk_product li a:last-child{
+    border-right:none;
+}
+.sk_product li a img{
+    width: 64%;
+    margin: 0 auto;
+    display: block;
+}
+.sk_product li p:nth-of-type(1) {
+    color: #f00;
+    padding-top:5px;
+    text-align: center;
+}
+.sk_product li p:nth-of-type(2) {
+    text-decoration: line-through;
+    padding-top:5px;
+    text-align: center;
+}
+
+/*商品图片*/
+.w_50 {
+    width: 50%;
+    display: block;
+}
+.w_50 img{
+    width: 100%;
+    display: block;
+}
+.b_right{
+    border-right: 1px solid #e0e0e0;
+}
+.b_left{
+    border-left: 1px solid #e0e0e0;
+}
+.b_bottom{
+    border-bottom: 1px solid #e0e0e0;
 }
