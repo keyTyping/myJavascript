@@ -58,3 +58,8 @@ input,textarea {
 .clearfix{
     *zoom: 1;
 }
+/*所有使用精灵图的class,以icon开始的所有class都有这些属性*/
+[class^="icon_"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size:200px 200px;
+}

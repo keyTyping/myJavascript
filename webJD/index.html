@@ -10,9 +10,95 @@
 </head>
 <body>
 <!--页面主体-->
-    <div class="jd_layerout">
-
+<div class="jd_layout">
+    <!--头部搜索-->
+    <header class="jd_header">
+        <div class="jd_header_box">
+            <a href="#" class="icon_logo"></a>
+            <form action="">
+                <span class="icon_search"></span>
+                <!--用form包裹,可以在移动端调用输入法的时候将小键盘的enter编程搜索按钮-->
+                <input type="search" name="" id="" placeholder="文字提示">
+            </form>
+            <a href="#" class="login">登录</a>
+        </div>
+    </header>
+    <!--轮播图-->
+    <div class="jd_banner">
+        <ul class="clearfix">
+            <li><a href="#"><img src="./images/l8.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l7.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l8.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/l1.jpg" alt=""></a></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
+    <!--导航栏-->
+    <nav class="jd_nav">
+        <ul class="clearfix">
+            <li><a href="#"><img src="./images/nav0.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav1.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav2.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav3.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav4.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav5.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav6.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./images/nav7.png" alt=""><p>分类查询</p></a></li>
+        </ul>
+    </nav>
+    <!--商品主体盒子        -->
+    <main class="jd_product">
+        <section class="jd_product_box">
+            <div class="product_tit no_border">
+                <div class="f_left">
+                    <span class="sk_icon"></span>
+                    <span class="sk_name">掌上秒杀</span>
+                    <div class="sk_time">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="f_right">
+                    <a href="#">更多</a>
+                </div>
+            </div>
+            <div class="product_con"></div>
+        </section>
+        <section class="jd_product_box">
+            <div class="product_tit"><h3>京东超市</h3></div>
+            <div class="product_con"></div>
+        </section>
+        <section class="jd_product_box">
+            <div class="product_tit"><h3>京东超市</h3></div>
+            <div class="product_con"></div>
+        </section>
+        <section class="jd_product_box">
+            <div class="product_tit"><h3>京东超市</h3></div>
+            <div class="product_con"></div>
+        </section>
+    </main>
+</div>
 <!--js文件的引用-->
 <script src="./js/index.js"></script>
 </body>
