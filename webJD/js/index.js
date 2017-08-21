@@ -91,7 +91,13 @@ function banner() {
         }
         removeTransition();
         setTranslate(-index*width);
-
+        // 圆点跟随的实现
+        // 1,清除所有圆点
+        for(var i=0;i<points.length;i++){
+            points[i].className = "";
+        }
+        // 2,给当前索引对应的位置加圆点
+        points[index-1].className="now";
     })
 
 }
