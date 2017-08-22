@@ -22,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webJD/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="139" column="14" lean-forward="true" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+            <state relative-caret-position="344">
+              <caret line="139" column="14" lean-forward="false" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -39,14 +39,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webJD/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1047">
-              <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+            <state relative-caret-position="184">
+              <caret line="124" column="22" lean-forward="true" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
               <folding>
                 <element signature="n#!!block;n#search#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webJD/category.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webJD/css/category.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding>
+                <marker date="1503424005395" expanded="true" signature="640:683" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="714:773" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="808:848" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="884:908" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="947:994" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="1036:1076" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="1122:1201" ph="{...}" />
+                <marker date="1503424005395" expanded="true" signature="1245:1311" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webJD/js/category.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/webJD/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -66,8 +105,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webJD/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+            <state relative-caret-position="1140">
+              <caret line="93" column="31" lean-forward="false" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
               <folding>
                 <element signature="e#528#655#0" expanded="false" />
                 <element signature="e#690#864#0" expanded="false" />
@@ -82,7 +121,7 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webJD/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="969">
               <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
               <folding />
             </state>
@@ -116,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JS特效/client/addEventListener第三个参数.html" />
         <option value="$PROJECT_DIR$/JS特效/client/事件阶段.html" />
         <option value="$PROJECT_DIR$/JS特效/client/添加事件的兼容方式.html" />
         <option value="$PROJECT_DIR$/JS特效/client/移除事件的兼容方式.html" />
@@ -167,6 +205,7 @@
         <option value="$PROJECT_DIR$/webJD/js/common.js" />
         <option value="$PROJECT_DIR$/webJD/index.html" />
         <option value="$PROJECT_DIR$/webJD/js/index.js" />
+        <option value="$PROJECT_DIR$/webJD/css/category.css" />
       </list>
     </option>
   </component>
@@ -190,7 +229,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/JQuery/day3/jquery-ui-1.12.1.custom/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="738" />
@@ -227,8 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,12 +282,14 @@
               <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
               <item name="webJD" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,19 +306,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\H5START\GitHub\myjavascript\webJD\js" />
+      <recent name="D:\H5START\GitHub\myjavascript\webJD\css" />
+      <recent name="D:\H5START\GitHub\myjavascript\webJD" />
+      <recent name="D:\H5START\GitHub\myjavascript\webJD\demo" />
+      <recent name="D:\H5START\GitHub\myjavascript\webJD\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\H5START\GitHub\myjavascript\JQuery\day1" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图\images" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效" />
       <recent name="D:\H5START\GitHub\myjavascript\" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\H5START\GitHub\myjavascript\webJD\demo" />
-      <recent name="D:\H5START\GitHub\myjavascript\webJD\images" />
-      <recent name="D:\H5START\GitHub\myjavascript\H5和CSS3\CSS3Day3" />
-      <recent name="D:\H5START\GitHub\myjavascript\H5和CSS3\CSS3Day2" />
-      <recent name="D:\H5START\GitHub\myjavascript\H5和CSS3\CSS3Day1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,11 +403,12 @@
       <workItem from="1502985228480" duration="342000" />
       <workItem from="1502985608210" duration="4532000" />
       <workItem from="1503156237567" duration="24354000" />
+      <workItem from="1503318019353" duration="3618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65692000" />
+    <option name="totallyTimeSpent" value="69310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,10 +420,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="0" width="683" height="738" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3977747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -432,27 +472,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JQuery/day2/jQuery018注意问题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JQuery/day2/jQuery022动态创建表格案例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="90" column="15" lean-forward="true" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JQuery/day2/jQuery024设置和获取表单元素的value.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-590">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JQuery/day2/jQuery025自定义属性.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -733,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webJD/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="969">
           <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding />
         </state>
@@ -743,14 +762,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webJD/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+        <state relative-caret-position="1140">
+          <caret line="93" column="31" lean-forward="false" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
           <folding>
             <element signature="e#528#655#0" expanded="false" />
             <element signature="e#690#864#0" expanded="false" />
@@ -764,7 +782,7 @@
     <entry file="file://$PROJECT_DIR$/webJD/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -773,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webJD/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="139" column="14" lean-forward="true" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+        <state relative-caret-position="344">
+          <caret line="139" column="14" lean-forward="false" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -791,11 +809,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webJD/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1047">
-          <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        <state relative-caret-position="184">
+          <caret line="124" column="22" lean-forward="true" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#search#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webJD/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webJD/css/category.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <marker date="1503424005395" expanded="true" signature="640:683" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="714:773" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="808:848" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="884:908" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="947:994" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="1036:1076" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="1122:1201" ph="{...}" />
+            <marker date="1503424005395" expanded="true" signature="1245:1311" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webJD/js/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
