@@ -31,23 +31,30 @@
     *       并且响应速度要比click快
     * */
     var div = document.querySelector('div');
-    itcast.tap(div,function(e){
-        console.log(e);
-    });
-    /*div.addEventListener('touchstart',function(e){
+//    itcast.tap(div,function(e){
+//        console.log(e);
+//    });
+    var startTime=0
+    div.addEventListener('touchstart',function(e){
         console.log('touchstart');
-        console.time('tap');/!*记录tap这个参数现在的时间*!/
+//        console.time('tap');/*记录tap这个参数现在的时间*/
+        startTime = new Date();
+//        console.log(startTime);
     });
     div.addEventListener('touchmove',function(e){
         console.log('touchmove');
     });
     div.addEventListener('touchend',function(e){
         console.log('touchend');
-        console.timeEnd('tap')/!*打印tap这个参数距离上一次记录的时候的时间*!/
+//        console.timeEnd('tap')/*打印tap这个参数距离上一次记录的时候的时间*/
     });
     div.addEventListener('click',function(e){
         console.log('click');
-    });*/
+//        console.timeEnd('tap')/*打印tap这个参数距离上一次记录的时候的时间*/
+        var endTime = new Date();
+        div.innerHTML= endTime - startTime;
+
+    });
 </script>
 </body>
 </html>

@@ -99,7 +99,7 @@ function leftSwipe(){
     /*绑定tap*/
     /*所有的li*/
     var lis = childBox.querySelectorAll('li');
-    itcast.tap(childBox,function(e){
+    common.tap(childBox,function(e){
         /*找到事件触发源 然后找到点击的那个li元素*/
         //console.log(e.target.parentNode);
         var li = e.target.parentNode;
