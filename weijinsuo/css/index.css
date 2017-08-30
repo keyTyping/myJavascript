@@ -36,19 +36,88 @@ a:hover{
             url(../fonts/MiFie-Web-Font.ttf) format("truetype"),
             url(../fonts/MiFie-Web-Font.woff) format("woff");
 }
-
-/*通过伪类来定义一个字体图标*/
 .wjs_icon{
-    font-family: wjs;
+    font-family:"wjs";
 }
-.wjs_icon_phone::before {
-    content: '\e908';
+/*通过伪类来定义一个字体图标*/
+.wjs_icon_phone::before{
+    content: "\e908";
 }
-.wjs_icon_tel::before {
-    content: '\e909';
+.wjs_icon_tel::before{
+    content: "\e909";
 }
-
-
+.wjs_icon_logo::before{
+    content: "\e920";
+}
+.wjs_icon_word::before{
+    content: "\e93e";
+}
+.wjs_icon_E903::before{
+    content: "\e903";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_E905::before{
+    content: "\e905";
+}
+.wjs_icon_E907::before{
+    content: "\e907";
+}
+.wjs_icon_E901::before{
+    content: "\e901";
+}
+.wjs_icon_E900::before{
+    content: "\e900";
+}
+.wjs_icon_E904::before{
+    content: "\e904";
+}
+.wjs_icon_E902::before{
+    content: "\e902";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_icon_new03::before{
+    content: "\e910";
+}
+.wjs_icon_new04::before{
+    content: "\e911";
+}
+.wjs_icon_partner01::before{
+    content:"\e946";
+}
+.wjs_icon_partner02::before{
+    content: "\e92f";
+}
+.wjs_icon_partner03::before{
+    content: "\e92e";
+}
+.wjs_icon_partner04::before{
+    content: "\e92a";
+}
+.wjs_icon_partner05::before{
+    content: "\e929";
+}
+.wjs_icon_partner06::before{
+    content: "\e931";
+}
+.wjs_icon_partner07::before{
+    content: "\e92c";
+}
+.wjs_icon_partner08::before{
+    content: "\e92b";
+}
+.wjs_icon_partner09::before{
+    content: "\e92d";
+}
 
 /**==========页面的CSS======**/
 /*顶部通栏*/
@@ -86,4 +155,45 @@ a:hover{
 }
 .wjs_header>.container>.row>div+div{
     border-left: 1px solid #ccc;
+}
+.wjs_header .wjs_reg{
+    /*margin: 7px 0;*/
+}
+.wjs_header .wjs_reg a {
+    font-size:12px;
+    line-height: 12px;
+}
+.wjs_header .wjs_reg .wjs_reg_btn {
+    display: inline-block;
+    width: 80px;
+    height: 26px;
+    background-color: #E92322;
+    color: #fff;
+    /*font-size: 12px;*/
+    vertical-align: middle;
+
+}
+.wjs_header .wjs_reg .wjs_login{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/*导航栏*/
+.wjs_nav {
+    height: 80px;
+    line-height: 50px;
+    padding-top: 15px;
+}
+.wjs_nav .navbar-brand span {
+    text-align: center;
+}
+.wjs_nav .navbar-brand span:first-of-type {
+    font-size: 50px;
+    color: #E92322;
+    vertical-align: middle;
+}
+.wjs_nav .navbar-brand span:last-of-type {
+    font-size: 36px;
+    color: #333;
+    vertical-align: middle;
 }
