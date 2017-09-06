@@ -1,8 +1,9 @@
 /**
  * Created by Administrator on 2017/6/22 0022.
  */
-    console.log("" && "ср╠ъ");
-    console.log(null && "ср╠ъ");
-    console.log(undefined && "ср╠ъ");
-    console.log("вС╠ъ" || "ср╠ъ");
-    console.log(null && "ср╠ъ");
+    console.log("" && "Е▐ЁХ╬╧");
+    console.log(null && "Е▐ЁХ╬╧");
+    console.log(undefined && "Е▐ЁХ╬╧");
+    console.log("Е╥╕Х╬╧" || "Е▐ЁХ╬╧");
+    console.log(null && "Е▐ЁХ╬╧");
+    
