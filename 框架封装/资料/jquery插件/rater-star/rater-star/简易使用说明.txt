@@ -1,0 +1,21 @@
+1.将jquery.rater.css、jquery.rater.js添加到项目中。
+2.将star.gif与star2.gif添加到项目中。
+3.在项目中需要用到评分控件的页面中添加以下3个引用：
+  1>jquery-1.4.*的引用。
+  2>jquery.rater.css、jquery.rater.js的引用
+  3>在需要用到评分控件的地方放置一个div标签并设置Id(如<div id="divRater"></div>)
+  4>在页面中增加脚本，如：
+<script type="text/javascript">
+        $(function () {
+            $("#raterDiv").rater(
+            { image: '../rater-star/imgs/star.gif', //设置图片的路径
+                max: 10,
+                value: 5,
+                enabled: true,
+                step: 0.5
+            });
+        });
+    </script>
+
+4.其他详细使用说明参考rater-star.zip中的说明。
+5.该插件的下载地址：http://raychou.com/labs/rater-star/

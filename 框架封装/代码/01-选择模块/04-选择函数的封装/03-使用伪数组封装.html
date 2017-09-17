@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+    </div>
+    <hr>
+    <input type="button" value="全选" id="selectAll">
+    <input type="button" value="全不选" id="noSelect">
+    <input type="button" value="反选" id="select">
+</body>
+<script>
+    function isArrayLike ( array ) {
+        
+        var length = array && array.length;
+
+        return typeof length === 'number' && length >= 0;
+
+    }
+    
+    function each ( array, callback ) {
+        var i, k;
+        if ( isArrayLike( array ) ) {
+            // 使用 for 循环
+            for ( i= 0; i < array.length; i++ ) {
+                if( callback.call( array[ i ], i, array[ i ] ) === false ) break;
+            }
+        } else {
+            // 使用 for-in 循环
+            for ( k in array ) {
+                if( callback.call( array[ i ], k , array[ k ] ) === false ) break;
+            }
+        }
+        return array; 
+    }
+
+
+     function itcast( selector ) {
+        var arr = { length: 0 };
+        // 获取元素
+        var list = document.querySelectorAll( selector );
+
+        // 将 list 中的元素加入到 arr 中
+        [].push.apply( arr, list );
+
+        // 增加方法
+        arr.each = function ( callback ) {
+            each( arr, callback );
+        };
+        return arr;
+    }
+
+
+    // 代码
+    itcast( '#selectAll' )[ 0 ].onclick = function () {
+        itcast( 'div > input' ).each(function () {
+            this.checked = true;
+        });
+    };
+    itcast( '#noSelect' )[ 0 ].onclick = function () {
+        itcast( 'div > input' ).each(function () {
+            this.checked = false;
+        });
+    };
+    itcast( '#select' )[ 0 ].onclick = function () {
+        itcast( 'div > input' ).each(function () {
+            this.checked = !this.checked;
+        });
+    };
+</script>
+</html>

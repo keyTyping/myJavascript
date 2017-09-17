@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./jquery-3.1.0.js"></script>
+    <!--<script src="./jquery.cookie.js"></script>-->
+</head>
+<body>
+    <input type="button" value="点击存储 cookie " id="btn1">   
+
+    <input type="button" value="点击获取 cookies " id="btn2"> 
+</body>
+<script>
+
+    $( '#btn1' ).click( function () {
+
+        $.cookie( 'itcast', '传智播客' );
+
+    }); 
+
+    $( '#btn2' ).click( function () {
+
+        alert( $.cookie( 'itcast' ) );
+    });
+
+</script>
+
+</html>

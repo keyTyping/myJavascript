@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="../jquery-3.1.0.js"></script>
+<script>
+    // 1, 两边都只有 一个元素
+    $( '<div>div</div>' ).appendTo( document.body );
+
+    // 2, 前面有两个以及两个以上的元素
+    $('电冰箱,彩电,计算机,手机,移动设备,眼镜'.split( ',' ).map( function ( v ) {
+        return '<div>' + v + '</div>';
+    }).join( '' )).appendTo( document.body );
+
+
+    // 3, 右边如果有多个元素
+    // 创建 一个 p 标签, 加到 div 中
+    var $dv1 = $( '<p style="width: 100px; height: 40px; border: 1px dashed blue;"></p>' )
+    var $dv2 = $dv1.appendTo( 'div' ) // 选择器
+
+    // 4, 如果左边的是 多个元素, 右边的也是多个元素?
+    
+</script>
+</html>

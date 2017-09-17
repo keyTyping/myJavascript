@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>div</div>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+</body>
+<script>
+    // 需求
+    // 在页面中, 将 div 元素 与 span 取出来, 然后增加边框样式
+    var div_list = document.getElementsByTagName( 'div' );
+    var span_list = document.getElementsByTagName( 'span' );
+
+    
+    // 利用循环增加样式
+    for ( var i = 0; i < div_list.length; i++ ) {
+        div_list[ i ].style.border = '1px dashed red';
+    }
+            
+    for ( var i = 0; i < span_list.length; i++ ) {
+        span_list[ i ].style.border = '1px dashed blue';
+    }       
+    
+</script>
+</html>

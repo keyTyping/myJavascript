@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var data = [
+        { name: 'jim1', age: 19, gender: 'male' },
+        { name: 'jim2', age: 18, gender: 'female' },
+        { name: 'jim3', age: 20, gender: 'female' },
+        { name: 'jim4', age: 21, gender: 'male' },
+        { name: 'jim5', age: 19, gender: 'female' },
+        { name: 'jim6', age: 18, gender: 'male' }
+    ];
+
+    function cTag ( tagName ) {
+        return document.createElement( tagName );
+    }
+
+    function isArrayLike ( array ) {
+        
+        var length = array && array.length;
+
+        return typeof length === 'number' && length >= 0;
+
+    }
+    
+    function each ( array, callback ) {
+        var i, k;
+        if ( isArrayLike( array ) ) {
+            // 使用 for 循环
+            for ( i= 0; i < array.length; i++ ) {
+                if( callback.call( array[ i ], i, array[ i ] ) === false ) break;
+            }
+        } else {
+            // 使用 for-in 循环
+            for ( k in array ) {
+                if( callback.call( array[ i ], k , array[ k ] ) === false ) break;
+            }
+        }
+        return array; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var table = cTag( 'table' );
+    var tbody = cTag( 'tbody' );
+    // 注意, jq 中的 each 方法中 回调函数的 参数是 k, v 的形式
+    each( data, function ( k, v ) {
+        // 根据 v 生成 tr
+        var tr = cTag( 'tr' );
+        // 遍历 v 生成 td
+        each( v, function ( key, value ) {
+            var td = cTag( 'td' );
+            var txt = document.createTextNode( value + '' );
+            td.appendChild( txt );
+            tr.appendChild( td );
+        });
+        tbody.appendChild( tr );
+    });
+    table.appendChild( tbody );
+    // 设置, 并将 table 加到 body
+    table.border = '1';
+    table.width = '80%';
+    document.body.appendChild( table );
+
+</script> 
+</html>

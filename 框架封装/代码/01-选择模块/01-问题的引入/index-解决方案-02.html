@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>div</div>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+</body>
+<script>
+   
+    function select ( selector ) {
+        return document.querySelectorAll( selector );
+    }
+
+
+    
+
+    var array = [];
+
+    array.push.apply( array, select( 'div, span' ));
+    
+    array.forEach(function ( v, i ) {
+        v.style.border = '2px dashed red';
+    });
+    
+</script>
+</html>

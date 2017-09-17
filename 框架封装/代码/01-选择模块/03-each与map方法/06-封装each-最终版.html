@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+<script>
+    function isArrayLike ( array ) {
+        
+        var length = array && array.length;
+
+        return typeof length === 'number' && length >= 0;
+
+    }
+    
+    function each ( array, callback ) {
+        var i, k;
+        if ( isArrayLike( array ) ) {
+            // 使用 for 循环
+            for ( i= 0; i < array.length; i++ ) {
+                if( callback.call( array[ i ], i, array[ i ] ) === false ) break;
+            }
+        } else {
+            // 使用 for-in 循环
+            for ( k in array ) {
+                if( callback.call( array[ i ], k , array[ k ] ) === false ) break;
+            }
+        }
+        return array; 
+    }
+
+
+    var list = document.getElementsByTagName( 'div' );
+    each( list, function () {
+        this.style.border = '1px dashed red';
+        this.style.width = '300px';
+        this.style.height = '100px';
+        this.style.margin = '10px 0px';
+
+        return false;
+    });
+
+
+</script>
+</html>

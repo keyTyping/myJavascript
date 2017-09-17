@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>div</div>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+</body>
+<script>
+    // 如果两个元素合到一起, 组成一个数组, 那么就可以减少一个遍历
+
+    // function t ( tagName, dom ) {
+    //     dom = dom || document;
+    //     // || 语法含义是如果左边的数据为真, 那么整个表达式的值就是左边的数据
+    //     // 如果左边的表达式为 假, 那么整个表达式的值就是右边的数据
+    //     return dom.getElementsByTagName( tagName );
+    // }
+
+    // var array = [];
+
+    // var div_list = t( 'div' );
+    // array.push.apply( array, div_list );
+    
+    // var span_list = t( 'span' );
+    // array.push.apply( array, span_list );
+
+
+    // document.querySelectorAll( selector )
+    // 它支持 CSS3 的选择器
+    function select ( selector ) {
+        return document.querySelectorAll( selector );
+    }
+
+
+    var array = select( 'div, span' );
+    
+    // 利用循环增加样式
+    for ( var i = 0; i < array.length; i++ ) {
+        array[ i ].style.border = '1px dashed blue';
+    }  
+    
+</script>
+</html>

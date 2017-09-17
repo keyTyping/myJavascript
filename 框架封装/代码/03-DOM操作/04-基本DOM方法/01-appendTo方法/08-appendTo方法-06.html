@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            /* height: 100px; */
+            margin: 10px 0;
+            border: 1px dashed blue;
+        } 
+        p {
+            border: 1px dotted red;
+            margin: 5px;
+            padding: 0;
+        }
+    </style>
+</head>
+<script src="./js/Itcast.core.js"></script>
+<script src="./js/Itcast.dom.js"></script>
+<script src="./js/Itcast.ctor-2.js"></script>
+<script>
+
+
+    var arr = [],
+        push = arr.push;
+
+    // 增加 end 方法
+    Itcast.fn.end = function () {
+        return this.prevObj || this;
+    };
+    // 链破坏操作封装成 方法
+    Itcast.fn.pushStack = function ( newObj ) {
+        newObj.prevObj = this;
+        return newObj;
+    } 
+
+
+    Itcast.fn.appendTo = function ( selector ) {
+        var iObj = Itcast( selector ),
+            // 准备一个空的新的 Itcast 对象( 容器 )
+            iNewObj = Itcast(),
+            tmp, // 存储临时的数据
+            rest = [],
+            len = iObj.length,
+            i;
+
+        this.each(function () {
+            
+            for ( i = 0; i < len; i++ ) {
+                tmp =i == len - 1 ? this : this.cloneNode( true );
+                iObj[ i ].appendChild( tmp );
+                rest.push( tmp );
+            }
+
+        }); 
+
+        push.apply( iNewObj, rest );
+
+
+        return this.pushStack( iNewObj );
+    };
+
+
+
+</script>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+<script>
+    // 1. 加入传入的是 一个 dom 元素
+    var i1 = I( '<p>p1</p>' )
+    var i12 = i1.appendTo( I( 'div' ).get( 1 ) );
+
+    // 2, 传入的是一个选择器
+    var i2 = I( '<p>p2</p>' )
+    var i22 = i2.appendTo( 'div' );
+
+    // 3, 传入的也是一个 Itcast 对象
+    // 在 p 标签中放置 span 标签 
+    var i3 = I( '<span style="color: red; font-size: 50px;">span</span>' )
+    var i32 = i3.appendTo( I( 'p' ) );
+
+    
+</script>
+</html>

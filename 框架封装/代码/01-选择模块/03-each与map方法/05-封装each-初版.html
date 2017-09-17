@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+<script>
+    function isArrayLike ( array ) {
+        
+        var length = array && array.length;
+
+        return typeof length === 'number' && length >= 0;
+
+    }
+    
+    function each ( array, callback ) {
+        if ( isArrayLike( array ) ) {
+            // 使用 for 循环
+            for ( var i= 0; i < array.length; i++ ) {
+                callback( i, array[ i ] );
+            }
+        } else {
+            // 使用 for-in 循环
+            for ( var k in array ) {
+                callback( k , array[ k ] );
+            }
+        }
+    }
+
+    var arr = 'a,b,c,d,e,f,g'.split( ',' );
+    each( arr, function ( i, v ) {
+        console.log( i + ', ' + v );
+    });
+
+
+    var o = { name: 'jim', age: 19, gender: 'male' };
+    each( o, function ( k, v ) {
+        console.log( k + ', ' + v );
+    });
+
+    var list = document.getElementsByTagName( 'div' );
+    each( list, function ( i, v ) {
+        v.style.border = '1px dashed red';
+        v.style.width = '300px';
+        v.style.height = '100px';
+        v.style.margin = '10px 0px';
+    });
+
+
+</script>
+</html>

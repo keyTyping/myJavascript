@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Person(name,age,gender ) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    var p1 = new Person("Jim");
+    console.log(p1);
+    var o = {};
+    Person.call(o, 'tom');  //实现继承
+
+    function Student(name,age,gender,chinese,math,english) {
+        Person.call(this, name, age, gender);  //继承
+        this.chinese = chinese;
+        this.math = math;
+        this.english = english;
+    }
+    Student.prototype.sayHello = function () {
+        console.log("你好,我是" + this.name);
+    }
+    var s = new Student("张三", 16, "男", 80, 87, 20);
+</script>
+</body>
+</html>

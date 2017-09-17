@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+<script src="./Itcast.js"></script>
+<script>
+    var $dvs = I( 'div' );
+
+    // 1, 无参数的 get 方法
+    var array1 = $dvs.get();
+
+    // 2, 带有一个数字参数
+    var item1 = $dvs.get( 2 );  // div3
+
+    // 3, 带有一个超出索引范围的参数
+    var item2 = $dvs.get( 3 );  // div4
+
+    // 4, 带有一个 负数 参数
+    var item3 = $dvs.get( -1 ); // div4
+
+    // 5, 带有一个超出索引范围的 负数 参数
+    var item4 = $dvs.get( -2 ); // div3
+    var item5 = $dvs.get( -4 ); // div1 
+</script>
+</html>

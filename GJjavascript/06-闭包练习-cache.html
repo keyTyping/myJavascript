@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cache</title>
+</head>
+<body>
+    <span>span</span>
+    <div>div</div>
+    <b>b</b>
+    <h3>h3</h3>
+    <h2>h2</h2>
+    <span>span</span>
+    <div>div</div>
+    <b>b</b>
+    <h3>h3</h3>
+    <h2>h2</h2>
+    <span>span</span>
+    <div>div</div>
+    <b>b</b>
+    <h3>h3</h3>
+    <h2>h2</h2>
+    <span>span</span>
+    <div>div</div>
+    <b>b</b>
+    <h3>h3</h3>
+    <h2>h2</h2>
+<script>
+    var length = 3;
+    var $ =(function () {
+          var cache = {};
+          var cacheKey=[];
+          return function (str) {
+              var nodeList;
+              if (cache[str]) {
+                  nodeList = cache[str];
+              }else {
+                  nodeList =[].slice.call(document.querySelectorAll( str ));
+                  if (cacheKey.length >= length) {
+                      var key = cacheKey.shift();
+                      delete cache[key];
+                  }
+                  cacheKey.push(str);
+                  cache[str] = nodeList;
+              }
+              return nodeList;
+          }
+      })();
+
+      $("div").forEach(function (k) {
+          k.style.border = "1px solid red";
+      });
+      $("span").forEach(function (k) {
+          k.style.border = "1px dashed red";
+      });
+      $("b").forEach(function (k) {
+          k.style.backgroundColor = "#f40";
+      });
+      $("h3").forEach(function (k) {
+          k.style.color = "green";
+      });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../../资料/jquery/jquery-3.1.0/jquery-3.1.0.js"></script>
+    <script src="./jquery.storage.js"></script>
+    <script>
+        
+
+        // jQuery.storage = function ( key, value ) {
+        //     if (  value === undefined  ) {
+        //         // 要取数据
+        //         return window.localStorage[ key ];
+        //     } else {
+        //         // 要存数据
+        //         window.localStorage[ key ] = value;
+        //     }
+
+        // }
+
+        // jQuery.storage.clear = function () {
+        //     window.localStorage.clear();
+        // }
+
+
+
+    </script>
+</head>
+<body>
+    key: <input type="text" id="k"><br>
+    value: <input type="text" id="v"><br>
+    <input type="button" value="存储数据" id="btn">
+    <input type="button" value="清除数据" id="btnClear">
+</body>
+<script>
+    var key = 'itcast';
+    $( function () {
+
+        var value = $.storage( key )
+        if ( value ) {
+            $( '#k' ).val( key );
+            $( '#v' ).val( value );
+        }
+
+        $( '#btn' ).click( function () {
+
+            $.storage( key, $( '#v' ).val() );
+
+        });
+
+
+        $( '#btnClear' ).click( function () {
+
+            $.storage.clear();
+
+        })
+
+
+
+    })
+
+</script>
+</html>

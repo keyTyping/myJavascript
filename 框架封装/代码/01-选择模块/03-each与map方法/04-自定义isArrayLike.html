@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function isArrayLike ( array ) {
+        
+        var length = array && array.length;
+
+        return typeof length === 'number' && length >= 0;
+
+    }
+
+    console.log( isArrayLike() );                       // => false
+    console.log( isArrayLike( 123 ) );                  // => false
+    console.log( isArrayLike( "abc" ) );                // => true
+    console.log( isArrayLike( [ 1,2,3 ] ) );            // => true
+    console.log( isArrayLike( { name: 'jim' } ) );      // => false
+    console.log( isArrayLike( { length: 0 } ) );        // => true
+</script>
+</html>

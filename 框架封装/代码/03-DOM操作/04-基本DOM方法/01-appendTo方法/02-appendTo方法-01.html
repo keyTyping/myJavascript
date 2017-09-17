@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script src="./js/Itcast.core.js"></script>
+<script src="./js/Itcast.dom.js"></script>
+<script src="./js/Itcast.ctor.js"></script>
+<script>
+    // 在这里写代码
+    // appendTo 方法, 是实例方法
+    // 所以应该使用 Itcast.fn.xxx = vvv
+    // 或
+    // Itcast.fn.extend({ appendTo: function () { ... } })
+
+    // 1, 假定两边都是单个元素, 并且 参数为 DOM 元素
+    Itcast.fn.appendTo = function ( dom ) {
+        // 将 this 中的元素加到 dom 中
+        dom.appendChild( this[ 0 ] );
+
+        // 为了实现链式编程, 返回 this
+        return this; 
+    };
+
+
+
+</script>
+<body>
+    
+</body>
+<script>
+    I( '<div style="border: 1px dashed blue; padding: 10px">div</div>' )
+        .appendTo( document.body );
+</script>
+</html>

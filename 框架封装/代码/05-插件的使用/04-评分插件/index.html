@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../../资料/jquery/jquery-3.1.0/jquery-3.1.0.js"></script>
+    <style>
+        * {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+<script>
+    // $( 'div' ).html( '<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>' )
+    // $( 'div span' ).css({
+    //     cursor: 'pointer'
+    // });
+    // var i = 0;
+    // $( 'div span' ).each(function () {
+    //     this.title = i++;
+    // });
+    // var isClick;
+    // $( 'div span' ).hover(function () {
+    //     if ( isClick ) return;
+    //     $( this ).text( '★' ).prevAll().text( '★' ).end().nextAll().text( '☆' );
+    // }, function () {
+    //     if ( isClick ) return;
+    //     $( this ).text( '☆' ).siblings().text( '☆' );
+    // }).click( function () {
+    //     if ( isClick ) return;
+    //     isClick = this;
+    //     (function () {
+    //         alert( isClick.title );
+    //     })();
+    // });
+
+
+    jQuery.fn.rater = function ( options ) {
+        // max: 几颗星星
+        // after_click: 点击后触发事件, 参数, 记录分数
+        var max = options && options.max || 5;
+        var func = options && options.after_click;
+
+        var  innerHTMLString = '';
+        for ( var i = 0; i < max; i++ ) {
+            innerHTMLString += '<span title="'+ i +'">☆</span>';
+        }
+
+        this.html( innerHTMLString );
+        var i = 0;
+        // var isClick;
+        $( 'span', this ).css({
+            cursor: 'pointer'
+        }).each(function () {
+            // this.title = i++;
+        }).hover(function () {
+            if ( $( this ).parent().attr( 'isClick') ) return;
+            $( this ).text( '★' ).prevAll().text( '★' ).end().nextAll().text( '☆' );
+        }, function () {
+            if ( $( this ).parent().attr( 'isClick') ) return;
+            $( this ).text( '☆' ).siblings().text( '☆' );
+        }).click( function () {
+            if ( $( this ).parent().attr( 'isClick') ) return;
+            // isClick = this;
+
+            $( this ).parent().attr( 'isClick', this.title - 0 + 1 );
+
+            if ( typeof func == 'function' ) {
+                func( $( this ).parent().attr( 'isClick')  - 0 );
+            }
+        });
+
+    }
+
+
+
+    $( 'div' ).rater({
+        max: 10,
+        after_click: function ( value ) {
+            alert( value );
+        }
+    });
+</script>
+</html>

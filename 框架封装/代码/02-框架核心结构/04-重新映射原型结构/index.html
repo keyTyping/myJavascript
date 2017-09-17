@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>div</div>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <p>pppp</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+</body>
+<script>
+
+var I = 
+
+(function () {
+
+function isArrayLike ( array ) {
+    
+    var length = array && array.length;
+
+    return typeof length === 'number' && length >= 0;
+
+}
+function each ( array, callback ) {
+    var i, k;
+    if ( isArrayLike( array ) ) {
+        // 使用 for 循环
+        for ( i= 0; i < array.length; i++ ) {
+            if( callback.call( array[ i ], i, array[ i ] ) === false ) break;
+        }
+    } else {
+        // 使用 for-in 循环
+        for ( k in array ) {
+            if( callback.call( array[ i ], k , array[ k ] ) === false ) break;
+        }
+    }
+    return array; 
+}
+function map ( array, callback ) {
+    var i, k,
+        res = [],
+        tmp;
+    if ( isArrayLike( array ) ) {
+        // 使用 for 循环
+        for ( i= 0; i < array.length; i++ ) {
+            tmp = callback( array[ i ], i );
+            if ( tmp !== undefined ) {
+                res.push( tmp );
+            }
+        }
+    } else {
+        // 使用 for-in 循环
+        for ( k in array ) {
+            tmp = callback( array[ k ], k );
+            if ( tmp !== undefined ) {
+                res.push( tmp );
+            }
+        }
+    }
+    return res; 
+}
+function select( selector ) {
+    return document.querySelectorAll( selector );
+}
+
+/** 构造函数 */
+function Itcast( selector ) {
+    // 初始化 this 是伪数组
+    var list = select( selector );
+    [].push.apply( this, list ); // 将 list 中的每一个元素 一一 的加到 this 中, 并且会自增 length 属性
+    return this;
+}
+/** 对外公开的方法 */
+function I( selector ) {
+    return I.fn.Itcast( selector );
+}
+/** 重新映射原型结构 */
+I.fn = I.prototype = {
+    Itcast: Itcast,
+    each: function ( callback ) {
+        // 将 this 作为数组, 遍历数组, 使用 callback 处理数组的每一个元素
+        each( this, callback );
+    },
+    map: function( callback ) {
+        map( this, callback );
+    }
+};
+
+I.fn.Itcast.prototype = I.fn;
+
+
+return I;
+
+})();
+
+
+I.fn.method = '我是一个自定义的方法, 并且在闭包外被扩展';
+
+
+
+
+
+    var obj = I( 'div, span' );
+    obj.each(function () {
+        this.style.border = '1px dashed green';
+    });
+
+    console.log( obj.method );
+</script>
+</html>

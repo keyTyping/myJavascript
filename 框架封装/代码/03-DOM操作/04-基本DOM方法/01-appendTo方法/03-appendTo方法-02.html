@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script src="./js/Itcast.core.js"></script>
+<script src="./js/Itcast.dom.js"></script>
+<script src="./js/Itcast.ctor.js"></script>
+<script>
+    // 1, 假定左边是多个元素, 右边还是单个 DOM 参数
+    // Itcast.fn.appendTo = function ( dom ) {
+    //     // 需要使用循环
+    //     for ( var i = 0; i < this.length; i++ ) {
+    //         dom.appendChild( this.get( i ) );
+    //     }
+
+    //     return this; 
+    // };
+
+
+    // 第二种算法
+    Itcast.fn.appendTo = function ( dom ) {
+        // 任务就是将 this 遍历, 然后将每一个元素加到 dom 中
+        // 然后返回 this
+
+        return this.each(function () {
+            // 函数里面的 this 表示每一个 DOM 元素
+            dom.appendChild( this );
+        }); 
+    };
+
+
+
+</script>
+<body>
+    
+</body>
+<script>
+    I( '<div style="border: 1px dashed blue; padding: 10px; width: 200px;">div</div>' +
+       '<div style="border: 1px dashed red; padding: 10px; width: 200px;">div</div>' +
+       '<div style="border: 1px dashed green; padding: 10px; width: 200px;">div</div>' + 
+       '<div style="border: 1px dashed pink; padding: 10px; width: 200px;">div</div>' )
+        .appendTo( document.body );
+</script>
+</html>

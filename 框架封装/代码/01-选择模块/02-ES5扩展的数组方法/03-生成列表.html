@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .float {
+            float: left;
+            margin-left: 30px;
+            border: 1px dashed pink;
+        }
+        .clear {
+            clear: both;
+        }
+
+        .even {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!--传统的处理办法-->
+    <div id="dv1" class="float"></div>
+
+    <!-- forEach 实现 -->
+    <div id="dv2" class="float"></div>
+
+    <!-- 另一种 实现 -->
+    <div id="dv3" class="float"></div>
+
+    <!-- map 实现 -->
+    <div id="dv4" class="float"></div>
+
+
+    <div class="clear"></div>
+</body>
+<script>
+    // 假设有一个数据
+    // 要求利用该数据生成一个 ul-li 的数据列表
+    var list = "HTML基础,CSS基础,JavaScript基础,DOM基础,HTML5和CSS3,JavaScript高级".split( ',' );
+
+    // 传统处理办法
+    
+    // 1, 创建元素
+    (function () {
+        var ul = document.createElement( 'ul' );
+        // 2, 根据数据创建 li 等子元素
+        // 3, 加入元素
+        for ( var i = 0; i < list.length; i++ ) {
+            var li = document.createElement( 'li' );
+            li.innerHTML = list[ i ];
+            ul.appendChild( li ); 
+        }
+        // 4. 加入到 DOM 树中
+        document.getElementById( 'dv1' ).appendChild( ul );
+    })();
+
+
+    // 使用 forEach 代替 for 循环
+    (function () {
+        var ul = document.createElement( 'ul' );
+        // 2, 根据数据创建 li 等子元素
+        // 3, 加入元素
+        list.forEach( function ( v ) {
+            var li = document.createElement( 'li' );
+            li.innerHTML = v;
+            ul.appendChild( li );
+        });
+        // 4. 加入到 DOM 树中
+        document.getElementById( 'dv2' ).appendChild( ul );
+    })();
+
+
+    // 使用拼接字符串的方式处理 ( forEach 方法 )
+    (function () {
+        var lis = [];
+
+        list.forEach(function ( v ) {
+            lis.push( '<li>' + v + '</li>' );
+        });
+
+        document.getElementById( 'dv3' ).innerHTML = 
+            '<ul>' + 
+             lis.join( '' ) + 
+             '</ul>';
+
+    })();
+
+
+    // map 实现办法
+    (function () {
+
+        document.getElementById( 'dv4' ).innerHTML = 
+            '<ul>' + list.map(function ( v, i ) {
+                return '<li ' + ( i % 2 == 1 ? 'class="even"' : '' ) + '>' + v + '</li>';
+            }).join( '' ) + '</ul>';
+
+
+    })();
+
+</script>
+</html>

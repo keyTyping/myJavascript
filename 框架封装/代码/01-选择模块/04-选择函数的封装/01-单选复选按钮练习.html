@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+        <input type="checkbox"> 测试数据<br>
+    </div>
+    <hr>
+    <input type="button" value="全选" id="selectAll">
+    <input type="button" value="全不选" id="noSelect">
+    <input type="button" value="反选" id="select">
+</body>
+<script src="./jquery-3.1.0.js"></script>
+<script>
+    // 全选
+    $( '#selectAll' ).click(function () {
+        $( 'div > input' ).each(function () {
+            this.checked = true;
+        })
+    });
+
+    // 全不选
+    $( '#noSelect' ).click(function () {
+        $( 'div > input' ).each(function () {
+            this.checked = false;
+        })
+    });
+
+    // 反选
+    $( '#select' ).click(function () {
+        $( 'div > input' ).each(function () {
+            this.checked = !this.checked;
+        })
+    });
+
+</script>
+
+</html>
