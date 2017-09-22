@@ -18,22 +18,40 @@
     <favorites_list name="myjavascript" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="借用构造函数实现继承.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GJjavascript/借用构造函数实现继承.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LKpower.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#423#474#0" expanded="false" />
+                <element signature="e#509#559#0" expanded="false" />
+                <element signature="e#712#823#0" expanded="false" />
+                <element signature="e#862#1303#0" expanded="false" />
+                <element signature="e#1341#1948#0" expanded="false" />
+                <element signature="e#1981#2042#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LKjsTest.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKjsTest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="01-选择模块.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架封装/myCode/01-选择模块.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,9 +63,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -66,14 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JQuery/01体验jQuery.html" />
-        <option value="$PROJECT_DIR$/JQuery/06网页的开关灯效果.html" />
-        <option value="$PROJECT_DIR$/JQuery/08ID选择器案例.html" />
-        <option value="$PROJECT_DIR$/JQuery/09标签选择器案例.html" />
-        <option value="$PROJECT_DIR$/JQuery/jQuery011标签+类选择器.html" />
-        <option value="$PROJECT_DIR$/JQuery/012多条件选择器.html" />
-        <option value="$PROJECT_DIR$/JQuery/013几个常见的方法.html" />
-        <option value="$PROJECT_DIR$/JQuery/jQuery015层次选择器案例.html" />
         <option value="$PROJECT_DIR$/JQuery/jQuery016下拉菜单的案例/07下拉菜单练习.html" />
         <option value="$PROJECT_DIR$/JQuery/jQuery019精品展示案例/淘宝精品服饰案例.html" />
         <option value="$PROJECT_DIR$/JQuery/jQuery021好友面板切换案例.html" />
@@ -117,6 +127,14 @@
         <option value="$PROJECT_DIR$/GJjavascript/06-闭包练习-cache.html" />
         <option value="$PROJECT_DIR$/GJjavascript/借用构造函数实现继承.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/01-选择模块.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/common.js" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/02-map的使用.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/03-封装自己的each和map.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/lib.js" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/testLib.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/LKjsTest.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/LKpower.js" />
       </list>
     </option>
   </component>
@@ -136,6 +154,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/框架封装/代码/gulptest/node_modules" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/JQuery/day3/jquery-ui-1.12.1.custom/package.json" />
@@ -178,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,12 +215,63 @@
               <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
               <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="笔记" type="462c0819:PsiDirectoryNode" />
+              <item name="myCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="代码" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="代码" type="462c0819:PsiDirectoryNode" />
+              <item name="02-框架核心结构" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="代码" type="462c0819:PsiDirectoryNode" />
+              <item name="02-框架核心结构" type="462c0819:PsiDirectoryNode" />
+              <item name="06-简单抽取框架的核心结构" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="代码" type="462c0819:PsiDirectoryNode" />
+              <item name="02-框架核心结构" type="462c0819:PsiDirectoryNode" />
+              <item name="07-简单优化" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="资料" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="资料" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
+              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
+              <item name="资料" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery-3.1.0" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -218,19 +289,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\H5START\GitHub\myjavascript\框架封装" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\demo" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\lessonDemo" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\H5START\GitHub\myjavascript\JQuery\day1" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图\images" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效" />
       <recent name="D:\H5START\GitHub\myjavascript\" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\H5START\GitHub\myjavascript\框架封装\myCode" />
+      <recent name="D:\H5START\GitHub\myjavascript\框架封装" />
+      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\demo" />
+      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\lessonDemo" />
+      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -328,11 +399,15 @@
       <workItem from="1504285703796" duration="1199000" />
       <workItem from="1504957147185" duration="3009000" />
       <workItem from="1505559079186" duration="9702000" />
+      <workItem from="1505747839030" duration="3029000" />
+      <workItem from="1505918767185" duration="4690000" />
+      <workItem from="1506010516368" duration="1699000" />
+      <workItem from="1506094165782" duration="4067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109630000" />
+    <option name="totallyTimeSpent" value="123115000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,15 +422,15 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24181548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23065476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -391,85 +466,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DOM/动态创建列表.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/动态创建文本框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/节点插入移除和克隆.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/demo/01流式布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/images/sprites.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/images/l1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/images/nav2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/images/nav1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/images/nav0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/demo/06.touch事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/js/swipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/demo/09.封装tap事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webJD/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
@@ -677,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-99">
           <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,15 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GJjavascript/借用构造函数实现继承.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +734,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GJjavascript/借用构造函数实现继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/02-map的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/01-选择模块/03-each与map方法/05-封装each-初版.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/01-选择模块/03-each与map方法/06-封装each-最终版.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc;n#isArrayLike#0" expanded="false" />
+            <element signature="n#!!block;n#isArrayLike#0" expanded="false" />
+            <element signature="n#!!doc;n#each#0" expanded="false" />
+            <element signature="n#!!block;n#each#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/01-选择模块/04-选择函数的封装/03-使用伪数组封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#673#793#0" expanded="false" />
+            <element signature="e#837#1279#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/testLib.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/03-封装自己的each和map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/01-选择模块.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/02-框架核心结构/06-简单抽取框架的核心结构/Itcast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#522#623#0" expanded="false" />
+            <element signature="e#658#1044#0" expanded="false" />
+            <element signature="e#1078#1598#0" expanded="false" />
+            <element signature="e#1627#1680#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKjsTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#423#474#0" expanded="false" />
+            <element signature="e#509#559#0" expanded="false" />
+            <element signature="e#712#823#0" expanded="false" />
+            <element signature="e#862#1303#0" expanded="false" />
+            <element signature="e#1341#1948#0" expanded="false" />
+            <element signature="e#1981#2042#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

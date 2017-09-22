@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+    <input type="checkbox"> 测试数据<br>
+</div>
+<hr>
+<input type="button" value="全选" id="selectAll">
+<input type="button" value="全不选" id="noSelect">
+<input type="button" value="反选" id="select">
+</body>
+<script src="lib.js"></script>
+<script>
+    lkpower("#selectAll")[0].onclick = function () {
+        lkpower("div>input").each(function () {
+           this.checked = true;
+        });
+    }
+
+    lkpower("#noSelect")[0].onclick = function () {
+        lkpower("div>input").each(function () {
+            this.checked = false;
+        });
+    }
+    lkpower("#select")[0].onclick = function () {
+        lkpower("div>input").each(function () {
+            this.checked = !this.checked;
+        });
+    }
+</script>
+</html>

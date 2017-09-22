@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+    <span>span</span>
+    <div>div</div>
+    <p>p</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+</body>
+    <script>
+       /* function t(selector, dom) {
+            dom=dom||document;
+            return dom.querySelectorAll(selector)
+        }
+        var array = [];
+        var div_list = document.getElementsByTagName("div");
+        array.push.apply(array, div_list);
+        var span_list = document.getElementsByTagName("span");
+        array.push.apply(array, span_list);*/
+
+       function selector(sel) {
+           return document.querySelectorAll(sel);
+       }
+
+       var array = [];
+       array.push.apply(array, selector("span,div"));
+
+       array.forEach( function (v, k) {
+           v.style.border = '1px dashed red';
+
+       })
+    </script>
+</html>

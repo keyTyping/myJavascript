@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<script>
+    function isArrayLike(array) {
+        var length = array && array.length;  //判断是否有参数传进来
+        return typeof length === 'number' && length >= 0;
+    }
+
+/*
+    console.log(isArrayLike());
+    console.log(isArrayLike(123));
+    console.log(isArrayLike("abc"));
+    console.log(isArrayLike([1,2,3]));
+    console.log(isArrayLike({name:"jim"}));
+    console.log(isArrayLike({length:0}));
+*/
+function each(array, callback) {
+    var i,k;
+    if (isArrayLike(array)) {
+        for( i = 0; i<array.length;i++){
+            if (callback.call(array[i], array[i], i)=== false) break;
+        }
+    }else{
+        for( k in array){
+            if (callback.call(array[k], array[k], k)===false)break ;
+        }
+    }
+    return array;
+}
+    var divList = document.querySelectorAll("div");
+/*    var arr1 = [1, 2, 3, 5];
+    each(arr1,function (v, i) {
+       console.log(i+':'+v);
+    });*/
+    each(divList,function (v, i) {
+        this.style.border = '2px solid green';
+        this.style.width = '200px';
+        this.style.height = '100px';
+        this.style.margin = '10px auto';
+    });
+</script>
+</body>
+</html>

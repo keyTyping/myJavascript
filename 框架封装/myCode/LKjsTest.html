@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>div</div>
+    <span>span</span>
+    <p>p</p>
+    <span>span</span>
+    <div>div</div>
+    <p>p</p>
+    <span>span</span>
+    <span>span</span>
+    <div>div</div>
+
+    <script src="LKpower.js"></script>
+    <script>
+        var obj123 = LK('div,span');
+        obj123.each(function () {
+            this.style.border = '1px dashed blue';
+        });
+
+    </script>
+</body>
+</html>
