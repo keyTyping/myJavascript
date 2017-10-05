@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟传值</title>
+    <script src="vue221.js"></script>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+</body>
+<script>
+    var app = Vue.extend({});
+
+    var temp1 = Vue.extend({
+        template:'<div>第一个兄弟</div>',
+        data:function () {
+            return {
+                data1:'12345'
+            }
+        }
+    });
+
+    var temp2 = Vue.extend({
+        template:'<div>第二个兄弟{{data2}}</div>',
+        data:function () {
+            return {
+                data2:''
+            }
+        }
+    });
+
+    var vm = new Vue({
+        el:'#app'
+    });
+</script>
+</html>

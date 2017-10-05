@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue1026.js"></script>
+    <script src="./vue-router1.0.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <a href="#" v-link="{path: '/login'}">登录</a>
+        <a href="#" v-link="{path: '/register/lioo/12345'}">注册</a>
+        <!--占位符,准备显示的区域-->
+        <router-view></router-view>
+    </div>
+</body>
+<script>
+    var App =Vue.extend({});    // 1,定义根组件
+
+    var log =Vue.extend({     // 2.1 定义登录组件
+        template:'<h2>登录页面</h2>'
+    });
+
+    var reg =Vue.extend({  // 2.2 定义注册组件
+        template:'<h2>注册页面{{username+userpwd}}</h2>',
+        data:function () {
+            return {
+                username:'',
+                userpwd:''
+            }
+        },
+        created:function () {
+            this.username = this.$route.params.uname;
+            this.userpwd = this.$route.params.upwd;
+        }
+    });
+
+    var router = new VueRouter();   //3,实例化router对象
+
+    router.map({                    //4,定义路由规则
+        'login':{
+            component:log
+        },
+        'register/:uname/:upwd':{
+            component:reg
+        }
+    });
+
+    router.start(App,'#app');                 //5,使路由生效
+    router.redirect({
+        '/':'/login'
+    });
+</script>
+</html>

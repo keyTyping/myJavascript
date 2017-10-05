@@ -1,39 +1,68 @@
 /*封装自己的LKpower 框架*/
 (function (window) {
-    var arr = [],
-        push = arr.push;
+    var arr = [];
+    var push = arr.push;
+    var slice = arr.slice;
 
     function LKpower(selector) {
         return new LKpower.fn.inint(selector);
     }
     LKpower.fn = LKpower.prototype = {
+        // lkpower: version,
         constructor:LKpower,
+        length:0,
         inint: function (selector) {
-            var list = select(selector);
-            push.apply(this, list);
-            return this;
+            if (!selector) return this;
+
+            if (typeof  selector == 'string') {
+                if (selector.charAt(0) == '<' && selector.charAt(selector.length - 1) == '>') {
+                    push.apply(this, LKpower.parseHTML(selector));
+                    return this;
+                }else {
+                    push.apply(this, LKpower.select(selector));
+                    return this;
+                }
+            }
+
+
         },
         each :function (callback) {
-            return each(this,callback);
+            return LKpower.each(this,callback);
         },
         map :function (callback) {
-            return map(this,callback);
+            return LKpower.map(this,callback);
         },
         toArray:function () {
-            [].slice()
+           /* return this.map(function (v) {
+                return v;
+
+            });*/
+           return slice.call(this);
+        },
+        get:function (index) {
+            if (index===undefined) {
+                return this.toArray();
+            }else{
+                if (index >= 0) {
+                    return this[index];
+                }else if (index < 0) {
+                    return this[this.length + index];
+                }
+            }
+            return this;
         }
     };
     LKpower.fn.inint.prototype = LKpower.fn;
 
-    function isArrayLike ( array ) {
+    LKpower.isArrayLike =function ( array ) {
         var length = array && array.length;
 
         return typeof length === 'number' && length >= 0;
 
     }
-    function each ( array, callback ) {
+    LKpower.each = function ( array, callback ) {
         var i, k;
-        if ( isArrayLike( array ) ) {
+        if ( LKpower.isArrayLike( array ) ) {
             // 使用 for 循环
             for ( i= 0; i < array.length; i++ ) {
                 if( callback.call( array[ i ], i, array[ i ] ) === false ) break;
@@ -46,11 +75,11 @@
         }
         return array;
     }
-    function map ( array, callback ) {
+    LKpower.map=function ( array, callback ) {
         var i, k,
             res = [],
             tmp;
-        if ( isArrayLike( array ) ) {
+        if ( LKpower.isArrayLike( array ) ) {
             // 使用 for 循环
             for ( i= 0; i < array.length; i++ ) {
                 tmp = callback( array[ i ], i );
@@ -69,9 +98,25 @@
         }
         return res;
     }
-    function select( selector ) {
+    LKpower.select=function( selector ) {
         return document.querySelectorAll( selector );
     }
+
+    LKpower.fn.extend=LKpower.extend = function(obj) {
+        for(var k in obj){
+            this[k] = obj[k];
+        }
+    }
+    function parseHTML(str) {
+        var div = document.createElement("div");
+        var rest=[];
+        div.innerHTML=str;
+        for(var i=0;i<div.childNodes.length;i++){
+            rest.push(div.childNodes[i]);
+        }
+        return rest;
+    }
+    LKpower.parseHTML = parseHTML;
 
 
     window.LKpower = window.LK = LKpower; //映射全局变量

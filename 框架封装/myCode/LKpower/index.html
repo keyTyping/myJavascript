@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="./LKpower.core.js"></script>
+<script src="./LKpower.ctor.js"></script>
+<script src="./LKpower.DOM.js"></script>
+<script>
+    // 创建一个 div 加到页面中
+    LK( 'body' ).get( 0 ).appendChild(
+        LK( '<div id="dv" style="border: 1px solid red; width: 200px; height: 70px;">123</div>' ).get( 0 )
+    );
+
+
+    // 修改 刚刚加入的 div
+    LK( '#dv' ).each(function (){
+        this.style.border = '1px dashed blue';
+    })
+
+</script>
+</html>

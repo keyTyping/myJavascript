@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue1026.js"></script>
+    <script src="vue-resource121.js"></script>
+    <style>
+        #app {
+            width: 800px;
+            margin:30px auto;
+        }
+        .tb {
+            border-collapse: collapse;
+            padding: 5px;
+            width: 800px;
+        }
+        .tb th {
+            height: 30px;
+            font-size: 16px;
+            background-color: #0dbaf1;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .tb td {
+            height: 30px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        #app input {
+            margin: 5px auto;
+            padding-left:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--<input type="text" v-model="pId">-->
+        <input type="text" v-model="pName" @keydown.enter="addItem">
+        <input type="button" @click="addItem" value="添加数据"><br>
+        <my-color>搜索条件:</my-color>
+        <input type="text" v-model="pCheck" placeholder="请输入要查询的名字..." v-focus v-color="color2">
+        <table class="tb">
+            <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            <tr v-if="list.length==0">
+                <td colspan="4">当前没有数据....</td>
+            </tr>
+            <tr v-for="item in list | filterBy pCheck in 'name'">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.ctime}}</td> <!-- |dataFmt-->
+                <td>
+                    <a href="#" @click="delItem(item.id)">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        //自定义过滤器
+/*
+        Vue.filter('dataFmt',function (input,fmt) {
+            if (fmt == 'yyyy-mm-dd') {
+                return input.getFullYear()+'-'+input.getMonth()+'-'+input.getDate();
+            } else{
+                return input.getFullYear()+'-'+(input.getMonth()+1)+'-'+input.getDate()+'  '+input.getHours()+':'+input.getMinutes()+':'+((input.getSeconds()>=10)?input.getSeconds():'0'+input.getSeconds());
+            }
+        });
+*/
+        //自定义v-focus 获取焦点指令
+        Vue.directive('focus',function () {
+            this.el.focus();
+        });
+        //自定义 v-color 添加颜色指令
+        Vue.directive('color',function (color) {
+            this.el.style.color = color;
+//            console.log(color);
+//            console.log(color === this.vm[this.expression]);
+        });
+
+        //自定义元素  (自定义标签)
+        Vue.elementDirective('my-color',{
+            bind:function() {
+                this.el.style.color = 'red';
+            }
+        });
+
+        var vm = new Vue({
+            el: '#app',
+            created:function () {
+                this.getData();
+            },
+            data:{
+                list:[],
+/*
+                    {id:1,name:'奥迪',ctime:new Date()},
+                    {id:2,name:'宝马',ctime:new Date()},
+                    {id:3,name:'奔驰',ctime:new Date()}
+*/
+
+                pName:'',
+                pCheck:'',
+                color2:'red'
+            },
+            methods:{
+                //获取数据
+                getData:function () {
+                  this.$http.get('http://139.199.192.48:8888/api/getprodlist').then(function (rese) {
+                      if (rese.body.status != 0) {
+                          alert(rese.body.message);
+                          return;
+                      }
+                      this.list = rese.body.message;
+//                      console.log(this.list);
+                  });
+                },
+                addItem:function () {
+/*
+                    var p = {};
+                    p.id=this.pId;
+                    p.name=this.pName;
+                    p.ctime=new Date();
+                    this.list.push(p);
+                    this.pId = 0;
+                    this.pName='';
+*/
+                    this.$http.post('http://139.199.192.48:8888/api/addproduct',{name:this.pName},{emulateJSON:true}).then(function (rese) {
+                        if (rese.body.status != 0) {
+                            alert(rese.body.message);
+                            return;
+                        }
+                        this.getData();
+                    });
+                },
+                delItem:function (dId) {
+/*
+                    //console.log(dId);
+                    if (!("是否删除这一项?")) {
+                        return;
+                    }
+                    var index = this.list.findIndex(function () {
+                        return this.id==dId;
+                    });
+                    this.list.splice(index,1);
+*/
+                    this.$http.get('http://139.199.192.48:8888/api/delproduct/'+dId).then(function (rese) {
+                        if (rese.body.status != 0) {
+                            alert(rese.body.message);
+                            return;
+                        }
+                        this.getData();
+                    });
+
+                }
+            }
+        });
+    </script>
+</body>
+</html>

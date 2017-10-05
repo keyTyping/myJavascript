@@ -20,23 +20,24 @@
 <input type="button" value="全不选" id="noSelect">
 <input type="button" value="反选" id="select">
 </body>
-<script src="lib.js"></script>
+<script src="./LKpower.js"></script>
 <script>
-    lkpower("#selectAll")[0].onclick = function () {
+    LK("#selectAll")[0].onclick = function () {
         lkpower("div>input").each(function () {
            this.checked = true;
         });
     }
-
-    lkpower("#noSelect")[0].onclick = function () {
+    LK("#noSelect")[0].onclick = function () {
         lkpower("div>input").each(function () {
             this.checked = false;
         });
     }
-    lkpower("#select")[0].onclick = function () {
+    LK("#select")[0].onclick = function () {
         lkpower("div>input").each(function () {
             this.checked = !this.checked;
         });
     }
+    LK("body")[0].appendChild(LK("<div id=\"dv\" style=\"border: 1px solid red\">123</div>").get(0));
+    LK("#dv")[0].style.backgroundColor = "blue";
 </script>
 </html>

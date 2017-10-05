@@ -19,39 +19,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LKpower.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower.js">
+      <file leaf-file-name="02-Vue的v-on注册事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/mydemo/02-Vue的v-on注册事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#423#474#0" expanded="false" />
-                <element signature="e#509#559#0" expanded="false" />
-                <element signature="e#712#823#0" expanded="false" />
-                <element signature="e#862#1303#0" expanded="false" />
-                <element signature="e#1341#1948#0" expanded="false" />
-                <element signature="e#1981#2042#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LKjsTest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKjsTest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="179">
+              <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01-选择模块.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架封装/myCode/01-选择模块.html">
+      <file leaf-file-name="03-列表实现.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vue/mydemo/03-列表实现.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06利用自定义指令实现焦点默认定位到搜索框中.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/lesson/Day1/代码/品牌案例/06利用自定义指令实现焦点默认定位到搜索框中.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -72,6 +66,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>product_con</find>
+      <find>jquery</find>
     </findStrings>
     <dirStrings>
       <dir>D:\H5START\GitHub\myjavascript\H5和CSS3\H5Day2</dir>
@@ -84,15 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JQuery/jQuery016下拉菜单的案例/07下拉菜单练习.html" />
-        <option value="$PROJECT_DIR$/JQuery/jQuery019精品展示案例/淘宝精品服饰案例.html" />
-        <option value="$PROJECT_DIR$/JQuery/jQuery021好友面板切换案例.html" />
-        <option value="$PROJECT_DIR$/JQuery/jQuery22手风琴案例/案例手风琴.html" />
-        <option value="$PROJECT_DIR$/JQuery/day2/01机智的开关灯实现.html" />
-        <option value="$PROJECT_DIR$/JQuery/jQueryExchange/许愿墙重写/许愿墙.html" />
-        <option value="$PROJECT_DIR$/JQuery/day2/jQuery022动态创建表格案例.html" />
-        <option value="$PROJECT_DIR$/H5和CSS3/H5Day1/demo/学生档案.html" />
-        <option value="$PROJECT_DIR$/H5和CSS3/CSS3Day2/demo/02-HTML5-径向渐变.html" />
         <option value="$PROJECT_DIR$/H5和CSS3/CSS3Day2/demo/03-HTML5-重复渐变.html" />
         <option value="$PROJECT_DIR$/testData/考试题测试.html" />
         <option value="$PROJECT_DIR$/testData/考试程序题1.html" />
@@ -132,9 +118,18 @@
         <option value="$PROJECT_DIR$/框架封装/myCode/02-map的使用.html" />
         <option value="$PROJECT_DIR$/框架封装/myCode/03-封装自己的each和map.html" />
         <option value="$PROJECT_DIR$/框架封装/myCode/lib.js" />
-        <option value="$PROJECT_DIR$/框架封装/myCode/testLib.html" />
         <option value="$PROJECT_DIR$/框架封装/myCode/LKjsTest.html" />
+        <option value="$PROJECT_DIR$/框架封装/代码/03-DOM操作/01-parseHTML/03-解决方案1.html" />
+        <option value="$PROJECT_DIR$/框架封装/代码/03-DOM操作/01-parseHTML/04-解决方案2.html" />
         <option value="$PROJECT_DIR$/框架封装/myCode/LKpower.js" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/testLib.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/LKpower/LKpower.DOM.js" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/LKpower/index.html" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/LKpower/LKpower.core.js" />
+        <option value="$PROJECT_DIR$/框架封装/myCode/LKpower/LKpower.ctor.js" />
+        <option value="$PROJECT_DIR$/Vue/Day1/01-Vue初体验.html" />
+        <option value="$PROJECT_DIR$/Vue/mydemo/02-Vue的v-on注册事件.html" />
+        <option value="$PROJECT_DIR$/Vue/mydemo/03-列表实现.html" />
       </list>
     </option>
   </component>
@@ -174,10 +169,13 @@
           <State>
             <id />
           </State>
+          <State>
+            <id>Vue</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>CoffeeScript</id>
+            <id>AngularJS</id>
           </State>
         </selected-state>
       </profile-state>
@@ -206,67 +204,6 @@
               <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="myCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="代码" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="代码" type="462c0819:PsiDirectoryNode" />
-              <item name="02-框架核心结构" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="代码" type="462c0819:PsiDirectoryNode" />
-              <item name="02-框架核心结构" type="462c0819:PsiDirectoryNode" />
-              <item name="06-简单抽取框架的核心结构" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="代码" type="462c0819:PsiDirectoryNode" />
-              <item name="02-框架核心结构" type="462c0819:PsiDirectoryNode" />
-              <item name="07-简单优化" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="资料" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="资料" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="框架封装" type="462c0819:PsiDirectoryNode" />
-              <item name="资料" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-3.1.0" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -276,7 +213,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.23894863" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/lessc.cmd" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -289,19 +226,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\H5START\GitHub\myjavascript\Vue\mydemo" />
+      <recent name="D:\H5START\GitHub\myjavascript\Vue\Day1" />
+      <recent name="D:\H5START\GitHub\myjavascript" />
+      <recent name="D:\H5START\GitHub\myjavascript\框架封装\myCode\LKpower" />
+      <recent name="D:\H5START\GitHub\myjavascript\框架封装\myCode" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\H5START\GitHub\myjavascript\JQuery\day1" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效\轮播图\images" />
       <recent name="D:\H5START\GitHub\myjavascript\JS特效" />
       <recent name="D:\H5START\GitHub\myjavascript\" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\H5START\GitHub\myjavascript\框架封装\myCode" />
-      <recent name="D:\H5START\GitHub\myjavascript\框架封装" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\demo" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo\lessonDemo" />
-      <recent name="D:\H5START\GitHub\myjavascript\weijinsuo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,11 +340,16 @@
       <workItem from="1505918767185" duration="4690000" />
       <workItem from="1506010516368" duration="1699000" />
       <workItem from="1506094165782" duration="4067000" />
+      <workItem from="1506238967139" duration="17158000" />
+      <workItem from="1506427660605" duration="2747000" />
+      <workItem from="1506530062997" duration="1147000" />
+      <workItem from="1506695996683" duration="3001000" />
+      <workItem from="1506772109351" duration="10782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123115000" />
+    <option name="totallyTimeSpent" value="157950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,17 +362,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23065476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23660715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -466,144 +407,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webJD/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markdown语法.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/js/category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="107" column="20" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/css/category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webJD/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="53" column="78" lean-forward="false" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/lib/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/lib/jQuery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/lib/html5shiv/html5shiv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/demo/03container.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/demo/baseModel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/demo/01mediaQuery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weijinsuo/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weijinsuo/demo/08.导航栏.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1216">
@@ -762,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,12 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!doc;n#isArrayLike#0" expanded="false" />
-            <element signature="n#!!block;n#isArrayLike#0" expanded="false" />
-            <element signature="n#!!doc;n#each#0" expanded="false" />
-            <element signature="n#!!block;n#each#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,18 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#673#793#0" expanded="false" />
-            <element signature="e#837#1279#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架封装/myCode/testLib.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,35 +612,161 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="e#522#623#0" expanded="false" />
-            <element signature="e#658#1044#0" expanded="false" />
-            <element signature="e#1078#1598#0" expanded="false" />
-            <element signature="e#1627#1680#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/03-DOM操作/01-parseHTML/03-解决方案1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/03-DOM操作/01-parseHTML/04-解决方案2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/资料/jquery/jquery-1.7.1/jquery-1.7.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="358" column="40" lean-forward="true" selection-start-line="358" selection-start-column="40" selection-end-line="358" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/03-DOM操作/01-parseHTML/05-验证parseHTML方法案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKjsTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/testLib.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="263">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/03-DOM操作/03-将代码分解到不同的模块中/js/Itcast.ctor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower/LKpower.DOM.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower/LKpower.core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="90" column="9" lean-forward="false" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/03-DOM操作/04-基本DOM方法/01-appendTo方法/05-itcast.ctor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/myCode/LKpower/LKpower.ctor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架封装/代码/03-DOM操作/03-将代码分解到不同的模块中/js/Itcast.core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/Day1/01-Vue初体验.html" />
+    <entry file="file://$PROJECT_DIR$/Vue/mydemo/01-Vue初体验.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/lesson/Day1/资料/就业班04-Vue第1天笔记.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/lesson/Day1/代码/过滤器/02自定义私有的过滤器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/mydemo/02-Vue的v-on注册事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/lesson/Day1/代码/过滤器/03自定义全局的过滤器 .html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/lesson/Day1/代码/品牌案例/06利用自定义指令实现焦点默认定位到搜索框中.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/mydemo/03-列表实现.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#423#474#0" expanded="false" />
-            <element signature="e#509#559#0" expanded="false" />
-            <element signature="e#712#823#0" expanded="false" />
-            <element signature="e#862#1303#0" expanded="false" />
-            <element signature="e#1341#1948#0" expanded="false" />
-            <element signature="e#1981#2042#0" expanded="false" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

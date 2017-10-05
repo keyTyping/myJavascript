@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="vue1026.js.js"></script>
+</head>
+<body>
+	<div id="app">
+		<input type="text" v-model="msg">
+
+	<!-- 场景举例-登录页面 -->
+	<form action="#">
+		<input type="text" v-model="uname">
+		<input type="text" v-model="upwd">
+		<input type="text" v-model="age" number>
+		<button @click="login">登录</button>
+	</form>
+
+	</div>
+</body>
+<script>
+
+/*
+  Vue1.0 版本中的修饰符
+   1、number修饰符的写法：<input type="text" v-model="age" number>
+
+  Vue2.0 版本中的修饰符
+   1、number修饰符的写法：<input type="text" v-model.number="age">
+
+ */ 
+  var vm = new Vue({
+  	el:'#app',
+  	data:{
+  		msg:'黑马程序员',
+  		uname:'',
+  		upwd:'',
+  		age:1
+  	},
+  	methods:{
+  		login:function(){
+  			// 实现登录逻辑
+  			// 1.0 获取文本框中的两个值
+  			alert(typeof this.age);
+  			// this.age = this.age + 1; // -> 2
+  			// alert("uname="+this.uname + ",pwd="+this.upwd +' age='+this.age);
+  		}
+  	}
+  });
+</script>
+
+</html>
